@@ -1,0 +1,138 @@
+.video-container {
+    position: relative;
+  }
+  
+  .video-overlay {
+    position: absolute;
+    content: '';
+    background-color: rgba(0,0,0,0.3);
+    top: 0;
+    left: 0;
+    height: 300px;
+    width: 100%;
+  }
+  
+  .video-container h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #fff;
+    letter-spacing: 2px;
+    white-space: nowrap;
+  }
+  
+  .cart__video {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  .cart-img {
+    width: 50%;
+    height: 40px;
+    object-fit: contain;
+  }
+  
+  .cart-content {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  
+  .cart-content button {
+    display: block;
+    margin: 2rem auto;
+    width: 200px;
+  }
+  
+  .t-head th {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .tr td {
+    padding: 10px;
+  }
+  
+  .table-auto {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table-auto th, .table-auto td {
+    border: 1px solid #ddd;
+  }
+  
+  @media (min-width: 768px) {
+    .cart-content {
+      width: 70%;
+    }
+  
+    .form__group {
+      display: flex;
+    }
+  
+    .checkout__cart {
+      width: 30%;
+    }
+
+    .video-container h3 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      font-size: 3rem;
+      font-weight: 800;
+      color: #fff;
+      letter-spacing: 2px;
+      white-space: nowrap;
+    }
+  }
+  
+  .checkout__cart {
+    display: flex;
+    gap: 1rem;
+    background-color: #2B2D42;
+    padding: 1rem;
+    margin: 1rem 0;
+    color: #fff;
+    border-radius: 10px;
+    flex-direction: column;
+  }
+  
+  .checkout__cart h4 {
+    margin: 0.5rem 0;
+    font-size: large;
+  }
+
+  .checkout__cart h4 span {
+    font-weight: bold;
+  }
+
+  .checkout-discount {
+    font-weight: bold;
+  }
+  
+  .place__order {
+    background-color: #ff7e00;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.4s;
+  }
+
+  .place__order p {
+    font-size: large;
+    font-weight: bold;
+  }
+  
+  .place__order:hover {
+    background-color: #ff9c33;
+    transform: scale(0.95);
+  }
+  

@@ -1,0 +1,86 @@
+.billing-form {
+    width: 100%;
+}
+
+.billing-checkout {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.checkout-form input {
+    border: 1px solid #2B2D42;
+    display: block;
+    height: 50px;
+    width: 100%;
+    margin: 15px 0;
+    padding-left: 10px;
+    outline: none;
+    border-radius: 10px;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.billing-checkout {
+    display: flex;
+    gap: 1rem;
+    background-color: #2B2D42;
+    padding: 1rem;
+    margin: 1rem 0;
+    color: #fff;
+    border-radius: 10px;
+    flex-direction: column;
+  }
+  
+.billing-checkout h4 {
+    margin: 0.5rem 0;
+    font-size: large;
+}
+
+.billing-checkout h4 span {
+    font-weight: bold;
+}
+
+.place__order {
+    background-color: #ff7e00;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.4s;
+}
+
+.place__order p {
+    font-size: large;
+    font-weight: bold;
+}
+
+.place__order:hover {
+    background-color: #ff9c33;
+    transform: scale(0.95);
+}
+
+.error-message {
+    color: white;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    background-color: red;
+  }
+  
+
+@media (min-width: 768px) {
+    .billing-form {
+        width: 60%;
+    }
+
+    .billing-checkout {
+        width: 40%;
+        margin-top: 0;
+    }
+}

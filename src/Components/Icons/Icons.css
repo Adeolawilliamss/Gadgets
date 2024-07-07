@@ -1,0 +1,31 @@
+.marquee-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+.image {
+    width: 4rem;
+    height: 4rem;
+    background-color: #efe2e6;
+    padding: 1rem;
+    border-radius: 50%;
+    
+}
+.icons {
+    width:2.5rem;
+    
+}
+
+.icons.return{
+    width: 2rem;
+}
+
+.marquee-icons h3 {
+    font-size: 1rem;
+}
+
+.marquee-icons p {
+    font-size: 0.8rem;
+}

@@ -1,0 +1,193 @@
+.product-btn {
+  border: none;
+  padding: 1rem;
+  background-color: #D10024;
+  color: #fff;
+  text-transform: capitalize;
+  transition: all 0.4s;
+  width: 15rem;
+}
+
+.product-btn:hover {
+  transform: scale(0.95);
+}
+
+.buy-btn {
+  position: relative;
+  background-color: transparent;
+  border: 1.5px solid #15161D;
+  color: #15161D;
+  padding: 1rem;
+  margin-bottom: 5px;
+  overflow: hidden;
+  background-color: transparent;
+  width: 15rem;
+}
+
+.buy-btn:after {
+  position: absolute;
+  content: 'Buy Now';
+  height: auto;
+  background-color: #15161D;
+  color: #fff;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  inset: 0;
+  text-align: center;
+  transform: translateX(-100%);
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buy-btn:hover:after {
+  transform: translateX(0);
+  color: #fff;
+}
+.reviews-button {
+  width: 10rem;
+  background-color: #D10024;
+  color: #fff;
+  height: 3rem;
+}
+
+.itemDetails-img {
+  width: 100%;
+  height: 25rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.details-cover {
+  width: 22rem;
+}
+
+.first-details {
+  width: 25%;
+}
+
+.second-details {
+  width: 75%;
+}
+
+.second-details h3 {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.second-details h1 {
+  font-size: 2rem;
+}
+
+.last-details .tab {
+  font-weight: medium;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.last-details .tab.active {
+  color: #D10024;
+}
+
+.content {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.content.active {
+  display: block;
+  opacity: 1;
+}
+
+.reviews input, .reviews textarea {
+  border: 1px solid #2B2D42;
+  border-radius: 0.4rem;
+  padding: 0.5rem;
+  outline: none;
+}
+
+.reviews span {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+  cursor: pointer;
+}
+
+.reviews-button {
+  border: none;
+  padding: 0.5rem 1rem;
+  background-color: #D10024;
+  color: #fff;
+  text-transform: capitalize;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+
+.reviews-button:hover {
+  transform: scale(0.95);
+}
+
+@media (max-width: 480px) {
+  .second-details h3,
+  .second-details h1,
+  .second-details h2,
+  .second-details p,
+  .second-details {
+    text-align: center;
+  }
+
+  .reviews input, .reviews textarea {
+    width: 100%;
+  }
+}
+
+
+/**************************The Recommended component styling********************/
+.recommended-product {
+  width: 100%;
+  max-width: 20rem;
+  height: 500px;
+  border: 1px solid black;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3rem;
+}
+
+.recommended-product:hover {
+  border: 2px solid red;
+}
+
+.recommended-product h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.recommended-product h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  margin-top: 5px;
+}
+
+@media (max-width: 480px) {
+  .recommended-product {
+    height:450px;
+  }
+  .product-btn {
+    width: 100%;
+  }
+  .buy-btn {
+    width: 100%;
+  }
+}

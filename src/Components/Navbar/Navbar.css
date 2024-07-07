@@ -1,0 +1,225 @@
+.circle {
+  width: 10px;
+  height: 10px;
+  background-color: #c20a22;
+  border-radius: 50%;
+}
+
+.header-search form input {
+    width: 100%;
+    outline-color: #D10024;
+    height: 59px;
+}
+
+.header-search form .search-btn {
+  height: 40px;
+  width: 100px;
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  border-radius: 0 40px 40px 0;
+}
+
+.iconss {
+  position: relative;
+  color: #fff;
+  margin: 1rem;
+}
+
+.qty {
+  background-color: #d10024;
+  color: #fff;
+  position: absolute;
+  top: 24px;
+  margin-left: 13px;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-icons {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: nowrap;
+}
+
+
+.header-icons img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.profile-card {
+  position: absolute;
+  display: block;
+  background-color: #fff;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  z-index: 3;
+  width: 100px;
+  white-space: nowrap;
+  top: 4rem;
+  margin-left: 4rem;
+}
+
+.profile-card p {
+  color: #15161d;
+  cursor: pointer;
+}
+
+.profile-card p:hover {
+  color: #d10024;
+}
+
+.avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+/*Menu Design*/
+
+.menu {
+  display: block; /* Default to hidden, will show on medium and small screens */
+  padding: 0 1rem;
+}
+
+.menu ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.menu.active ul {
+  flex-direction: column;
+  display: block;
+  position: fixed;
+  margin: auto;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 99;
+  transition: all 0.3s;
+}
+
+.menu-btn.active {
+  position: fixed;
+  top: 1rem;
+  right: 0rem;
+  z-index: 999;
+}
+
+.menu.active ul li a {
+  display: block;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 3rem;
+  color: #15161D;
+}
+
+.menu.active ul li.active-btn a {
+  margin-top: 7rem;
+}
+
+.menu-btn {
+  display: none; /* Hide by default */
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+  background-color: #15161D;
+  border: none;
+}
+
+/* Responsive design */
+
+@media (max-width: 768px) {
+  .header-icons {
+    gap: 25px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-right: 1rem;
+  }
+
+  .header-icons .iconss {
+    margin: 0.5rem;
+  }
+
+  .header-icons .qty {
+    margin-left: 1.4rem;
+    margin-bottom: 5rem;
+  }
+
+  .profile-card {
+    margin-right: 1.5rem;
+    top: 3.5rem;
+  }
+}
+
+@media (max-width: 968px) {
+  .menu-btn {
+    display: block; /* Show on medium and small screens */
+  }
+
+  .header-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem auto 0 auto;
+    cursor: pointer;
+  }
+}
+
+.menu-btn .close {
+  position: fixed;
+  right: 2rem;
+  background-color: #FFF;
+  color: #15161D;
+}
+
+@media (max-width: 750px) {
+  .qty {
+    top: 10.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-icons {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2rem;
+    flex-wrap: nowrap;
+  }
+  .profile-card {
+    top: 11rem;
+  }
+
+  .qty {
+    top: 10.5rem;
+  }
+
+  .avatar {
+    margin-top: 1.2rem;
+  }
+
+  .menu {
+    margin-top: 1.2rem;
+  }
+
+  .profile-card {
+    margin-top: 1.5rem;
+  }
+
+  .avatar-button {
+    margin-top: 1.2rem;
+  }
+}
+
+
