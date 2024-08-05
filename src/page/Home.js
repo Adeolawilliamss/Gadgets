@@ -7,7 +7,6 @@ import TopSelling from './../Components/TopSelling/TopSelling';
 import Newsletter from './../Components/Newsletter/Newsletter';
 import { useLocation } from 'react-router-dom';
 import Skeleton from '../utils/Skeleton';
-import '../utils/LoadingSpinner/Spinner.css';
 
 const Home = () => {
   const collectionRef = useRef(null);
@@ -44,9 +43,7 @@ const Home = () => {
 
   if (loading) {
     return (
-      <div className="loading-screen">
         <Skeleton />
-      </div>
     );
   }
 
