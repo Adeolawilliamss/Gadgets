@@ -20,7 +20,7 @@ function Collection() {
       <div className="container mx-auto px-4">
         <div className="collection">
           <div className="under-links py-8 border-b-4">
-            <ul className="flex gap-4 items-center justify-center mt-8 hidden md:flex">
+            <ul className="gap-4 items-center justify-center mt-8 hidden md:flex">
               <li className="list"><Link to="#collection">Home</Link></li>
               <li className="list"><Link to="#newProduct">New Products</Link></li>
               <li className="list"><Link to="#topSelling">Trending Products</Link></li>

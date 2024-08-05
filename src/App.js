@@ -1,4 +1,4 @@
-import { Routes, Route, useLocation } from 'react-router-dom';
+import { Routes, Route} from 'react-router-dom';
 import './App.css';
 import Home from './page/Home';
 import Shop from './Components/Shop/Shop';
@@ -14,7 +14,6 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 function App({ item }) {
-  let location = useLocation();
 
   return (
     <>
