@@ -194,6 +194,9 @@ export const product = [
             "assets/images/pro-img/51vRipjKjML._SL1200_.jpg",
             "assets/images/pro-img/61-uVCKZhtL._SL1200_.jpg"
           ],
+          "itemVid": [
+            "assets/video/gaming.mp4",
+          ],
           "description1": "XBOX",
           "description2": "",
           "newItemPrice": "1112",
@@ -792,6 +795,7 @@ export const product = [
             "assets/images/pro-img/616-K1n0NeL._SL1500_.jpg",
             "assets/images/pro-img/61H-v5npLZL._SL1500_.jpg"
           ],
+          "itemVid": ["assets/video/gaming.mp4"],
           "description1": "Lorem ipsum dolor sit amet",
           "description2": "",
           "newItemPrice": "1112",
@@ -833,6 +837,7 @@ export const product = [
 							"assets/images/pro-img/6009728cv11d.jpeg",
 							"assets/images/pro-img/6009728cv12d.jpeg"
 						],
+            "itemVid": ["assets/video/cellphones.mp4"],
 						"description1": "iPhone 13 - White",
 						"description2": "",
 						"newItemPrice": "520",
@@ -2540,6 +2545,7 @@ export const product = [
 					"itemInfo": {
 						"name": "LG",
 						"itemImg": ["assets/images/pro-img/71fg+BrjQlL._AC_SX679_.webp"],
+            "itemVid": ["assets/video/cellphones.mp4"],
 						"description1": "LG - Gold",
 						"description2": "",
 						"newItemPrice": "520",
@@ -2590,6 +2596,7 @@ export const product = [
               "itemTotal": "630",
               "brand": "jbl",
               "category": "Speakers",
+              "itemVid": ["assets/video/speakers.mp4"],
               "color": "🇺🇦",
               "OS": "🫶🏼",
               "CPU": "🁼",
@@ -4133,6 +4140,7 @@ export const product = [
                 "assets/images/pro-img/6495841cv11d.jpeg",
                 "assets/images/pro-img/6495841_rd.jpeg"
               ],
+              "itemVid": ["assets/video/speakers.mp4"],
               "description1": "JBL Airpod - Black",
               "description2": "",
               "newItemPrice": "1112",
@@ -4175,6 +4183,7 @@ export const product = [
                 "assets/images/pro-img/6450858cv4d.jpeg",
                 "assets/images/pro-img/6450858cv7d.jpeg"
               ],
+              "itemVid": ["assets/video/computers.mp4"],
               "description1": "Apple MacBook Pro 2022 - Grey - Apple MacBook Pro 2022 - Grey",
               "description2": "",
               "newItemPrice": "1200",
@@ -5705,6 +5714,7 @@ export const product = [
                 "assets/images/pro-img/6517655cv11d.jpeg",
                 "assets/images/pro-img/6517655cv12d.jpeg"
               ],
+              "itemVid": ["assets/video/computers.mp4"],
               "description1": "HP Elite",
               "description2": "",
               "newItemPrice": "1300",
@@ -5745,6 +5755,7 @@ export const product = [
             "itemInfo": {
               "name": "Hisense",
               "itemImg": ["assets/images/pro-img/try8.webp"],
+              "itemVid": ["assets/video/Tv.mp4"],
               "description1": "Hisense TV",
               "description2": "",
               "newItemPrice": "928",
@@ -7061,6 +7072,7 @@ export const product = [
               "itemImg": [
                 "assets/images/pro-img/pngfind.com-flat-screen-tv-on-3513033.webp"
               ],
+              "itemVid": ["assets/video/Tv.mp4"],
               "description1": "LG TV",
               "description2": "",
               "newItemPrice": "300",

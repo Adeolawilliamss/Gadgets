@@ -7,10 +7,13 @@ import './Collection.css';
 function Collection() {
   const [filter, setFilter] = useState(product);
 
-  const uniqueObjects = filter.reduce((item, cat) => {
-    Object.assign(item, { [cat.itemInfo.category]: cat });
-    return item;
-  }, {});
+  const uniqueObjects = Array.isArray(filter)
+  ? filter.reduce((item, cat) => {
+      Object.assign(item, { [cat.itemInfo.category]: cat });
+      return item;
+    }, {})
+  : {};
+
 
   const unique = Object.values(uniqueObjects);
   console.log(unique);
@@ -34,9 +37,14 @@ function Collection() {
                 <div key={id}>
                   <Link to={`/shop/${itemInfo.category}`}>
                     <div className="second-collection">
-                      <div className="collection-img">
-                        <img src={itemInfo.itemImg[0]} alt="" />
-                      </div>
+                      <div className="collection-video">
+                      {itemInfo.itemVid && itemInfo.itemVid.length > 0 ? (
+                        <video src={itemInfo.itemVid[0]} autoPlay loop muted playsInline className="w-full h-auto"></video>
+                      ) : (
+                        <p>No Video Available</p>
+                      )}
+                    </div>
+
                       <div className="collection-body">
                         <h3>{itemInfo.category} collection</h3>
                         <button className="cta-btn">Shop now <span className="arrow"><FaArrowCircleRight /></span></button>

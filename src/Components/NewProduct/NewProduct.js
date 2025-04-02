@@ -116,7 +116,7 @@ function NewProduct() {
           </div>
           <div className="New-subheader">
             <div className="under-links">
-              <ul className="flex flex-row gap-4">
+              <ul className="flex flex-row gap-10 sm:justify-between">
                 <li className="list">Laptops</li>
                 <li className="list">Smartphones</li>
                 <li className="list">Computers</li>

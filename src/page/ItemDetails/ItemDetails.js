@@ -94,7 +94,7 @@ function ItemDetails() {
           </figure>
         </div>
 
-        <div className="second-details items-center justify-center w-full md:w-3/4 mt-8 md:mt-20 text-center md:text-left">
+        <div className="second-details items-center justify-center w-full sm: ml-8 md:w-3/4 mt-8 md:mt-20 text-center md:text-left">
           <h3 className="font-bold text-lg">{itemInfo.category}</h3>
           <h1 className='mt-3 text-2xl'>{itemInfo.name}</h1>
           <h1>${itemInfo.newItemPrice}</h1>

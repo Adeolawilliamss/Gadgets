@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useLocation, useNavigate, Link } from 'react-router-dom';
+import { useLocation, useNavigate} from 'react-router-dom';
 import { FaArrowLeft } from 'react-icons/fa';
 import { useDispatch } from 'react-redux';
 import { cartActions } from '../../redux/cartSlice';

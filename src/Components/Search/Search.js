@@ -16,13 +16,13 @@ function Search() {
   return (
     <div>
       {searchItems.length === 0 ? (
-        <>
+        <div className="w-100 h-100">
           <h1 className='text-center mt-4'>Item Not Available</h1>
           <p className='text-center'>Go to shop to see all available items</p>
           <Link to={pages.get('shop').path}>
             <button className="product-btn d-block m-auto my-3"> Shop</button>
           </Link>
-        </>
+        </div>
       ) : (
         <div className="container bg-slate-100 mx-auto">
           <h1 className='search-header p-2'>Results for {query}</h1>

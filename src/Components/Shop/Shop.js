@@ -34,7 +34,7 @@ function Shop() {
   return (
     <div className='shop'>
       <h1 className='shop-header mt-5'>Products Available for {category}</h1>
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 mt-8">
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 mt-8 mb-4">
         {filteredProducts.map(item => (
           <ProductItem key={item.id} item={item} />
         ))}
