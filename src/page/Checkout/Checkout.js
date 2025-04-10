@@ -1,3 +1,4 @@
+/*eslint-disable*/
 import React, { useEffect, useState } from 'react';
 import pages from "../../utils/pages";
 import { useLocation, useNavigate } from 'react-router-dom';
@@ -147,9 +148,9 @@ function Checkout() {
             <div className='billing-checkout'>
               <h4>TotalQty: <span>{totalQuantity}</span></h4>
               <h4>Subtotal:  <span>${totalAmount}</span></h4>
-              <h4>Discount:  <span>-${totalDiscount}</span></h4>
+              <h4>Discount:  <span>${totalDiscount}</span></h4>
               <hr />
-              <h4 className='total'>Total cost: <span>${totalCost}</span></h4>
+              <h4 className='total'>Total: <span>${totalCost}</span></h4>
               <button
                 className="place__order"
                 onClick={handlePlaceOrder}

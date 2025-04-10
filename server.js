@@ -1,49 +1,51 @@
-const mongoose = require("mongoose");
-const dotenv = require("dotenv");
+const mongoose = require('mongoose');
+const dotenv = require('dotenv');
 
-process.on("uncaughtException", (err) => {
+process.on('uncaughtException', (err) => {
   console.log(err.name, err.message);
-  console.log("UNCAUGHT EXCEPTION! 💥 shutting down....");
+  console.log('UNCAUGHT EXCEPTION! 💥 shutting down....');
   process.exit(1);
 });
 
-dotenv.config({ path: "./config.env" });
-const app = require("./app");
+dotenv.config({ path: './config.env' });
+const app = require('./app');
 
 const DB = process.env.DATABASE.replace(
-  "<PASSWORD>",
-  process.env.DATABASE_PASSWORD
+  '<PASSWORD>',
+  process.env.DATABASE_PASSWORD,
 );
 // 🛠️ Set Mongoose global settings
-mongoose.set("bufferTimeoutMS", 30000);
+mongoose.set('bufferTimeoutMS', 30000);
 
 mongoose
   .connect(DB, {
     serverSelectionTimeoutMS: 30000,
     socketTimeoutMS: 45000,
   })
-  .then(() => console.log("✅ DB Connection successful!"))
+  .then(() => console.log('✅ DB Connection successful!'))
   .catch((err) => {
-    console.error("❌ DB Connection error:", err.message);
+    console.error('❌ DB Connection error:', err.message);
     process.exit(1); // Force exit if database connection fails
   });
 
-const port = process.env.PORT || "3000";
+const port = process.env.PORT || '3000';
 const server = app.listen(port, () => {
   console.log(`App running on port ${port}...`);
 });
 
-process.on("unhandledRejection", (err) => {
+console.log('Environment:', process.env.NODE_ENV);
+
+process.on('unhandledRejection', (err) => {
   console.log(err.name, err.message);
-  console.log("UNHANDLED REJECTION! 💥 shutting down....");
+  console.log('UNHANDLED REJECTION! 💥 shutting down....');
   server.close(() => {
     process.exit(1);
   });
 });
 
-process.on("SIGTERM", () => {
-  console.log("👋SIGTERM RECEIVED,Shutting down gracefully");
+process.on('SIGTERM', () => {
+  console.log('👋SIGTERM RECEIVED,Shutting down gracefully');
   server.close(() => {
-    console.log("Process terminated");
+    console.log('Process terminated');
   });
 });

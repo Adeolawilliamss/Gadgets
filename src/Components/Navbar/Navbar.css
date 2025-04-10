@@ -55,7 +55,9 @@
 
 .profile-card {
   position: absolute;
-  display: block;
+  display: flex;         /* Change from block to flex */
+  flex-direction: column; /* Stack items vertically */
+  gap: 0.5rem;            /* Space between buttons and divider */
   background-color: #fff;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
   padding: 1rem;
@@ -63,8 +65,15 @@
   width: 100px;
   white-space: nowrap;
   top: 4rem;
-  margin-left: 4rem;
+  margin-left: 8rem;
 }
+
+.divider {
+  height: 1px;
+  background-color: red;
+  width: 100%;
+}
+
 
 .profile-card p {
   color: #15161d;
@@ -73,12 +82,6 @@
 
 .profile-card p:hover {
   color: #d10024;
-}
-
-.avatar {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
 }
 
 /*Menu Design*/
@@ -199,6 +202,7 @@
   }
   .profile-card {
     top: 11rem;
+    margin-top: 1.7rem;
   }
 
   .qty {
@@ -211,10 +215,6 @@
 
   .menu {
     margin-top: 1.2rem;
-  }
-
-  .profile-card {
-    margin-top: 1.5rem;
   }
 
   .avatar-button {

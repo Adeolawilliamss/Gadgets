@@ -1,7 +1,7 @@
 .product-btn {
   border: none;
   padding: 1rem;
-  background-color: #D10024;
+  background-color: #d10024;
   color: #fff;
   text-transform: capitalize;
   transition: all 0.4s;
@@ -15,8 +15,8 @@
 .buy-btn {
   position: relative;
   background-color: transparent;
-  border: 1.5px solid #15161D;
-  color: #15161D;
+  border: 1.5px solid #15161d;
+  color: #15161d;
   padding: 1rem;
   /* margin-bottom: 5px; */
   overflow: hidden;
@@ -24,11 +24,11 @@
   width: 15rem;
 }
 
-.buy-btn:after {
+/* .buy-btn:after {
   position: absolute;
   content: 'Buy Now';
   height: auto;
-  background-color: #15161D;
+  background-color: #15161d;
   color: #fff;
   top: 0;
   left: 0;
@@ -46,10 +46,10 @@
 .buy-btn:hover:after {
   transform: translateX(0);
   color: #fff;
-}
+} */
 .reviews-button {
   width: 10rem;
-  background-color: #D10024;
+  background-color: #d10024;
   color: #fff;
   height: 3rem;
 }
@@ -89,7 +89,7 @@
 }
 
 .last-details .tab.active {
-  color: #D10024;
+  color: #d10024;
 }
 
 .content {
@@ -103,8 +103,9 @@
   opacity: 1;
 }
 
-.reviews input, .reviews textarea {
-  border: 1px solid #2B2D42;
+.reviews input,
+.reviews textarea {
+  border: 1px solid #2b2d42;
   border-radius: 0.4rem;
   padding: 0.5rem;
   outline: none;
@@ -120,7 +121,7 @@
 .reviews-button {
   border: none;
   padding: 0.5rem 1rem;
-  background-color: #D10024;
+  background-color: #d10024;
   color: #fff;
   text-transform: capitalize;
   transition: all 0.4s;
@@ -140,11 +141,11 @@
     text-align: center;
   }
 
-  .reviews input, .reviews textarea {
+  .reviews input,
+  .reviews textarea {
     width: 100%;
   }
 }
-
 
 /**************************The Recommended component styling********************/
 .recommended-product {
@@ -182,7 +183,7 @@
 
 @media (max-width: 480px) {
   .recommended-product {
-    height:450px;
+    height: 450px;
   }
   .product-btn {
     width: 100%;

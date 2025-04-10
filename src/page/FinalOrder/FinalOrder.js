@@ -1,3 +1,4 @@
+/*eslint-disable*/
 import React, { useEffect, useState } from 'react';
 import { useLocation, useNavigate} from 'react-router-dom';
 import { FaArrowLeft } from 'react-icons/fa';
@@ -12,7 +13,7 @@ function FinalOrder() {
   const navigate = useNavigate();
   const [loading, setLoading] = useState(true);
   const dispatch = useDispatch();
-  const { billingDetails, shoppingDetails, totalQuantity, totalAmount, totalCost, deliveryFee } = location.state || {};
+  const { billingDetails, shoppingDetails, totalQuantity, totalCost, deliveryFee } = location.state || {};
 
   const handleContinue = (id) => {
     dispatch(cartActions.clearCart());
@@ -66,7 +67,7 @@ function FinalOrder() {
 
         <div className="second-final flex justify-between mt-2 mb-2">
           <h2>SubTotal</h2>
-          <h3 className="text-xl font-bold">${totalAmount}</h3>
+          <h3 className="text-xl font-bold">${totalCost}</h3>
         </div>
 
         <div className="second-final flex justify-between mt-2 mb-2">

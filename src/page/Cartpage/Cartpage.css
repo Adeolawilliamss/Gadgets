@@ -136,3 +136,19 @@
     transform: scale(0.95);
   }
   
+
+  .checkout-btn {
+    position: relative;
+    border: 1.5px solid #15161d;
+    color: #15161d;
+    padding: 1rem;
+    overflow: hidden;
+    background-color: transparent;
+    width: 100%;
+  }
+  
+  @media (max-width: 480px) {
+    .checkout-btn {
+      width: 100%;
+    }
+  }

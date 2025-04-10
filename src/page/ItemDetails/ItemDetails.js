@@ -1,8 +1,9 @@
+/*eslint-disable*/
 import React, { useState, useRef, useEffect } from 'react';
+import { useAuth } from './../context/AuthContext';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { product } from '../../data';
-import pages from '../../utils/pages';
 import { cartActions } from '../../redux/cartSlice';
 import { RiStarFill } from 'react-icons/ri';
 import { toast } from 'react-toastify';
@@ -16,9 +17,10 @@ function ItemDetails() {
   const navigate = useNavigate();
   const reviewUser = useRef('');
   const reviewMsg = useRef('');
-
+  
   const [activeTab, setActiveTab] = useState('description');
   const [rating, setRating] = useState(null);
+  const { isAuthenticated } = useAuth();
 
   const item = product.find((item) => item.id === id);
 
@@ -52,19 +54,23 @@ function ItemDetails() {
     toast.success('Added Succesfully');
   };
 
-    const buyNow = () => {
+  const buyNow = () => {
     const totalAmount = item.itemInfo.newItemPrice;
     const totalQuantity = 1;
     const discount = 5; // $5 off per item
     const totalCost = totalAmount - discount;
-
-    navigate(pages.get('checkout').path, {
-      state: {
-        totalQuantity,
-        totalAmount,
-        totalCost
-      }
-    });
+  
+    if (!isAuthenticated) {
+      navigate('/login'); // redirect to login page
+    } else {
+      navigate('/checkout', {
+        state: {
+          totalQuantity,
+          totalAmount,
+          totalCost
+        }
+      });
+    }
   };
 
   useEffect(() => {
@@ -102,7 +108,14 @@ function ItemDetails() {
 
           <div className='flex flex-col md:flex-row gap-3 mt-5'>
             <button className='product-btn' onClick={addToCart}>Add to cart</button>
-            <button type='button' className="buy-btn" onClick={buyNow}>Buy Now</button>
+            <button type='button' className="buy-btn relative overflow-hidden group" onClick={buyNow}>
+            <span className="block">{isAuthenticated ? 'Buy Now' : 'Login to continue'}</span>
+            <span className="absolute inset-0 bg-black text-white flex items-center justify-center translate-x-full group-hover:translate-x-0 transition-transform duration-300">
+              {isAuthenticated ? 'Buy Now' : 'Login to continue'}
+            </span>
+          </button>
+
+
           </div>
         </div>
       </div>

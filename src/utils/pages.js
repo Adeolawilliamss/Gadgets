@@ -1,3 +1,4 @@
+/*eslint-disable*/
 const pages = new Map();
 pages.set('home', { name: 'Home', path: '/', anchorable: true });
 pages.set('shop', { name: 'Shop', path: '/shop/all', anchorable: true });

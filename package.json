@@ -15,7 +15,7 @@
     "cors": "^2.8.5",
     "crypto": "^1.0.1",
     "dotenv": "^16.4.7",
-    "express": "^5.1.0",
+    "express": "^4.21.2",
     "express-mongo-sanitize": "^2.2.0",
     "express-rate-limit": "^7.5.0",
     "express-session": "^1.18.1",
@@ -75,6 +75,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/eslint-parser": "^7.27.0",
     "concurrently": "^9.1.2",
     "eslint": "^8.57.1",
     "eslint-config-airbnb": "^19.0.4",
@@ -82,7 +83,7 @@
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-prettier": "^5.2.5",
+    "eslint-plugin-prettier": "^5.2.6",
     "eslint-plugin-react": "^7.37.4",
     "tailwindcss": "^3.4.3"
   }

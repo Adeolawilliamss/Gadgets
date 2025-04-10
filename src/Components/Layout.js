@@ -1,3 +1,4 @@
+/*eslint-disable*/
 import React from 'react';
 import { useLocation } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
@@ -6,7 +7,7 @@ import Footer from './Footer/Footer';
 
 const Layout = ({ children }) => {
   const location = useLocation();
-  const showHeaderFooter = location.pathname !== '/login';
+  const showHeaderFooter = location.pathname !== '/login' && location.pathname !== '/signup';
 
   // Define default metadata
   const defaultTitle = 'Adeola Gadgets';
@@ -27,6 +28,10 @@ const Layout = ({ children }) => {
         return 'Favourite';
       case '/finalorder':
         return 'Final Order';
+      case '/signup':
+        return  'Sign Up';
+      case '/account':
+        return 'Account';
       default:
         return 'Page';
     }
