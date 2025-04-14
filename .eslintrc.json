@@ -4,7 +4,7 @@
     "browser": true,
     "es6": true
   },
-  "extends": ["airbnb", "prettier", "plugin:node/recommended"],
+  "extends": ["prettier", "plugin:node/recommended"],
   "parser": "@babel/eslint-parser",
   "parserOptions": {
     "ecmaVersion": 2021,
