@@ -12,6 +12,7 @@ function Checkout() {
   const location = useLocation();
   const [loading, setLoading] = useState(true);
   const { totalQuantity, totalAmount, totalCost, totalDiscount } = location.state || {};
+  const discount = 5;
   const carts = useSelector((state) => state.cart.cartItem);
 
 
@@ -148,7 +149,7 @@ function Checkout() {
             <div className='billing-checkout'>
               <h4>TotalQty: <span>{totalQuantity}</span></h4>
               <h4>Subtotal:  <span>${totalAmount}</span></h4>
-              <h4>Discount:  <span>${totalDiscount}</span></h4>
+              <h4>Discount:  <span>${discount}</span></h4>
               <hr />
               <h4 className='total'>Total: <span>${totalCost}</span></h4>
               <button

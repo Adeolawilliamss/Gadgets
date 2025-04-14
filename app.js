@@ -9,9 +9,10 @@ const cookieParser = require('cookie-parser');
 const compression = require('compression');
 const cors = require('cors');
 
-const AppError = require('./server/utils/appError');
 const globalErrorHandler = require('./server/controllers/errorController');
 const userRouter = require('./server/routes/userRoutes');
+const productRouter = require('./server/routes/productRoutes');
+const storeRouter = require('./server/routes/storeRoutes');
 
 //Starts express App immediately
 const app = express();
@@ -78,11 +79,8 @@ app.use((req, res, next) => {
 
 //ROUTES
 app.use('/users', userRouter);
-
-// THIS WOULD ONLY BE REACHED IF ALL THE OTHER ROUTERS PLUS THE TOURS AND USER ROUTERS DIDNT CATCH IT
-// app.all('*', (req, res, next) => {
-//   next(new AppError(`Can't find ${req.originalUrl} on this server!`, 404));
-// });
+app.use('/products', productRouter);
+app.use('/store', storeRouter);
 
 // Serve React frontend (Only in production)
 if (process.env.NODE_ENV === 'production') {

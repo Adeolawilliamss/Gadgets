@@ -1,6 +1,6 @@
 /*eslint-disable*/
 import React, { useState } from 'react';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { useAlert } from './../context/AlertContext';
 import Slider from 'react-slick';
@@ -109,7 +109,7 @@ function Login() {
                 placeholder="Enter your email"
                 className="block w-full h-12 mt-8 p-2.5 pr-10"
               />
-                <p className="text-red-500 text-sm mt-2">For Testing: Adeolaoladeinde6@gmail.com</p>
+                <p className="text-slate-900 text-sm mt-2">For Testing: JohnDoe@gmail.com</p>
 
               <div className="form__input">
                 <input
@@ -127,6 +127,7 @@ function Login() {
                   {showPassword ? <FaEyeSlash /> : <FaEye />}
                 </span>
               </div>
+              <p className="text-slate-900 text-sm mt-2">test1234</p>
             </div>
             <div className="flex items-center justify-between mt-4">
               <label htmlFor="checkbox">

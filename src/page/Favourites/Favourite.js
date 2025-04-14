@@ -1,3 +1,4 @@
+/*eslint-disable*/
 import React from "react";
 import { useSelector, useDispatch } from 'react-redux';
 import { cartActions } from '../../redux/cartSlice';
@@ -21,6 +22,7 @@ function Favourite() {
       img: item.img,
       description: item.description,
     }));
+     toast.success('Added to Cart!');
     dispatch(cartActions.removeFromWishList(item.id));
   };
 

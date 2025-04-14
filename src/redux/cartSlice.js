@@ -1,3 +1,4 @@
+/*eslint-disable*/
 import { createSlice } from '@reduxjs/toolkit';
 
 const getParsedLocalStorageItem = (key, defaultValue) => {
@@ -10,14 +11,14 @@ const getParsedLocalStorageItem = (key, defaultValue) => {
   }
 };
 
-const cartItem = getParsedLocalStorageItem("cartList", []);
-const totalAmount = getParsedLocalStorageItem("cartTotal", 0);
-const totalQuantity = getParsedLocalStorageItem("cartQuantity", 0);
+const cartItem = getParsedLocalStorageItem('cartList', []);
+const totalAmount = getParsedLocalStorageItem('cartTotal', 0);
+const totalQuantity = getParsedLocalStorageItem('cartQuantity', 0);
 
 const setCartListFunc = (cartItem, totalAmount, totalQuantity) => {
-  localStorage.setItem("cartList", JSON.stringify(cartItem));
-  localStorage.setItem("cartTotal", JSON.stringify(totalAmount));
-  localStorage.setItem("cartQuantity", JSON.stringify(totalQuantity));
+  localStorage.setItem('cartList', JSON.stringify(cartItem));
+  localStorage.setItem('cartTotal', JSON.stringify(totalAmount));
+  localStorage.setItem('cartQuantity', JSON.stringify(totalQuantity));
 };
 
 const initialState = {
@@ -35,7 +36,9 @@ const cartSlice = createSlice({
   reducers: {
     addItem: (state, action) => {
       const newItem = action.payload;
-      const existingItem = state.cartItem.find((item) => item.id === newItem.id);
+      const existingItem = state.cartItem.find(
+        (item) => item.id === newItem.id,
+      );
       state.totalQuantity++;
       if (!existingItem) {
         state.cartItem.push({
@@ -50,17 +53,24 @@ const cartSlice = createSlice({
         });
       } else {
         existingItem.quantity++;
-        existingItem.totalPrice = Number(existingItem.totalPrice) + Number(newItem.price);
+        existingItem.totalPrice =
+          Number(existingItem.totalPrice) + Number(newItem.price);
       }
       state.totalAmount = state.cartItem.reduce(
         (total, item) => total + Number(item.price) * Number(item.quantity),
-        0
+        0,
       );
-      setCartListFunc(state.cartItem.map((item) => item), state.totalAmount, state.totalQuantity);
+      setCartListFunc(
+        state.cartItem.map((item) => item),
+        state.totalAmount,
+        state.totalQuantity,
+      );
     },
     addToWishList: (state, action) => {
       const wishList = action.payload;
-      const existingItem = state.favItem.find((item) => item.id === wishList.id);
+      const existingItem = state.favItem.find(
+        (item) => item.id === wishList.id,
+      );
       state.wishListQuantity++;
       if (!existingItem) {
         state.favItem.push({
@@ -76,11 +86,12 @@ const cartSlice = createSlice({
         });
       } else {
         existingItem.quantity++;
-        existingItem.totalPrice = Number(existingItem.totalPrice) + Number(wishList.price);
+        existingItem.totalPrice =
+          Number(existingItem.totalPrice) + Number(wishList.price);
       }
       state.wishListAmount = state.favItem.reduce(
         (total, item) => total + Number(item.price) * Number(item.quantity),
-        0
+        0,
       );
     },
     removeFromCart: (state, action) => {
@@ -92,9 +103,13 @@ const cartSlice = createSlice({
       }
       state.totalAmount = state.cartItem.reduce(
         (total, item) => total + Number(item.price) * Number(item.quantity),
-        0
+        0,
       );
-      setCartListFunc(state.cartItem.map((item) => item), state.totalAmount, state.totalQuantity);
+      setCartListFunc(
+        state.cartItem.map((item) => item),
+        state.totalAmount,
+        state.totalQuantity,
+      );
     },
     clearCart: (state, action) => {
       state.cartItem = [];
@@ -102,11 +117,11 @@ const cartSlice = createSlice({
     },
     removeFromWishList: (state, action) => {
       const id = action.payload;
-      state.favItem = state.favItem.filter(item => item.id !== id);
+      state.favItem = state.favItem.filter((item) => item.id !== id);
       state.wishListQuantity--;
       state.wishListAmount = state.favItem.reduce(
         (total, item) => total + Number(item.price) * Number(item.quantity),
-        0
+        0,
       );
     },
   },

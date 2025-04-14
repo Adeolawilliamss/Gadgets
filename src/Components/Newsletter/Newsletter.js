@@ -1,3 +1,4 @@
+/*eslint-disable*/
 import React from "react";
 import { FaEnvelope, FaFacebook, FaTwitter, FaInstagram, FaPinterest, } from 'react-icons/fa';
 import './Newsletter.css';

@@ -108,7 +108,7 @@ function Cartpage() {
                   Subtotal: <span>${totalAmount}</span>
                 </h4>
                 <div className="flex">
-                  <span>Discount: </span>
+                  <span>Discount: ${discount} </span>
                   <span className="checkout-discount">${totalDiscount}</span>
                 </div>
                 <hr />

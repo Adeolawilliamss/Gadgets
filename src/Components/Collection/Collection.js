@@ -1,22 +1,24 @@
-import React, { useState } from "react";
+/*eslint-disable*/
+import React, { useState, useEffect } from "react";
+import axios from 'axios';
 import { FaArrowCircleRight } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-import { product } from '../../data';
 import './Collection.css';
 
 function Collection() {
-  const [filter, setFilter] = useState(product);
+  const [collections, setCollections] = useState([]);
 
-  const uniqueObjects = Array.isArray(filter)
-  ? filter.reduce((item, cat) => {
-      Object.assign(item, { [cat.itemInfo.category]: cat });
-      return item;
-    }, {})
-  : {};
-
-
-  const unique = Object.values(uniqueObjects);
-  console.log(unique);
+  useEffect(() => {
+    const fetchCollections = async () => {
+      try {
+        const res = await axios.get('http://localhost:5000/store');
+        setCollections(res.data.data.store); // matches your controller's response
+      } catch (err) {
+        console.error("Failed to fetch collections:", err);
+      }
+    };
+    fetchCollections();
+  }, []);
 
   return (
     <div className="bg-slate-100 min-h-screen">
@@ -31,29 +33,28 @@ function Collection() {
             </ul>
           </div>
           <div className="collection-page grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {unique.map((item) => {
-              const { id, itemInfo } = item;
-              return (
-                <div key={id}>
-                  <Link to={`/shop/${itemInfo.category}`}>
-                    <div className="second-collection">
-                      <div className="collection-video">
-                      {itemInfo.itemVid && itemInfo.itemVid.length > 0 ? (
-                        <video src={itemInfo.itemVid[0]} autoPlay loop muted playsInline className="w-full h-auto"></video>
+          {collections.map((item) => (
+              <div key={item._id}>
+               <Link to={`/shop/${item.collection.toLowerCase()}`}>
+                  <div className="second-collection">
+                    <div className="collection-video">
+                      {item.video ? (
+                        <video src={item.video} autoPlay loop muted playsInline className="w-full h-auto"></video>
                       ) : (
                         <p>No Video Available</p>
                       )}
                     </div>
 
-                      <div className="collection-body">
-                        <h3>{itemInfo.category} collection</h3>
-                        <button className="cta-btn">Shop now <span className="arrow"><FaArrowCircleRight /></span></button>
-                      </div>
+                    <div className="collection-body">
+                      <h3>{item.collection} Collection</h3>
+                      <button className="cta-btn">
+                        Shop now <span className="arrow"><FaArrowCircleRight /></span>
+                      </button>
                     </div>
-                  </Link>
-                </div>
-              )
-            })}
+                  </div>
+                </Link>
+              </div>
+            ))}
           </div>
         </div>
       </div>

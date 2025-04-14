@@ -1,5 +1,4 @@
 /*eslint-disable*/
-// src/page/context/AuthContext.js
 import { createContext, useContext, useEffect, useState } from 'react';
 import axios from 'axios';
 import { useLocation } from 'react-router-dom';

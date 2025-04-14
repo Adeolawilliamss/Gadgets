@@ -1,4 +1,5 @@
-import React, { useRef, useEffect, useState } from 'react';
+/*eslint-disable*/
+import React, { useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import Collection from './../Components/Collection/Collection';
 import NewProduct from './../Components/NewProduct/NewProduct';
@@ -6,7 +7,6 @@ import Icons from './../Components/Icons/Icons';
 import TopSelling from './../Components/TopSelling/TopSelling';
 import Newsletter from './../Components/Newsletter/Newsletter';
 import { useLocation } from 'react-router-dom';
-import Skeleton from '../utils/Skeleton';
 
 const Home = () => {
   const collectionRef = useRef(null);
@@ -16,7 +16,6 @@ const Home = () => {
   const newsletterRef = useRef(null);
 
   const location = useLocation();
-  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const hash = location.hash;
@@ -29,23 +28,10 @@ const Home = () => {
     }
   }, [location]);
 
-  useEffect(() => {
-    setTimeout(() => {
-      setLoading(false);
-      console.log('Loading complete');
-    }, 4000);
-  }, []);
-
   const fadeInUp = {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0 }
   };
-
-  if (loading) {
-    return (
-        <Skeleton />
-    );
-  }
 
   return (
     <div>

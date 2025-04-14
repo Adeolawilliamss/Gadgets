@@ -1,3 +1,4 @@
+/*eslint-disable*/
 import React, { useState } from "react";
 import Marquee from 'react-fast-marquee';
 import './Icons.css'

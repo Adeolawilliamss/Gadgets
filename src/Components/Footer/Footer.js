@@ -1,3 +1,4 @@
+/*eslint-disable*/
 import React from 'react';
 import { FaEnvelope, FaMapMarker, FaPhone } from 'react-icons/fa';
 import './Footer.css';

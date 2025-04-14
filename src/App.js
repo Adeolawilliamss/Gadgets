@@ -14,7 +14,6 @@ import Signup from './page/signup/signup';
 import Account from './page/Account/account';
 import FinalOrder from './page/FinalOrder/FinalOrder';
 import { AlertProvider } from './page/context/AlertContext';
-import ProtectedRoute from './page/context/ProtectedRoute';
 import { AuthProvider } from './page/context/AuthContext';
 import Alert from './page/Alert/Alert';
 import { ToastContainer } from 'react-toastify';
@@ -32,14 +31,7 @@ function App({ item }) {
           <Route path="/products/:id" element={<ItemDetails item={item} />} />
           <Route path="/login" element={<Login />} />
           <Route path="/cart" element={<Cartpage />} />
-          <Route
-              path="/checkout"
-              element={
-                <ProtectedRoute>
-                  <Checkout />
-                </ProtectedRoute>
-              }
-            />
+          <Route path="/checkout" element={<Checkout />}/>
           <Route path="/favourite" element={<Favourite />} />
           <Route path="/signup" element={<Signup />}/>
           <Route path="/account" element={<Account />}/>

@@ -1,4 +1,6 @@
-import React, { useState } from 'react';
+/*eslint-disable*/
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 import { IoHeartOutline } from 'react-icons/io5';
 import { cartActions } from '../../redux/cartSlice';
 import { toast } from 'react-toastify';
@@ -9,22 +11,21 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './NewProduct.css';
-import { recentlyAdded } from '../../data';
 
 const ProductItem = ({ item, addToCart, addToFavourite }) => (
     <div className="items-product group relative">
       <div className="overflow-hidden">
         <img 
-          src={item.itemInfo.itemImg[0]} 
-          alt={item.itemInfo.name} 
+          src={item.images[0]} 
+          alt={item.name} 
           className="itemsproduct-img h-44 object-contain transition-transform duration-200 transform group-hover:scale-110"
         />
       </div>
-      <h2>{item.itemInfo.category}</h2>
-      <h3>{item.itemInfo.name}</h3>
+      <h2>{item.category}</h2>
+      <h3>{item.name}</h3>
       <span className='flex items-center justify-center gap-10'>
-        <h3 className="text-red-800 font-bold">${item.itemInfo.newItemPrice}</h3>
-        <strike>{item.itemInfo.oldItemPrice}</strike>
+      <h3 className="text-red-800 font-bold">{item.oldItemPrice}</h3>
+        <strike>${item.newItemPrice}</strike>
       </span>
       <hr />
       <div className='bottom-icons flex justify-center items-center'>
@@ -53,14 +54,27 @@ const ProductItem = ({ item, addToCart, addToFavourite }) => (
 function NewProduct() {
   const [sliderRef, setSliderRef] = useState(null);
   const dispatch = useDispatch();
+  const [newProducts, setNewProducts] = useState([])
+
+  useEffect(() => {
+    const fetchNewProducts = async () => {
+      try {
+        const res = await axios.get('http://localhost:5000/products?isRecentlyAdded=true');
+        setNewProducts(res.data.data.products);
+      } catch (error) {
+        console.error('Failed to fetch Products:', error);
+      }
+    };    
+    fetchNewProducts();
+  },[])
 
   const addToCart = (item) => {
     dispatch(cartActions.addItem({
       id: item.id,
-      name: item.itemInfo.name,
-      price: item.itemInfo.newItemPrice,
-      img: item.itemInfo.itemImg[0],
-      description: item.itemInfo.description,
+      name: item.name,
+      price: item.newItemPrice,
+      img: item.images[0],
+      description: item.description,
     }));
     toast.success('Added Successfully');
   };
@@ -68,12 +82,12 @@ function NewProduct() {
   const addToFavourite = (item) => {
     dispatch(cartActions.addToWishList({
       id: item.id,
-      name: item.itemInfo.name,
-      price: item.itemInfo.newItemPrice,
-      oldPrice: item.itemInfo.oldItemPrice,
-      img: item.itemInfo.itemImg[0],
-      description: item.itemInfo.description,
-      category: item.itemInfo.category
+      name: item.name,
+      price: item.newItemPrice,
+      oldPrice: item.oldItemPrice,
+      img: item.images[0],
+      description: item.description,
+      category: item.category
     }));
     toast.success('Favourited!');
   };
@@ -131,8 +145,8 @@ function NewProduct() {
           <div className='items-container'>
           <div className='items-slider'>
             <Slider ref={setSliderRef} {...settings}>
-              {recentlyAdded.map(item => (
-                <ProductItem key={item.id} item={item} addToCart={addToCart} addToFavourite={addToFavourite} />
+              {newProducts.map(item => (
+                <ProductItem key={item._id} item={item} addToCart={addToCart} addToFavourite={addToFavourite} />
               ))}
             </Slider>
           </div>

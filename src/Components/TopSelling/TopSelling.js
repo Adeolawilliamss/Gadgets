@@ -1,32 +1,47 @@
-import React, { useState } from 'react';
+/*eslint-disable*/
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 import {FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { weeklyFeatures } from '../../data';
 import './TopSelling.css';
 
-const ProductItem = ({ itemInfo }) => (
+const ProductItem = ({ item }) => (
     <div className="topselling-product group relative">
       <div className="overflow-hidden">
       <img 
-        src={itemInfo.itemImg[0]} 
-        alt={itemInfo.name} 
+        src={item.images[0]} 
+        alt={item.name} 
         className="w-full h-44 object-contain transition-transform duration-200 transform group-hover:scale-110"
       />
     </div>
-      <h2>{itemInfo.category}</h2>
-      <h3>{itemInfo.name}</h3>
+      <h2>{item.category}</h2>
+      <h3>{item.name}</h3>
       <span className='flex items-center justify-center gap-10'>
-                  <h3 className="text-red-800 font-bold">${itemInfo.newItemPrice}</h3>
-                  <strike>{itemInfo.oldItemPrice}</strike>
-                  </span>
+      <h3 className="text-red-800 font-bold">{item.oldItemPrice}</h3>
+          <strike>${item.newItemPrice}</strike>
+       </span>
      </div>
   );
 
 function TopSelling () {
 
   const [sliderRef, setSliderRef] = useState(null);
+  const [weeklyFeatures,setWeeklyFeatures] = useState([])
+
+  useEffect(() => {
+    const fetchWeeklyFeatures = async () => {
+      try {
+        const res = await axios.get('http://localhost:5000/products?feature=weekly');
+        console.log(res.data)
+        setWeeklyFeatures(res.data.data.products);
+      } catch (error) {
+        console.error('Failed to fetch Products:', error);
+      }
+    };    
+    fetchWeeklyFeatures();
+  },[])
 
   const settings = {
     dots: false,
@@ -66,7 +81,7 @@ function TopSelling () {
           <div className='my-slider'>
           <Slider ref={setSliderRef} {...settings}>
               {weeklyFeatures.map(item => (
-                <ProductItem key={item.id} itemInfo={item.itemInfo} />
+                <ProductItem key={item._id} item={item} />
               ))}
             </Slider>
           </div>
