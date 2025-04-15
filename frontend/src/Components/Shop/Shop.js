@@ -35,7 +35,7 @@ function Shop() {
     const fetchShopData = async () => {
       try {
         const res = await axios.get(
-          'http://localhost:5000/products?fields=_id,images,name,collection,oldItemPrice,newItemPrice,category'
+          '/products?fields=_id,images,name,collection,oldItemPrice,newItemPrice,category'
         );
         setShop(res.data.data.products);
       } catch (error) {

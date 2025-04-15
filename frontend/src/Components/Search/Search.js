@@ -14,7 +14,7 @@ function Search() {
   useEffect(() => {
     const findProducts = async () => {
       try {
-        const res = await axios.get('http://localhost:5000/products');
+        const res = await axios.get('/products');
         const allProductSearch = res.data.data.products;
 
         const currentSearch = allProductSearch.filter((item) =>

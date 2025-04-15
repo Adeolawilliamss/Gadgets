@@ -22,7 +22,7 @@ const Account = () => {
   const [photo, setPhoto] = useState(null);
   const [passwordCurrent, setPasswordCurrent] = useState('');
   const [photoPreview, setPhotoPreview] = useState(
-    user?.photo ? `http://localhost:5000/img/users/${user.photo}` : null,
+    user?.photo ? `/img/users/${user.photo}` : null,
   );
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
@@ -35,7 +35,7 @@ const Account = () => {
     if (photo) formData.append('photo', photo);
 
     try {
-      await axios.patch('http://localhost:5000/users/updateMe', formData, {
+      await axios.patch('/users/updateMe', formData, {
         withCredentials: true,
         headers: { 'Content-Type': 'multipart/form-data' },
       });
@@ -54,7 +54,7 @@ const Account = () => {
 
     try {
       await axios.patch(
-        'http://localhost:5000/users/updatePassword',
+        '/users/updatePassword',
         {
           passwordCurrent,
           password,

@@ -59,7 +59,7 @@ function Login() {
 
     try {
       const res = await axios.post(
-        'http://localhost:5000/users/login',
+        '/users/login',
         {
           email,
           password,

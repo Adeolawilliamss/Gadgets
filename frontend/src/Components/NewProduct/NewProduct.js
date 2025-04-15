@@ -59,7 +59,7 @@ function NewProduct() {
   useEffect(() => {
     const fetchNewProducts = async () => {
       try {
-        const res = await axios.get('http://localhost:5000/products?isRecentlyAdded=true');
+        const res = await axios.get('/products?isRecentlyAdded=true');
         setNewProducts(res.data.data.products);
       } catch (error) {
         console.error('Failed to fetch Products:', error);

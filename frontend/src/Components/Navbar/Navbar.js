@@ -78,7 +78,7 @@ function Navbar() {
 
     try {
       const res = await axios.post(
-        'http://localhost:5000/users/logout',
+        '/users/logout',
         {},
         { withCredentials: true },
       );
@@ -175,7 +175,7 @@ function Navbar() {
             >
               {isAuthenticated && user?.photo ? (
                 <img
-                  src={`http://localhost:5000/img/users/${user.photo}`}
+                  src={`/img/users/${user.photo}`}
                   alt="avatar"
                   className="avatar mr-5 ml-5 rounded-full w-10 h-10 object-cover"
                 />

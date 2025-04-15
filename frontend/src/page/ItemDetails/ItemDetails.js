@@ -29,7 +29,7 @@ function ItemDetails() {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const res = await axios.get('http://localhost:5000/products');
+        const res = await axios.get('/products');
         const allProducts = res.data.data.products;
 
         const currentProduct = allProducts.find((item) => item._id === id);

@@ -14,7 +14,7 @@ export const AuthProvider = ({ children }) => {
   const checkAuthStatus = async () => {
     try {
       const res = await axios.get(
-        `http://localhost:5000/users/isLoggedIn?timestamp=${Date.now()}`,
+        `/users/isLoggedIn?timestamp=${Date.now()}`,
         {
           withCredentials: true,
           headers: { 'Cache-Control': 'no-cache' },

@@ -23,8 +23,7 @@ app.enable('trust proxy');
 
 const allowedOrigins = [
   'http://localhost:3000', // React default (Vite)
-  // "http://localhost:5173", // React Vite default
-  // "https://yourfrontenddomain.com", // Production domain (update this!)
+  'https://gadgets-8unr.onrender.com'
 ];
 app.use(
   cors({

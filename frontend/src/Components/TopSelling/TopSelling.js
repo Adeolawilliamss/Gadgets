@@ -33,7 +33,7 @@ function TopSelling () {
   useEffect(() => {
     const fetchWeeklyFeatures = async () => {
       try {
-        const res = await axios.get('http://localhost:5000/products?feature=weekly');
+        const res = await axios.get('/products?feature=weekly');
         console.log(res.data)
         setWeeklyFeatures(res.data.data.products);
       } catch (error) {

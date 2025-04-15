@@ -11,7 +11,7 @@ function Collection() {
   useEffect(() => {
     const fetchCollections = async () => {
       try {
-        const res = await axios.get('http://localhost:5000/store');
+        const res = await axios.get('/store');
         setCollections(res.data.data.store); // matches your controller's response
       } catch (err) {
         console.error("Failed to fetch collections:", err);
