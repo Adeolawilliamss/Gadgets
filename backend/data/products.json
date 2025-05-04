@@ -1,0 +1,3510 @@
+[
+    {
+        "_id": "67f913176f0b923933ab92dd",
+        "productId": "w-5",
+        "name": "Hisense",
+        "collection": "TV",
+        "images": [
+            "assets/images/pro-img/try3.webp"
+        ],
+        "videos": [],
+        "price": 928,
+        "oldItemPrice": 544,
+        "newItemPrice": 928,
+        "discount": "",
+        "badge": "",
+        "brand": "hisense",
+        "category": "TV",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": "weekly",
+        "reviews": [],
+        "createdAt": "2025-04-11T13:03:19.702Z"
+    },
+    {
+        "_id": "67f913176f0b923933ab92dc",
+        "productId": "w-4",
+        "name": "Apple MacBook Air 2020",
+        "collection": "Computers",
+        "images": [
+            "assets/images/pro-img/6455369_sd.webp",
+            "assets/images/pro-img/6455369_rd.jpeg",
+            "assets/images/pro-img/6450858cv7d.jpeg",
+            "assets/images/pro-img/6450858cv4d.jpeg"
+        ],
+        "videos": [],
+        "price": 1100,
+        "oldItemPrice": 544,
+        "newItemPrice": 1100,
+        "discount": "",
+        "badge": "",
+        "brand": "Mac",
+        "category": "Computers",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": "weekly",
+        "reviews": [],
+        "createdAt": "2025-04-11T13:03:19.701Z"
+    },
+    {
+        "_id": "67f913176f0b923933ab92db",
+        "productId": "w-3",
+        "name": "JBL Flip 5",
+        "collection": "Speakers",
+        "images": [
+            "assets/images/pro-img/6488913_rd.png",
+            "assets/images/pro-img/6488913_sd.jpeg",
+            "assets/images/pro-img/6488913cv1d.jpeg",
+            "assets/images/pro-img/6488913cv11d.jpeg",
+            "assets/images/pro-img/6488913ld.jpeg"
+        ],
+        "videos": [],
+        "price": 480,
+        "oldItemPrice": 544,
+        "newItemPrice": 480,
+        "discount": "",
+        "badge": "",
+        "brand": "jbl",
+        "category": "Speakers",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": "weekly",
+        "reviews": [],
+        "createdAt": "2025-04-11T13:03:19.700Z"
+    },
+    {
+        "_id": "67f913176f0b923933ab92da",
+        "productId": "w-2",
+        "name": "Samsung S15",
+        "collection": "Cellphones",
+        "images": [
+            "assets/images/pro-img/61b7ywCsH2L._AC_SX679_.webp",
+            "assets/images/pro-img/61G1cC5bTYL._AC_SX679_.jpg"
+        ],
+        "videos": [],
+        "price": 520,
+        "oldItemPrice": 544,
+        "newItemPrice": 520,
+        "discount": "",
+        "badge": "",
+        "brand": "Samsung",
+        "category": "Cellphones",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": "weekly",
+        "reviews": [],
+        "createdAt": "2025-04-11T13:03:19.699Z"
+    },
+    {
+        "_id": "67f913176f0b923933ab92d9",
+        "productId": "w-1",
+        "name": "Xbox",
+        "collection": "Gaming",
+        "images": [
+            "assets/images/pro-img/61RA2sUPu+L._SL1000_.webp"
+        ],
+        "videos": [],
+        "price": 1112,
+        "oldItemPrice": 544,
+        "newItemPrice": 1112,
+        "discount": "",
+        "badge": "",
+        "brand": "Xbox",
+        "category": "Gaming",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": "weekly",
+        "reviews": [],
+        "createdAt": "2025-04-11T13:03:19.697Z"
+    },
+    {
+        "_id": "67f90f3403dbb2a0fe188c0e",
+        "productId": "r-8",
+        "name": "Hisense",
+        "collection": "TV",
+        "images": [
+            "assets/images/pro-img/try8.webp"
+        ],
+        "videos": [],
+        "price": 928,
+        "oldItemPrice": 544,
+        "newItemPrice": 928,
+        "discount": "",
+        "badge": "",
+        "brand": "hisense",
+        "category": "TV",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": true,
+        "feature": null,
+        "reviews": [],
+        "createdAt": "2025-04-11T12:46:44.397Z"
+    },
+    {
+        "_id": "67f90f3403dbb2a0fe188c0f",
+        "productId": "r-9",
+        "name": "Samsung S22 Ultra",
+        "collection": "Cellphones",
+        "images": [
+            "assets/images/pro-img/6472835_sd.png",
+            "assets/images/pro-img/6472835cv11d.jpeg",
+            "assets/images/pro-img/6472835_rd.jpeg",
+            "assets/images/pro-img/6472835ld.jpeg"
+        ],
+        "videos": [],
+        "price": 520,
+        "oldItemPrice": 544,
+        "newItemPrice": 520,
+        "discount": "",
+        "badge": "",
+        "brand": "Samsung",
+        "category": "Cellphones",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": true,
+        "feature": null,
+        "reviews": [],
+        "createdAt": "2025-04-11T12:46:44.397Z"
+    },
+    {
+        "_id": "67f90f3403dbb2a0fe188c0d",
+        "productId": "r-7",
+        "name": "JBL Flip 5",
+        "collection": "Speakers",
+        "images": [
+            "assets/images/pro-img/6356535_sd.png",
+            "assets/images/pro-img/6356535cv11d.jpeg",
+            "assets/images/pro-img/6356535cv12d.jpeg",
+            "assets/images/pro-img/6356535cv13d.jpeg",
+            "assets/images/pro-img/6356535ld.jpeg"
+        ],
+        "videos": [],
+        "price": 2100,
+        "oldItemPrice": 544,
+        "newItemPrice": 2100,
+        "discount": "",
+        "badge": "",
+        "brand": "jbl",
+        "category": "Speakers",
+        "color": "Red",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": true,
+        "feature": null,
+        "reviews": [],
+        "createdAt": "2025-04-11T12:46:44.396Z"
+    },
+    {
+        "_id": "67f90f3403dbb2a0fe188c0c",
+        "productId": "r-6",
+        "name": "Apple MacBook Pro 2022",
+        "collection": "Computers",
+        "images": [
+            "assets/images/pro-img/6450858_sd.webp",
+            "assets/images/pro-img/6450858cv1d.jpeg",
+            "assets/images/pro-img/6450858cv3d.jpeg",
+            "assets/images/pro-img/6450858cv4d.jpeg",
+            "assets/images/pro-img/6450858cv7d.jpeg"
+        ],
+        "videos": [],
+        "price": 1200,
+        "oldItemPrice": 544,
+        "newItemPrice": 1200,
+        "discount": "",
+        "badge": "",
+        "brand": "Mac",
+        "category": "Computers",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": true,
+        "feature": null,
+        "reviews": [],
+        "createdAt": "2025-04-11T12:46:44.395Z"
+    },
+    {
+        "_id": "67f90f3403dbb2a0fe188c0b",
+        "productId": "r-5",
+        "name": "iPhone 13",
+        "collection": "Cellphones",
+        "images": [
+            "assets/images/pro-img/6487295_sd.webp",
+            "assets/images/pro-img/6487295cv1d.jpeg",
+            "assets/images/pro-img/6487295cv2d.jpeg",
+            "assets/images/pro-img/6487295cv11d.jpeg"
+        ],
+        "videos": [],
+        "price": 950,
+        "oldItemPrice": 544,
+        "newItemPrice": 950,
+        "discount": "",
+        "badge": "",
+        "brand": "Apple",
+        "category": "Cellphones",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": true,
+        "feature": null,
+        "reviews": [],
+        "createdAt": "2025-04-11T12:46:44.394Z"
+    },
+    {
+        "_id": "67f90f3403dbb2a0fe188c0a",
+        "productId": "r-4",
+        "name": "PS 4",
+        "collection": "Gaming",
+        "images": [
+            "assets/images/pro-img/pngfind.com-ps4-cover-png-4164715.webp",
+            "assets/images/pro-img/41A5YRynOAL._SL1000_.jpg",
+            "assets/images/pro-img/51tbWVPtckL._AC_SL1500_.jpg"
+        ],
+        "videos": [],
+        "price": 850,
+        "oldItemPrice": 544,
+        "newItemPrice": 850,
+        "discount": "",
+        "badge": "",
+        "brand": "Ps",
+        "category": "Gaming",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": true,
+        "feature": null,
+        "reviews": [],
+        "createdAt": "2025-04-11T12:46:44.394Z"
+    },
+    {
+        "_id": "67f90f3403dbb2a0fe188c09",
+        "productId": "r-3",
+        "name": "Macbook Pro",
+        "collection": "Computers",
+        "images": [
+            "/photos/product03.png"
+        ],
+        "videos": [],
+        "price": 850,
+        "oldItemPrice": 544,
+        "newItemPrice": 850,
+        "discount": "",
+        "badge": "",
+        "brand": "Ps",
+        "category": "Computers",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": true,
+        "feature": null,
+        "reviews": [],
+        "createdAt": "2025-04-11T12:46:44.393Z"
+    },
+    {
+        "_id": "67f90f3403dbb2a0fe188c08",
+        "productId": "r-2",
+        "name": "Macbook Pro",
+        "collection": "Speaker",
+        "images": [
+            "/photos/product02.png"
+        ],
+        "videos": [],
+        "price": 850,
+        "oldItemPrice": 544,
+        "newItemPrice": 850,
+        "discount": "",
+        "badge": "",
+        "brand": "Ps",
+        "category": "Speaker",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": true,
+        "feature": null,
+        "reviews": [],
+        "createdAt": "2025-04-11T12:46:44.392Z"
+    },
+    {
+        "_id": "67f90f3403dbb2a0fe188c07",
+        "productId": "r-1",
+        "name": "Macbook Pro",
+        "collection": "Computers",
+        "images": [
+            "/photos/product01.png"
+        ],
+        "videos": [],
+        "price": 850,
+        "oldItemPrice": 544,
+        "newItemPrice": 850,
+        "discount": "",
+        "badge": "",
+        "brand": "Ps",
+        "category": "Computers",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": true,
+        "feature": null,
+        "reviews": [],
+        "createdAt": "2025-04-11T12:46:44.390Z"
+    },
+    {
+        "_id": "67f8531891c1ed37a3b80f19",
+        "productId": "169",
+        "name": "LG",
+        "collection": "TV",
+        "images": [
+            "assets/images/pro-img/pngfind.com-flat-screen-tv-on-3513033.webp"
+        ],
+        "videos": [],
+        "oldItemPrice": 544,
+        "newItemPrice": 300,
+        "discount": "",
+        "badge": "",
+        "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+        "reviews": [
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+        ],
+        "avgRating": 4.7,
+        "brand": "lg",
+        "category": "TV",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": null,
+        "createdAt": "2025-04-10T23:24:08.656Z"
+    },
+    {
+        "_id": "67f8531891c1ed37a3b80f16",
+        "productId": "166",
+        "name": "Toshiba",
+        "collection": "TV",
+        "images": [
+            "assets/images/pro-img/pngfind.com-led-tv-images-png-2500416.webp"
+        ],
+        "videos": [],
+        "oldItemPrice": 544,
+        "newItemPrice": 300,
+        "discount": "",
+        "badge": "",
+        "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+        "reviews": [
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+        ],
+        "avgRating": 4.7,
+        "brand": "toshiba",
+        "category": "TV",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": null,
+        "createdAt": "2025-04-10T23:24:08.655Z"
+    },
+    {
+        "_id": "67f8531891c1ed37a3b80f17",
+        "productId": "167",
+        "name": "Toshiba",
+        "collection": "TV",
+        "images": [
+            "assets/images/pro-img/pngfind.com-hd-tv-png-6136704.webp"
+        ],
+        "videos": [],
+        "oldItemPrice": 544,
+        "newItemPrice": 300,
+        "discount": "",
+        "badge": "",
+        "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+        "reviews": [
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+        ],
+        "avgRating": 4.7,
+        "brand": "toshiba",
+        "category": "TV",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": null,
+        "createdAt": "2025-04-10T23:24:08.655Z"
+    },
+    {
+        "_id": "67f8531891c1ed37a3b80f18",
+        "productId": "168",
+        "name": "LG",
+        "collection": "TV",
+        "images": [
+            "assets/images/pro-img/pngfind.com-flat-screen-tv-png-3193976.webp"
+        ],
+        "videos": [],
+        "oldItemPrice": 544,
+        "newItemPrice": 300,
+        "discount": "",
+        "badge": "",
+        "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+        "reviews": [
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+        ],
+        "avgRating": 4.7,
+        "brand": "lg",
+        "category": "TV",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": null,
+        "createdAt": "2025-04-10T23:24:08.655Z"
+    },
+    {
+        "_id": "67f8531891c1ed37a3b80f15",
+        "productId": "165",
+        "name": "Toshiba",
+        "collection": "TV",
+        "images": [
+            "assets/images/pro-img/pngfind.com-led-tv-images-png-2500423.webp"
+        ],
+        "videos": [],
+        "oldItemPrice": 544,
+        "newItemPrice": 300,
+        "discount": "",
+        "badge": "",
+        "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+        "reviews": [
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+        ],
+        "avgRating": 4.7,
+        "brand": "toshiba",
+        "category": "TV",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": null,
+        "createdAt": "2025-04-10T23:24:08.655Z"
+    },
+    {
+        "_id": "67f8531891c1ed37a3b80f14",
+        "productId": "164",
+        "name": "LG",
+        "collection": "TV",
+        "images": [
+            "assets/images/pro-img/pngfind.com-led-tv-png-lg-5994058.webp"
+        ],
+        "videos": [],
+        "oldItemPrice": 544,
+        "newItemPrice": 300,
+        "discount": "",
+        "badge": "",
+        "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+        "reviews": [
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+        ],
+        "avgRating": 4.7,
+        "brand": "lg",
+        "category": "TV",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": null,
+        "createdAt": "2025-04-10T23:24:08.654Z"
+    },
+    {
+        "_id": "67f8531891c1ed37a3b80f12",
+        "productId": "162",
+        "name": "Samsung",
+        "collection": "TV",
+        "images": [
+            "assets/images/pro-img/pngfind.com-live-tv-png-5294774.webp"
+        ],
+        "videos": [],
+        "oldItemPrice": 544,
+        "newItemPrice": 1600,
+        "discount": "",
+        "badge": "",
+        "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+        "reviews": [
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+        ],
+        "avgRating": 4.7,
+        "brand": "samsung",
+        "category": "TV",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": null,
+        "createdAt": "2025-04-10T23:24:08.654Z"
+    },
+    {
+        "_id": "67f8531891c1ed37a3b80f11",
+        "productId": "161",
+        "name": "Samsung",
+        "collection": "TV",
+        "images": [
+            "assets/images/pro-img/pngfind.com-samsung-led-tv-png-1456870.webp"
+        ],
+        "videos": [],
+        "oldItemPrice": 544,
+        "newItemPrice": 1600,
+        "discount": "",
+        "badge": "",
+        "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+        "reviews": [
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+        ],
+        "avgRating": 4.7,
+        "brand": "samsung",
+        "category": "TV",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": null,
+        "createdAt": "2025-04-10T23:24:08.654Z"
+    },
+    {
+        "_id": "67f8531891c1ed37a3b80f13",
+        "productId": "163",
+        "name": "Samsung",
+        "collection": "TV",
+        "images": [
+            "assets/images/pro-img/pngfind.com-led-tvs-png-5392992.webp"
+        ],
+        "videos": [],
+        "oldItemPrice": 544,
+        "newItemPrice": 1600,
+        "discount": "",
+        "badge": "",
+        "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+        "reviews": [
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+        ],
+        "avgRating": 4.7,
+        "brand": "samsung",
+        "category": "TV",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": null,
+        "createdAt": "2025-04-10T23:24:08.654Z"
+    },
+    {
+        "_id": "67f8531891c1ed37a3b80f0d",
+        "productId": "157",
+        "name": "Samsung",
+        "collection": "TV",
+        "images": [
+            "assets/images/pro-img/pngfind.com-samsung-led-tv-png-2220829.webp"
+        ],
+        "videos": [],
+        "oldItemPrice": 544,
+        "newItemPrice": 1600,
+        "discount": "",
+        "badge": "",
+        "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+        "reviews": [
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+        ],
+        "avgRating": 4.7,
+        "brand": "samsung",
+        "category": "TV",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": null,
+        "createdAt": "2025-04-10T23:24:08.653Z"
+    },
+    {
+        "_id": "67f8531891c1ed37a3b80f10",
+        "productId": "160",
+        "name": "Samsung",
+        "collection": "TV",
+        "images": [
+            "assets/images/pro-img/pngfind.com-samsung-led-tv-png-1457255.webp"
+        ],
+        "videos": [],
+        "oldItemPrice": 544,
+        "newItemPrice": 1600,
+        "discount": "",
+        "badge": "",
+        "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+        "reviews": [
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+        ],
+        "avgRating": 4.7,
+        "brand": "samsung",
+        "category": "TV",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": null,
+        "createdAt": "2025-04-10T23:24:08.653Z"
+    },
+    {
+        "_id": "67f8531891c1ed37a3b80f0e",
+        "productId": "158",
+        "name": "Samsung",
+        "collection": "TV",
+        "images": [
+            "assets/images/pro-img/pngfind.com-samsung-led-tv-png-2220242.webp"
+        ],
+        "videos": [],
+        "oldItemPrice": 544,
+        "newItemPrice": 1600,
+        "discount": "",
+        "badge": "",
+        "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+        "reviews": [
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+        ],
+        "avgRating": 4.7,
+        "brand": "samsung",
+        "category": "TV",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": null,
+        "createdAt": "2025-04-10T23:24:08.653Z"
+    },
+    {
+        "_id": "67f8531891c1ed37a3b80f0f",
+        "productId": "159",
+        "name": "Samsung",
+        "collection": "TV",
+        "images": [
+            "assets/images/pro-img/pngfind.com-samsung-led-tv-png-1457864.webp"
+        ],
+        "videos": [],
+        "oldItemPrice": 544,
+        "newItemPrice": 1600,
+        "discount": "",
+        "badge": "",
+        "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+        "reviews": [
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+        ],
+        "avgRating": 4.7,
+        "brand": "samsung",
+        "category": "TV",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": null,
+        "createdAt": "2025-04-10T23:24:08.653Z"
+    },
+    {
+        "_id": "67f8531891c1ed37a3b80f0a",
+        "productId": "154",
+        "name": "Samsung",
+        "collection": "TV",
+        "images": [
+            "assets/images/pro-img/pngfind.com-samsung-led-tv-png-3123133.webp"
+        ],
+        "videos": [],
+        "oldItemPrice": 544,
+        "newItemPrice": 1600,
+        "discount": "",
+        "badge": "",
+        "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+        "reviews": [
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+        ],
+        "avgRating": 4.7,
+        "brand": "samsung",
+        "category": "TV",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": null,
+        "createdAt": "2025-04-10T23:24:08.652Z"
+    },
+    {
+        "_id": "67f8531891c1ed37a3b80f0c",
+        "productId": "156",
+        "name": "Samsung",
+        "collection": "TV",
+        "images": [
+            "assets/images/pro-img/pngfind.com-samsung-led-tv-png-3123104.webp"
+        ],
+        "videos": [],
+        "oldItemPrice": 544,
+        "newItemPrice": 1600,
+        "discount": "",
+        "badge": "",
+        "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+        "reviews": [
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+        ],
+        "avgRating": 4.7,
+        "brand": "samsung",
+        "category": "TV",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": null,
+        "createdAt": "2025-04-10T23:24:08.652Z"
+    },
+    {
+        "_id": "67f8531891c1ed37a3b80f0b",
+        "productId": "155",
+        "name": "Samsung",
+        "collection": "TV",
+        "images": [
+            "assets/images/pro-img/pngfind.com-samsung-led-tv-png-3123130.webp"
+        ],
+        "videos": [],
+        "oldItemPrice": 544,
+        "newItemPrice": 1600,
+        "discount": "",
+        "badge": "",
+        "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+        "reviews": [
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+        ],
+        "avgRating": 4.7,
+        "brand": "samsung",
+        "category": "TV",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": null,
+        "createdAt": "2025-04-10T23:24:08.652Z"
+    },
+    {
+        "_id": "67f8531891c1ed37a3b80f09",
+        "productId": "153",
+        "name": "Samsung",
+        "collection": "TV",
+        "images": [
+            "assets/images/pro-img/pngfind.com-samsung-tv-png-5392548.webp"
+        ],
+        "videos": [],
+        "oldItemPrice": 544,
+        "newItemPrice": 1600,
+        "discount": "",
+        "badge": "",
+        "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+        "reviews": [
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+        ],
+        "avgRating": 4.7,
+        "brand": "samsung",
+        "category": "TV",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": null,
+        "createdAt": "2025-04-10T23:24:08.650Z"
+    },
+    {
+        "_id": "67f8531891c1ed37a3b80f08",
+        "productId": "152",
+        "name": "LG",
+        "collection": "TV",
+        "images": [
+            "assets/images/pro-img/pngfind.com-samsung-tv-png-5392498.webp"
+        ],
+        "videos": [],
+        "oldItemPrice": 544,
+        "newItemPrice": 999,
+        "discount": "",
+        "badge": "",
+        "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+        "reviews": [
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+        ],
+        "avgRating": 4.7,
+        "brand": "lg",
+        "category": "TV",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": null,
+        "createdAt": "2025-04-10T23:24:08.650Z"
+    },
+    {
+        "_id": "67f8531891c1ed37a3b80f05",
+        "productId": "149",
+        "name": "LG",
+        "collection": "TV",
+        "images": [
+            "assets/images/pro-img/pngfind.com-television-png-3239976.webp"
+        ],
+        "videos": [],
+        "oldItemPrice": 544,
+        "newItemPrice": 999,
+        "discount": "",
+        "badge": "",
+        "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+        "reviews": [
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+        ],
+        "avgRating": 4.7,
+        "brand": "lg",
+        "category": "TV",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": null,
+        "createdAt": "2025-04-10T23:24:08.649Z"
+    },
+    {
+        "_id": "67f8531891c1ed37a3b80f04",
+        "productId": "148",
+        "name": "LG",
+        "collection": "TV",
+        "images": [
+            "assets/images/pro-img/pngfind.com-tv-frame-png-2260206.webp"
+        ],
+        "videos": [],
+        "oldItemPrice": 544,
+        "newItemPrice": 999,
+        "discount": "",
+        "badge": "",
+        "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+        "reviews": [
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+        ],
+        "avgRating": 4.7,
+        "brand": "lg",
+        "category": "TV",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": null,
+        "createdAt": "2025-04-10T23:24:08.649Z"
+    },
+    {
+        "_id": "67f8531891c1ed37a3b80f06",
+        "productId": "150",
+        "name": "LG",
+        "collection": "TV",
+        "images": [
+            "assets/images/pro-img/pngfind.com-smart-tv-png-6086400.webp"
+        ],
+        "videos": [],
+        "oldItemPrice": 544,
+        "newItemPrice": 999,
+        "discount": "",
+        "badge": "",
+        "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+        "reviews": [
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+        ],
+        "avgRating": 4.7,
+        "brand": "lg",
+        "category": "TV",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": null,
+        "createdAt": "2025-04-10T23:24:08.649Z"
+    },
+    {
+        "_id": "67f8531891c1ed37a3b80f07",
+        "productId": "151",
+        "name": "LG",
+        "collection": "TV",
+        "images": [
+            "assets/images/pro-img/pngfind.com-apple-tv-png-6650041.webp"
+        ],
+        "videos": [],
+        "oldItemPrice": 544,
+        "newItemPrice": 999,
+        "discount": "",
+        "badge": "",
+        "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+        "reviews": [
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+        ],
+        "avgRating": 4.7,
+        "brand": "lg",
+        "category": "TV",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": null,
+        "createdAt": "2025-04-10T23:24:08.649Z"
+    },
+    {
+        "_id": "67f8531891c1ed37a3b80f01",
+        "productId": "145",
+        "name": "Hisense",
+        "collection": "TV",
+        "images": [
+            "assets/images/pro-img/pngfind.com-tv-png-6141897.webp"
+        ],
+        "videos": [],
+        "oldItemPrice": 544,
+        "newItemPrice": 928,
+        "discount": "",
+        "badge": "",
+        "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+        "reviews": [
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+        ],
+        "avgRating": 4.7,
+        "brand": "hisense",
+        "category": "TV",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": null,
+        "createdAt": "2025-04-10T23:24:08.648Z"
+    },
+    {
+        "_id": "67f8531891c1ed37a3b80f02",
+        "productId": "146",
+        "name": "Hisense",
+        "collection": "TV",
+        "images": [
+            "assets/images/pro-img/pngfind.com-tv-png-1036874.webp"
+        ],
+        "videos": [],
+        "oldItemPrice": 544,
+        "newItemPrice": 928,
+        "discount": "",
+        "badge": "",
+        "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+        "reviews": [
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+        ],
+        "avgRating": 4.7,
+        "brand": "hisense",
+        "category": "TV",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": null,
+        "createdAt": "2025-04-10T23:24:08.648Z"
+    },
+    {
+        "_id": "67f8531891c1ed37a3b80f03",
+        "productId": "147",
+        "name": "LG",
+        "collection": "TV",
+        "images": [
+            "assets/images/pro-img/pngfind.com-tv-png-604165.webp"
+        ],
+        "videos": [],
+        "oldItemPrice": 544,
+        "newItemPrice": 999,
+        "discount": "",
+        "badge": "",
+        "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+        "reviews": [
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+        ],
+        "avgRating": 4.7,
+        "brand": "lg",
+        "category": "TV",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": null,
+        "createdAt": "2025-04-10T23:24:08.648Z"
+    },
+    {
+        "_id": "67f8531891c1ed37a3b80f00",
+        "productId": "144",
+        "name": "Hisense",
+        "collection": "TV",
+        "images": [
+            "assets/images/pro-img/pngfind.com-tv-top-view-png-3722350.webp"
+        ],
+        "videos": [],
+        "oldItemPrice": 544,
+        "newItemPrice": 928,
+        "discount": "",
+        "badge": "",
+        "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+        "reviews": [
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+        ],
+        "avgRating": 4.7,
+        "brand": "hisense",
+        "category": "TV",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": null,
+        "createdAt": "2025-04-10T23:24:08.647Z"
+    },
+    {
+        "_id": "67f8531891c1ed37a3b80eff",
+        "productId": "143",
+        "name": "Hisense",
+        "collection": "TV",
+        "images": [
+            "assets/images/pro-img/pngfind.com-wall-led-tv-png-6207876.webp"
+        ],
+        "videos": [],
+        "oldItemPrice": 544,
+        "newItemPrice": 928,
+        "discount": "",
+        "badge": "",
+        "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+        "reviews": [
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+        ],
+        "avgRating": 4.7,
+        "brand": "hisense",
+        "category": "TV",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": null,
+        "createdAt": "2025-04-10T23:24:08.647Z"
+    },
+    {
+        "_id": "67f8531891c1ed37a3b80efd",
+        "productId": "141",
+        "name": "Hisense",
+        "collection": "TV",
+        "images": [
+            "assets/images/pro-img/try2.webp"
+        ],
+        "videos": [],
+        "oldItemPrice": 544,
+        "newItemPrice": 928,
+        "discount": "",
+        "badge": "",
+        "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+        "reviews": [
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+        ],
+        "avgRating": 4.7,
+        "brand": "hisense",
+        "category": "TV",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": null,
+        "createdAt": "2025-04-10T23:24:08.647Z"
+    },
+    {
+        "_id": "67f8531891c1ed37a3b80efe",
+        "productId": "142",
+        "name": "Hisense",
+        "collection": "TV",
+        "images": [
+            "assets/images/pro-img/pngfind.com-apple-tv-png-6649938.webp"
+        ],
+        "videos": [],
+        "oldItemPrice": 544,
+        "newItemPrice": 928,
+        "discount": "",
+        "badge": "",
+        "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+        "reviews": [
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+        ],
+        "avgRating": 4.7,
+        "brand": "hisense",
+        "category": "TV",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": null,
+        "createdAt": "2025-04-10T23:24:08.647Z"
+    },
+    {
+        "_id": "67f8531891c1ed37a3b80efa",
+        "productId": "138",
+        "name": "Hisense",
+        "collection": "TV",
+        "images": [
+            "assets/images/pro-img/try5.webp"
+        ],
+        "videos": [],
+        "oldItemPrice": 544,
+        "newItemPrice": 928,
+        "discount": "",
+        "badge": "",
+        "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+        "reviews": [
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+        ],
+        "avgRating": 4.7,
+        "brand": "hisense",
+        "category": "TV",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": null,
+        "createdAt": "2025-04-10T23:24:08.646Z"
+    },
+    {
+        "_id": "67f8531891c1ed37a3b80efc",
+        "productId": "140",
+        "name": "Hisense",
+        "collection": "TV",
+        "images": [
+            "assets/images/pro-img/try3.webp"
+        ],
+        "videos": [],
+        "oldItemPrice": 544,
+        "newItemPrice": 928,
+        "discount": "",
+        "badge": "",
+        "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+        "reviews": [
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+        ],
+        "avgRating": 4.7,
+        "brand": "hisense",
+        "category": "TV",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": null,
+        "createdAt": "2025-04-10T23:24:08.646Z"
+    },
+    {
+        "_id": "67f8531891c1ed37a3b80efb",
+        "productId": "139",
+        "name": "Hisense",
+        "collection": "TV",
+        "images": [
+            "assets/images/pro-img/try4.webp"
+        ],
+        "videos": [],
+        "oldItemPrice": 544,
+        "newItemPrice": 928,
+        "discount": "",
+        "badge": "",
+        "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+        "reviews": [
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+        ],
+        "avgRating": 4.7,
+        "brand": "hisense",
+        "category": "TV",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": null,
+        "createdAt": "2025-04-10T23:24:08.646Z"
+    },
+    {
+        "_id": "67f8531891c1ed37a3b80ef9",
+        "productId": "137",
+        "name": "Hisense",
+        "collection": "TV",
+        "images": [
+            "assets/images/pro-img/try6.webp"
+        ],
+        "videos": [],
+        "oldItemPrice": 544,
+        "newItemPrice": 928,
+        "discount": "",
+        "badge": "",
+        "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+        "reviews": [
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+        ],
+        "avgRating": 4.7,
+        "brand": "hisense",
+        "category": "TV",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": null,
+        "createdAt": "2025-04-10T23:24:08.646Z"
+    },
+    {
+        "_id": "67f8531891c1ed37a3b80ef7",
+        "productId": "135",
+        "name": "Hisense",
+        "collection": "TV",
+        "images": [
+            "assets/images/pro-img/try8.webp"
+        ],
+        "videos": [],
+        "oldItemPrice": 544,
+        "newItemPrice": 928,
+        "discount": "",
+        "badge": "",
+        "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+        "reviews": [
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+        ],
+        "avgRating": 4.7,
+        "brand": "hisense",
+        "category": "TV",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": null,
+        "createdAt": "2025-04-10T23:24:08.645Z"
+    },
+    {
+        "_id": "67f8531891c1ed37a3b80ef6",
+        "productId": "134",
+        "name": "HP Elite",
+        "collection": "Computers",
+        "images": [
+            "assets/images/pro-img/6517655_sd.png",
+            "assets/images/pro-img/6517655cv11d.jpeg",
+            "assets/images/pro-img/6517655cv12d.jpeg"
+        ],
+        "videos": [],
+        "oldItemPrice": 544,
+        "newItemPrice": 1300,
+        "discount": "",
+        "badge": "",
+        "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+        "reviews": [
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+        ],
+        "avgRating": 4.7,
+        "brand": "HP",
+        "category": "Computers",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": null,
+        "createdAt": "2025-04-10T23:24:08.645Z"
+    },
+    {
+        "_id": "67f8531891c1ed37a3b80ef8",
+        "productId": "136",
+        "name": "Hisense",
+        "collection": "TV",
+        "images": [
+            "assets/images/pro-img/tyr77.png"
+        ],
+        "videos": [],
+        "oldItemPrice": 544,
+        "newItemPrice": 928,
+        "discount": "",
+        "badge": "",
+        "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+        "reviews": [
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+        ],
+        "avgRating": 4.7,
+        "brand": "hisense",
+        "category": "TV",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": null,
+        "createdAt": "2025-04-10T23:24:08.645Z"
+    },
+    {
+        "_id": "67f8531891c1ed37a3b80ef3",
+        "productId": "131",
+        "name": "Microsoft",
+        "collection": "Computers",
+        "images": [
+            "assets/images/pro-img/6505202cv14d.png",
+            "assets/images/pro-img/6505202cv11d.jpeg",
+            "assets/images/pro-img/6505202_sd.jpeg",
+            "assets/images/pro-img/6505202cv12d.jpeg",
+            "assets/images/pro-img/6505202cv15d.jpeg"
+        ],
+        "videos": [],
+        "oldItemPrice": 544,
+        "newItemPrice": 980,
+        "discount": "",
+        "badge": "",
+        "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+        "reviews": [
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+        ],
+        "avgRating": 4.7,
+        "brand": "Microsoft",
+        "category": "Computers",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": null,
+        "createdAt": "2025-04-10T23:24:08.644Z"
+    },
+    {
+        "_id": "67f8531891c1ed37a3b80ef4",
+        "productId": "132",
+        "name": "Omen",
+        "collection": "Computers",
+        "images": [
+            "assets/images/pro-img/6503845_rd.png",
+            "assets/images/pro-img/6503845ld.jpeg",
+            "assets/images/pro-img/6503845cv1d.jpeg"
+        ],
+        "videos": [],
+        "oldItemPrice": 544,
+        "newItemPrice": 1000,
+        "discount": "",
+        "badge": "",
+        "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+        "reviews": [
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+        ],
+        "avgRating": 4.7,
+        "brand": "Omen",
+        "category": "Computers",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": null,
+        "createdAt": "2025-04-10T23:24:08.644Z"
+    },
+    {
+        "_id": "67f8531891c1ed37a3b80ef5",
+        "productId": "133",
+        "name": "ASUS Zenbook",
+        "collection": "Computers",
+        "images": [
+            "assets/images/pro-img/6498803ld.png",
+            "assets/images/pro-img/6498803cv1d.jpeg",
+            "assets/images/pro-img/6498803cv4d.jpeg",
+            "assets/images/pro-img/6498803cv7d.jpeg",
+            "assets/images/pro-img/6498803_rd.jpeg"
+        ],
+        "videos": [],
+        "oldItemPrice": 544,
+        "newItemPrice": 1300,
+        "discount": "",
+        "badge": "",
+        "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+        "reviews": [
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+        ],
+        "avgRating": 4.7,
+        "brand": "asus",
+        "category": "Computers",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": null,
+        "createdAt": "2025-04-10T23:24:08.644Z"
+    },
+    {
+        "_id": "67f8531891c1ed37a3b80ef2",
+        "productId": "130",
+        "name": "HP Elite Pro Z20",
+        "collection": "Computers",
+        "images": [
+            "assets/images/pro-img/6499753_sd.webp",
+            "assets/images/pro-img/6499753_rd.jpeg",
+            "assets/images/pro-img/6499753ld.jpeg",
+            "assets/images/pro-img/6499753cv1d.jpeg",
+            "assets/images/pro-img/6499753cv3d.jpeg"
+        ],
+        "videos": [],
+        "oldItemPrice": 544,
+        "newItemPrice": 980,
+        "discount": "",
+        "badge": "",
+        "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+        "reviews": [
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+        ],
+        "avgRating": 4.7,
+        "brand": "HP",
+        "category": "Computers",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": null,
+        "createdAt": "2025-04-10T23:24:08.643Z"
+    },
+    {
+        "_id": "67f8531891c1ed37a3b80ef1",
+        "productId": "129",
+        "name": "HP Elite Pro Z20",
+        "collection": "Computers",
+        "images": [
+            "assets/images/pro-img/6502185_sd.png",
+            "assets/images/pro-img/6502185_rd.jpeg",
+            "assets/images/pro-img/6502185cv1d.jpeg"
+        ],
+        "videos": [],
+        "oldItemPrice": 544,
+        "newItemPrice": 980,
+        "discount": "",
+        "badge": "",
+        "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+        "reviews": [
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+        ],
+        "avgRating": 4.7,
+        "brand": "HP",
+        "category": "Computers",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": null,
+        "createdAt": "2025-04-10T23:24:08.643Z"
+    },
+    {
+        "_id": "67f8531891c1ed37a3b80eee",
+        "productId": "126",
+        "name": "Omen",
+        "collection": "Computers",
+        "images": [
+            "assets/images/pro-img/6503849_sd.png",
+            "assets/images/pro-img/6503849_rd.jpeg",
+            "assets/images/pro-img/6503849ld.jpeg",
+            "assets/images/pro-img/6503849cv1d.jpeg",
+            "assets/images/pro-img/6503849cv4d.jpeg"
+        ],
+        "videos": [],
+        "oldItemPrice": 544,
+        "newItemPrice": 1000,
+        "discount": "",
+        "badge": "",
+        "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+        "reviews": [
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+        ],
+        "avgRating": 4.7,
+        "brand": "Omen",
+        "category": "Computers",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": null,
+        "createdAt": "2025-04-10T23:24:08.642Z"
+    },
+    {
+        "_id": "67f8531891c1ed37a3b80ef0",
+        "productId": "128",
+        "name": "Omen",
+        "collection": "Computers",
+        "images": [
+            "assets/images/pro-img/6503845_rd.png",
+            "assets/images/pro-img/6503845ld.jpeg",
+            "assets/images/pro-img/6503845cv1d.jpeg"
+        ],
+        "videos": [],
+        "oldItemPrice": 544,
+        "newItemPrice": 1000,
+        "discount": "",
+        "badge": "",
+        "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+        "reviews": [
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+        ],
+        "avgRating": 4.7,
+        "brand": "Omen",
+        "category": "Computers",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": null,
+        "createdAt": "2025-04-10T23:24:08.642Z"
+    },
+    {
+        "_id": "67f8531891c1ed37a3b80eef",
+        "productId": "127",
+        "name": "Omen",
+        "collection": "Computers",
+        "images": [
+            "assets/images/pro-img/6503845_rd.png",
+            "assets/images/pro-img/6503845ld.jpeg",
+            "assets/images/pro-img/6503845cv1d.jpeg"
+        ],
+        "videos": [],
+        "oldItemPrice": 544,
+        "newItemPrice": 1000,
+        "discount": "",
+        "badge": "",
+        "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+        "reviews": [
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+        ],
+        "avgRating": 4.7,
+        "brand": "Omen",
+        "category": "Computers",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": null,
+        "createdAt": "2025-04-10T23:24:08.642Z"
+    },
+    {
+        "_id": "67f8531891c1ed37a3b80eed",
+        "productId": "125",
+        "name": "HP Pavilon",
+        "collection": "Computers",
+        "images": [
+            "assets/images/pro-img/6515546cv7d.webp",
+            "assets/images/pro-img/6502179_sd.jpeg",
+            "assets/images/pro-img/6502179_rd.jpeg",
+            "assets/images/pro-img/6502179ld.jpeg",
+            "assets/images/pro-img/6502179cv1d.jpeg"
+        ],
+        "videos": [],
+        "oldItemPrice": 544,
+        "newItemPrice": 1000,
+        "discount": "",
+        "badge": "",
+        "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+        "reviews": [
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+        ],
+        "avgRating": 4.7,
+        "brand": "HP",
+        "category": "Computers",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": null,
+        "createdAt": "2025-04-10T23:24:08.641Z"
+    },
+    {
+        "_id": "67f8531891c1ed37a3b80eeb",
+        "productId": "123",
+        "name": "ASUS Zenbook",
+        "collection": "Computers",
+        "images": [
+            "assets/images/pro-img/6494331_sd.png",
+            "assets/images/pro-img/6494331_rd.jpeg",
+            "assets/images/pro-img/6494331ld.jpeg",
+            "assets/images/pro-img/6494331cv1d.jpeg",
+            "assets/images/pro-img/6494331cv3d.jpeg"
+        ],
+        "videos": [],
+        "oldItemPrice": 544,
+        "newItemPrice": 1500,
+        "discount": "",
+        "badge": "",
+        "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+        "reviews": [
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+        ],
+        "avgRating": 4.7,
+        "brand": "ASUS",
+        "category": "Computers",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": null,
+        "createdAt": "2025-04-10T23:24:08.641Z"
+    },
+    {
+        "_id": "67f8531891c1ed37a3b80eec",
+        "productId": "124",
+        "name": "HP Mini Pavilon",
+        "collection": "Computers",
+        "images": [
+            "assets/images/pro-img/6515546_sd.png",
+            "assets/images/pro-img/6515546_rd.jpeg",
+            "assets/images/pro-img/6515546ld.jpeg",
+            "assets/images/pro-img/6515546cv1d.jpeg"
+        ],
+        "videos": [],
+        "oldItemPrice": 544,
+        "newItemPrice": 1000,
+        "discount": "",
+        "badge": "",
+        "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+        "reviews": [
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+        ],
+        "avgRating": 4.7,
+        "brand": "HP",
+        "category": "Computers",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": null,
+        "createdAt": "2025-04-10T23:24:08.641Z"
+    },
+    {
+        "_id": "67f8531891c1ed37a3b80eea",
+        "productId": "122",
+        "name": "ASUS Zenbook",
+        "collection": "Computers",
+        "images": [
+            "assets/images/pro-img/6508083cv4d.webp",
+            "assets/images/pro-img/6508083cv7d.jpeg",
+            "assets/images/pro-img/6508083cv3d.jpeg",
+            "assets/images/pro-img/6508083cv1d.jpeg"
+        ],
+        "videos": [],
+        "oldItemPrice": 544,
+        "newItemPrice": 1500,
+        "discount": "",
+        "badge": "",
+        "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+        "reviews": [
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+        ],
+        "avgRating": 4.7,
+        "brand": "ASUS",
+        "category": "Computers",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": null,
+        "createdAt": "2025-04-10T23:24:08.640Z"
+    },
+    {
+        "_id": "67f8531891c1ed37a3b80ee9",
+        "productId": "121",
+        "name": "ASUS Zenbook",
+        "collection": "Computers",
+        "images": [
+            "assets/images/pro-img/6508083_sd.webp",
+            "assets/images/pro-img/6508083_rd.jpeg",
+            "assets/images/pro-img/6508083cv1d.jpeg",
+            "assets/images/pro-img/6508083cv3d.jpeg"
+        ],
+        "videos": [],
+        "oldItemPrice": 544,
+        "newItemPrice": 1500,
+        "discount": "",
+        "badge": "",
+        "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+        "reviews": [
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+        ],
+        "avgRating": 4.7,
+        "brand": "ASUS",
+        "category": "Computers",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": null,
+        "createdAt": "2025-04-10T23:24:08.639Z"
+    },
+    {
+        "_id": "67f8531891c1ed37a3b80ee8",
+        "productId": "120",
+        "name": "ASUS Zenbook",
+        "collection": "Computers",
+        "images": [
+            "assets/images/pro-img/6513491cv14d.webp",
+            "assets/images/pro-img/6513491cv16d.jpeg",
+            "assets/images/pro-img/6494637cv1d.jpeg",
+            "assets/images/pro-img/6494580_sd.jpeg"
+        ],
+        "videos": [],
+        "oldItemPrice": 544,
+        "newItemPrice": 1500,
+        "discount": "",
+        "badge": "",
+        "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+        "reviews": [
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+        ],
+        "avgRating": 4.7,
+        "brand": "ASUS",
+        "category": "Computers",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": null,
+        "createdAt": "2025-04-10T23:24:08.639Z"
+    },
+    {
+        "_id": "67f8531891c1ed37a3b80ee6",
+        "productId": "118",
+        "name": "ASUS Zenbook",
+        "collection": "Computers",
+        "images": [
+            "assets/images/pro-img/6494637_rd.webp",
+            "assets/images/pro-img/6494637ld.jpeg",
+            "assets/images/pro-img/6494637cv1d.jpeg",
+            "assets/images/pro-img/6513491_sd.jpeg"
+        ],
+        "videos": [],
+        "oldItemPrice": 544,
+        "newItemPrice": 1500,
+        "discount": "",
+        "badge": "",
+        "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+        "reviews": [
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+        ],
+        "avgRating": 4.7,
+        "brand": "ASUS",
+        "category": "Computers",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": null,
+        "createdAt": "2025-04-10T23:24:08.638Z"
+    },
+    {
+        "_id": "67f8531891c1ed37a3b80ee7",
+        "productId": "119",
+        "name": "ASUS Zenbook",
+        "collection": "Computers",
+        "images": [
+            "assets/images/pro-img/6513491cv14d.webp",
+            "assets/images/pro-img/6513491cv16d.jpeg",
+            "assets/images/pro-img/6494637cv1d.jpeg",
+            "assets/images/pro-img/6513491_sd.jpeg"
+        ],
+        "videos": [],
+        "oldItemPrice": 544,
+        "newItemPrice": 1500,
+        "discount": "",
+        "badge": "",
+        "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+        "reviews": [
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+        ],
+        "avgRating": 4.7,
+        "brand": "ASUS",
+        "category": "Computers",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": null,
+        "createdAt": "2025-04-10T23:24:08.638Z"
+    },
+    {
+        "_id": "67f8531891c1ed37a3b80ee3",
+        "productId": "115",
+        "name": "ASUS Zenbook",
+        "collection": "Computers",
+        "images": [
+            "assets/images/pro-img/6494642_sd.png",
+            "assets/images/pro-img/6494642_rd.jpeg",
+            "assets/images/pro-img/6494642ld.jpeg",
+            "assets/images/pro-img/6494642cv1d.jpeg"
+        ],
+        "videos": [],
+        "oldItemPrice": 544,
+        "newItemPrice": 1500,
+        "discount": "",
+        "badge": "",
+        "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+        "reviews": [
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+        ],
+        "avgRating": 4.7,
+        "brand": "ASUS",
+        "category": "Computers",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": null,
+        "createdAt": "2025-04-10T23:24:08.637Z"
+    },
+    {
+        "_id": "67f8531891c1ed37a3b80ee4",
+        "productId": "116",
+        "name": "ASUS Zenbook",
+        "collection": "Computers",
+        "images": [
+            "assets/images/pro-img/6486485_sd.webp",
+            "assets/images/pro-img/6486485ld.jpeg",
+            "assets/images/pro-img/6486485cv1d.jpeg",
+            "assets/images/pro-img/6486485cv3d.jpeg",
+            "assets/images/pro-img/6486485cv4d.jpeg",
+            "assets/images/pro-img/66486485cv7d.jpeg"
+        ],
+        "videos": [],
+        "oldItemPrice": 544,
+        "newItemPrice": 1500,
+        "discount": "",
+        "badge": "",
+        "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+        "reviews": [
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+        ],
+        "avgRating": 4.7,
+        "brand": "ASUS",
+        "category": "Computers",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": null,
+        "createdAt": "2025-04-10T23:24:08.637Z"
+    },
+    {
+        "_id": "67f8531891c1ed37a3b80ee5",
+        "productId": "117",
+        "name": "ASUS Zenbook",
+        "collection": "Computers",
+        "images": [
+            "assets/images/pro-img/6494637_sd.png"
+        ],
+        "videos": [],
+        "oldItemPrice": 544,
+        "newItemPrice": 1500,
+        "discount": "",
+        "badge": "",
+        "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+        "reviews": [
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+        ],
+        "avgRating": 4.7,
+        "brand": "ASUS",
+        "category": "Computers",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": null,
+        "createdAt": "2025-04-10T23:24:08.637Z"
+    },
+    {
+        "_id": "67f8531891c1ed37a3b80ee2",
+        "productId": "114",
+        "name": "ASUS Zenbook",
+        "collection": "Computers",
+        "images": [
+            "assets/images/pro-img/6535501_sd.png",
+            "assets/images/pro-img/6535501_rd.jpeg",
+            "assets/images/pro-img/6535501ld.jpeg",
+            "assets/images/pro-img/6535501cv1d.jpeg",
+            "assets/images/pro-img/6535501cv3d.jpeg"
+        ],
+        "videos": [],
+        "oldItemPrice": 544,
+        "newItemPrice": 1500,
+        "discount": "",
+        "badge": "",
+        "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+        "reviews": [
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+        ],
+        "avgRating": 4.7,
+        "brand": "ASUS",
+        "category": "Computers",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": null,
+        "createdAt": "2025-04-10T23:24:08.636Z"
+    },
+    {
+        "_id": "67f8531891c1ed37a3b80ee1",
+        "productId": "113",
+        "name": "ASUS Zenbook",
+        "collection": "Computers",
+        "images": [
+            "assets/images/pro-img/6494580_sd.webp",
+            "assets/images/pro-img/6494580cv11d.jpeg",
+            "assets/images/pro-img/6494331cv1d.jpeg",
+            "assets/images/pro-img/6494331cv3d.jpeg",
+            "assets/images/pro-img/6494331ld.jpeg"
+        ],
+        "videos": [],
+        "oldItemPrice": 544,
+        "newItemPrice": 1500,
+        "discount": "",
+        "badge": "",
+        "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+        "reviews": [
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+        ],
+        "avgRating": 4.7,
+        "brand": "ASUS",
+        "category": "Computers",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": null,
+        "createdAt": "2025-04-10T23:24:08.636Z"
+    },
+    {
+        "_id": "67f8531891c1ed37a3b80ee0",
+        "productId": "112",
+        "name": "ASUS",
+        "collection": "Computers",
+        "images": [
+            "assets/images/pro-img/6494331_rd.png",
+            "assets/images/pro-img/6494331_sd.jpeg",
+            "assets/images/pro-img/6494331cv1d.jpeg",
+            "assets/images/pro-img/6494331cv3d.jpeg",
+            "assets/images/pro-img/6494331ld.jpeg"
+        ],
+        "videos": [],
+        "oldItemPrice": 544,
+        "newItemPrice": 1500,
+        "discount": "",
+        "badge": "",
+        "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+        "reviews": [
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+        ],
+        "avgRating": 4.7,
+        "brand": "ASUS",
+        "category": "Computers",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": null,
+        "createdAt": "2025-04-10T23:24:08.636Z"
+    },
+    {
+        "_id": "67f8531891c1ed37a3b80ede",
+        "productId": "110",
+        "name": "ASUS",
+        "collection": "Computers",
+        "images": [
+            "assets/images/pro-img/6492794_rd.webp",
+            "assets/images/pro-img/6492794_sd.jpeg",
+            "assets/images/pro-img/6492794cv1d.jpeg",
+            "assets/images/pro-img/6492794cv3d.jpeg",
+            "assets/images/pro-img/6492794cv10d.jpeg"
+        ],
+        "videos": [],
+        "oldItemPrice": 544,
+        "newItemPrice": 1250,
+        "discount": "",
+        "badge": "",
+        "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+        "reviews": [
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+        ],
+        "avgRating": 4.7,
+        "brand": "asus",
+        "category": "Computers",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": null,
+        "createdAt": "2025-04-10T23:24:08.635Z"
+    },
+    {
+        "_id": "67f8531891c1ed37a3b80edf",
+        "productId": "111",
+        "name": "ASUS",
+        "collection": "Computers",
+        "images": [
+            "assets/images/pro-img/6501561_sd.png",
+            "assets/images/pro-img/6501561_rd.jpeg",
+            "assets/images/pro-img/6501561ld.jpeg",
+            "assets/images/pro-img/6501561cv1d.jpeg",
+            "assets/images/pro-img/6501561cv3d.jpeg"
+        ],
+        "videos": [],
+        "oldItemPrice": 544,
+        "newItemPrice": 1500,
+        "discount": "",
+        "badge": "",
+        "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+        "reviews": [
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+        ],
+        "avgRating": 4.7,
+        "brand": "ASUS",
+        "category": "Computers",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": null,
+        "createdAt": "2025-04-10T23:24:08.635Z"
+    },
+    {
+        "_id": "67f8531891c1ed37a3b80edb",
+        "productId": "107",
+        "name": "Apple MacBook Pro",
+        "collection": "Computers",
+        "images": [
+            "assets/images/pro-img/6509650_sd.png",
+            "assets/images/pro-img/6509650cv11d.jpeg",
+            "assets/images/pro-img/6509650cv12d.jpeg"
+        ],
+        "videos": [],
+        "oldItemPrice": 544,
+        "newItemPrice": 1100,
+        "discount": "",
+        "badge": "",
+        "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+        "reviews": [
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+        ],
+        "avgRating": 4.7,
+        "brand": "Mac",
+        "category": "Computers",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": null,
+        "createdAt": "2025-04-10T23:24:08.634Z"
+    },
+    {
+        "_id": "67f8531891c1ed37a3b80edc",
+        "productId": "108",
+        "name": "Apple MacBook Pro",
+        "collection": "Computers",
+        "images": [
+            "assets/images/pro-img/6489721cv12d.webp",
+            "assets/images/pro-img/6489721_sd.jpeg",
+            "assets/images/pro-img/6515448cv11d.jpeg"
+        ],
+        "videos": [],
+        "oldItemPrice": 544,
+        "newItemPrice": 1100,
+        "discount": "",
+        "badge": "",
+        "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+        "reviews": [
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+        ],
+        "avgRating": 4.7,
+        "brand": "Mac",
+        "category": "Computers",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": null,
+        "createdAt": "2025-04-10T23:24:08.634Z"
+    },
+    {
+        "_id": "67f8531891c1ed37a3b80edd",
+        "productId": "109",
+        "name": "Apple MacBook Pro",
+        "collection": "Computers",
+        "images": [
+            "assets/images/pro-img/6515448_sd.png",
+            "assets/images/pro-img/6515448cv12d.jpeg"
+        ],
+        "videos": [],
+        "oldItemPrice": 544,
+        "newItemPrice": 1100,
+        "discount": "",
+        "badge": "",
+        "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+        "reviews": [
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+        ],
+        "avgRating": 4.7,
+        "brand": "Mac",
+        "category": "Computers",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": null,
+        "createdAt": "2025-04-10T23:24:08.634Z"
+    },
+    {
+        "_id": "67f8531891c1ed37a3b80eda",
+        "productId": "106",
+        "name": "Apple MacBook Air 2020",
+        "collection": "Computers",
+        "images": [
+            "assets/images/pro-img/6413734_sd.png"
+        ],
+        "videos": [],
+        "oldItemPrice": 544,
+        "newItemPrice": 1100,
+        "discount": "",
+        "badge": "",
+        "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+        "reviews": [
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+        ],
+        "avgRating": 4.7,
+        "brand": "Mac",
+        "category": "Computers",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": null,
+        "createdAt": "2025-04-10T23:24:08.633Z"
+    },
+    {
+        "_id": "67f8531891c1ed37a3b80ed8",
+        "productId": "104",
+        "name": "Apple MacBook Air 2020",
+        "collection": "Computers",
+        "images": [
+            "assets/images/pro-img/6455369_sd.webp",
+            "assets/images/pro-img/6455369_rd.jpeg",
+            "assets/images/pro-img/6450858cv7d.jpeg",
+            "assets/images/pro-img/6450858cv4d.jpeg"
+        ],
+        "videos": [],
+        "oldItemPrice": 544,
+        "newItemPrice": 1100,
+        "discount": "",
+        "badge": "",
+        "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+        "reviews": [
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+        ],
+        "avgRating": 4.7,
+        "brand": "Mac",
+        "category": "Computers",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": null,
+        "createdAt": "2025-04-10T23:24:08.633Z"
+    },
+    {
+        "_id": "67f8531891c1ed37a3b80ed9",
+        "productId": "105",
+        "name": "Apple MacBook Air 2020",
+        "collection": "Computers",
+        "images": [
+            "assets/images/pro-img/6455369_sd.webp"
+        ],
+        "videos": [],
+        "oldItemPrice": 544,
+        "newItemPrice": 1100,
+        "discount": "",
+        "badge": "",
+        "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+        "reviews": [
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+        ],
+        "avgRating": 4.7,
+        "brand": "Mac",
+        "category": "Computers",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": null,
+        "createdAt": "2025-04-10T23:24:08.633Z"
+    },
+    {
+        "_id": "67f8531891c1ed37a3b80ed6",
+        "productId": "102",
+        "name": "Apple MacBook Air 2020",
+        "collection": "Computers",
+        "images": [
+            "assets/images/pro-img/6489842_sd.webp",
+            "assets/images/pro-img/6489842cv11d.jpeg",
+            "assets/images/pro-img/6489842cv12d.jpeg"
+        ],
+        "videos": [],
+        "oldItemPrice": 544,
+        "newItemPrice": 1100,
+        "discount": "",
+        "badge": "",
+        "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+        "reviews": [
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+        ],
+        "avgRating": 4.7,
+        "brand": "Mac",
+        "category": "Computers",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": null,
+        "createdAt": "2025-04-10T23:24:08.632Z"
+    },
+    {
+        "_id": "67f8531891c1ed37a3b80ed5",
+        "productId": "101",
+        "name": "Apple MacBook Air 2020",
+        "collection": "Computers",
+        "images": [
+            "assets/images/pro-img/6489836_sd.png",
+            "assets/images/pro-img/6489836cv11d.jpeg",
+            "assets/images/pro-img/6489836cv12d.jpeg",
+            "assets/images/pro-img/6489836cv13d.jpeg",
+            "assets/images/pro-img/6489836cv14d.jpeg"
+        ],
+        "videos": [],
+        "oldItemPrice": 544,
+        "newItemPrice": 1100,
+        "discount": "",
+        "badge": "",
+        "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+        "reviews": [
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+        ],
+        "avgRating": 4.7,
+        "brand": "Mac",
+        "category": "Computers",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": null,
+        "createdAt": "2025-04-10T23:24:08.632Z"
+    },
+    {
+        "_id": "67f8531891c1ed37a3b80ed7",
+        "productId": "103",
+        "name": "Apple MacBook Air 2020",
+        "collection": "Computers",
+        "images": [
+            "assets/images/pro-img/5721600_sd.webp",
+            "assets/images/pro-img/5721600cv11d.jpeg",
+            "assets/images/pro-img/6489842cv12d.jpeg",
+            "assets/images/pro-img/5721600cv13d.jpeg",
+            "assets/images/pro-img/5721600cv14d.jpeg"
+        ],
+        "videos": [],
+        "oldItemPrice": 544,
+        "newItemPrice": 1100,
+        "discount": "",
+        "badge": "",
+        "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+        "reviews": [
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+        ],
+        "avgRating": 4.7,
+        "brand": "Mac",
+        "category": "Computers",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": null,
+        "createdAt": "2025-04-10T23:24:08.632Z"
+    },
+    {
+        "_id": "67f8531891c1ed37a3b80ed4",
+        "productId": "100",
+        "name": "Apple MacBook Air 2020",
+        "collection": "Computers",
+        "images": [
+            "assets/images/pro-img/6489618cv11d.png",
+            "assets/images/pro-img/6489618cv12d.jpeg",
+            "assets/images/pro-img/6489618cv14d.jpeg",
+            "assets/images/pro-img/6489618cv15d.jpeg"
+        ],
+        "videos": [],
+        "oldItemPrice": 544,
+        "newItemPrice": 1100,
+        "discount": "",
+        "badge": "",
+        "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+        "reviews": [
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+        ],
+        "avgRating": 4.7,
+        "brand": "Mac",
+        "category": "Computers",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": null,
+        "createdAt": "2025-04-10T23:24:08.631Z"
+    },
+    {
+        "_id": "67f8531891c1ed37a3b80ed2",
+        "productId": "98",
+        "name": "JBL Airpod",
+        "collection": "Speakers",
+        "images": [
+            "assets/images/pro-img/6495841cv12d.webp",
+            "assets/images/pro-img/6495841ld.jpeg",
+            "assets/images/pro-img/6495841cv11d.jpeg",
+            "assets/images/pro-img/6495841_rd.jpeg"
+        ],
+        "videos": [],
+        "oldItemPrice": 544,
+        "newItemPrice": 1112,
+        "discount": "",
+        "badge": "",
+        "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+        "reviews": [
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+        ],
+        "avgRating": 4.7,
+        "brand": "jbl",
+        "category": "Speakers",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": null,
+        "createdAt": "2025-04-10T23:24:08.631Z"
+    },
+    {
+        "_id": "67f8531891c1ed37a3b80ed3",
+        "productId": "99",
+        "name": "Apple MacBook Pro 2022",
+        "collection": "Computers",
+        "images": [
+            "assets/images/pro-img/6450858_sd.webp",
+            "assets/images/pro-img/6450858cv1d.jpeg",
+            "assets/images/pro-img/6450858cv3d.jpeg",
+            "assets/images/pro-img/6450858cv4d.jpeg",
+            "assets/images/pro-img/6450858cv7d.jpeg"
+        ],
+        "videos": [],
+        "oldItemPrice": 544,
+        "newItemPrice": 1200,
+        "discount": "",
+        "badge": "",
+        "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+        "reviews": [
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+        ],
+        "avgRating": 4.7,
+        "brand": "Mac",
+        "category": "Computers",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": null,
+        "createdAt": "2025-04-10T23:24:08.631Z"
+    },
+    {
+        "_id": "67f8531891c1ed37a3b80ecf",
+        "productId": "95",
+        "name": "Sony Headphone",
+        "collection": "Speakers",
+        "images": [
+            "assets/images/pro-img/6480256ld.webp",
+            "assets/images/pro-img/6480256_sd.jpeg",
+            "assets/images/pro-img/6480256_rd.jpeg",
+            "assets/images/pro-img/6480256_bd.jpeg"
+        ],
+        "videos": [],
+        "oldItemPrice": 544,
+        "newItemPrice": 1112,
+        "discount": "",
+        "badge": "",
+        "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+        "reviews": [
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+        ],
+        "avgRating": 4.7,
+        "brand": "Sony",
+        "category": "Speakers",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": null,
+        "createdAt": "2025-04-10T23:24:08.630Z"
+    },
+    {
+        "_id": "67f8531891c1ed37a3b80ed0",
+        "productId": "96",
+        "name": "Sony Headphone",
+        "collection": "Speakers",
+        "images": [
+            "assets/images/pro-img/6471737_sd.png",
+            "assets/images/pro-img/6471737_rd.jpeg"
+        ],
+        "videos": [],
+        "oldItemPrice": 544,
+        "newItemPrice": 1112,
+        "discount": "",
+        "badge": "",
+        "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+        "reviews": [
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+        ],
+        "avgRating": 4.7,
+        "brand": "Sony",
+        "category": "Speakers",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": null,
+        "createdAt": "2025-04-10T23:24:08.630Z"
+    },
+    {
+        "_id": "67f8531891c1ed37a3b80ed1",
+        "productId": "97",
+        "name": "JBL Headphone",
+        "collection": "Speakers",
+        "images": [
+            "assets/images/pro-img/headphone.png"
+        ],
+        "videos": [],
+        "oldItemPrice": 544,
+        "newItemPrice": 1112,
+        "discount": "",
+        "badge": "",
+        "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+        "reviews": [
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+        ],
+        "avgRating": 4.7,
+        "brand": "Xbox",
+        "category": "Speakers",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": null,
+        "createdAt": "2025-04-10T23:24:08.630Z"
+    },
+    {
+        "_id": "67f8531891c1ed37a3b80ecc",
+        "productId": "92",
+        "name": "JBL Headphone",
+        "collection": "Speakers",
+        "images": [
+            "assets/images/pro-img/6501224cv12d.webp",
+            "assets/images/pro-img/6501224ld.jpeg",
+            "assets/images/pro-img/6501224_rd.jpeg",
+            "assets/images/pro-img/6501224_sd.jpeg"
+        ],
+        "videos": [],
+        "oldItemPrice": 544,
+        "newItemPrice": 1112,
+        "discount": "",
+        "badge": "",
+        "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+        "reviews": [
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+        ],
+        "avgRating": 4.7,
+        "brand": "Xbox",
+        "category": "Speakers",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": null,
+        "createdAt": "2025-04-10T23:24:08.629Z"
+    },
+    {
+        "_id": "67f8531891c1ed37a3b80ecd",
+        "productId": "93",
+        "name": "JBL Headphone",
+        "collection": "Speakers",
+        "images": [
+            "assets/images/pro-img/6505728cv11d.png",
+            "assets/images/pro-img/6505728ld.jpeg",
+            "assets/images/pro-img/6505728_sd.jpeg",
+            "assets/images/pro-img/6505728_rd.jpeg"
+        ],
+        "videos": [],
+        "oldItemPrice": 544,
+        "newItemPrice": 1112,
+        "discount": "",
+        "badge": "",
+        "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+        "reviews": [
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+        ],
+        "avgRating": 4.7,
+        "brand": "Xbox",
+        "category": "Speakers",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": null,
+        "createdAt": "2025-04-10T23:24:08.629Z"
+    },
+    {
+        "_id": "67f8531891c1ed37a3b80ece",
+        "productId": "94",
+        "name": "JBL Headphone",
+        "collection": "Speakers",
+        "images": [
+            "assets/images/pro-img/headphone.png"
+        ],
+        "videos": [],
+        "oldItemPrice": 544,
+        "newItemPrice": 1112,
+        "discount": "",
+        "badge": "",
+        "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+        "reviews": [
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+        ],
+        "avgRating": 4.7,
+        "brand": "Xbox",
+        "category": "Speakers",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": null,
+        "createdAt": "2025-04-10T23:24:08.629Z"
+    },
+    {
+        "_id": "67f8531891c1ed37a3b80eca",
+        "productId": "90",
+        "name": "JBL Headphone",
+        "collection": "Speakers",
+        "images": [
+            "assets/images/pro-img/6514486ld.webp",
+            "assets/images/pro-img/6514486_rd.jpeg",
+            "assets/images/pro-img/6514486_sd.jpeg",
+            "assets/images/pro-img/6463749cv13d.jpeg"
+        ],
+        "videos": [],
+        "oldItemPrice": 544,
+        "newItemPrice": 1112,
+        "discount": "",
+        "badge": "",
+        "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+        "reviews": [
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+        ],
+        "avgRating": 4.7,
+        "brand": "Xbox",
+        "category": "Speakers",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": null,
+        "createdAt": "2025-04-10T23:24:08.628Z"
+    },
+    {
+        "_id": "67f8531891c1ed37a3b80ecb",
+        "productId": "91",
+        "name": "JBL Headphone",
+        "collection": "Speakers",
+        "images": [
+            "assets/images/pro-img/6385493_sd.png",
+            "assets/images/pro-img/6385493cv11d.jpeg",
+            "assets/images/pro-img/6385493cv12d.jpeg",
+            "assets/images/pro-img/6463749cv13d.jpeg"
+        ],
+        "videos": [],
+        "oldItemPrice": 544,
+        "newItemPrice": 1112,
+        "discount": "",
+        "badge": "",
+        "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+        "reviews": [
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+        ],
+        "avgRating": 4.7,
+        "brand": "Xbox",
+        "category": "Speakers",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": null,
+        "createdAt": "2025-04-10T23:24:08.628Z"
+    },
+    {
+        "_id": "67f8531891c1ed37a3b80ec8",
+        "productId": "88",
+        "name": "JBL Headphone",
+        "collection": "Speakers",
+        "images": [
+            "assets/images/pro-img/6427089ld.webp",
+            "assets/images/pro-img/6427089_sd.jpeg",
+            "assets/images/pro-img/6427089_rd.jpegg",
+            "assets/images/pro-img/6427089cv11d.jpeg"
+        ],
+        "videos": [],
+        "oldItemPrice": 544,
+        "newItemPrice": 1112,
+        "discount": "",
+        "badge": "",
+        "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+        "reviews": [
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+        ],
+        "avgRating": 4.7,
+        "brand": "Xbox",
+        "category": "Speakers",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": null,
+        "createdAt": "2025-04-10T23:24:08.627Z"
+    },
+    {
+        "_id": "67f8531891c1ed37a3b80ec9",
+        "productId": "89",
+        "name": "JBL Headphone",
+        "collection": "Speakers",
+        "images": [
+            "assets/images/pro-img/6517767_sd.webp",
+            "assets/images/pro-img/6517767_rd.jpeg",
+            "assets/images/pro-img/6517767ld.jpeg"
+        ],
+        "videos": [],
+        "oldItemPrice": 544,
+        "newItemPrice": 1112,
+        "discount": "",
+        "badge": "",
+        "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+        "reviews": [
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+        ],
+        "avgRating": 4.7,
+        "brand": "Xbox",
+        "category": "Speakers",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": null,
+        "createdAt": "2025-04-10T23:24:08.627Z"
+    },
+    {
+        "_id": "67f8531891c1ed37a3b80ec7",
+        "productId": "87",
+        "name": "Sony Boon Box",
+        "collection": "Speakers",
+        "images": [
+            "assets/images/pro-img/6427871_rd.webp",
+            "assets/images/pro-img/6427871_sd.jpeg",
+            "assets/images/pro-img/6427871cv11d.jpeg"
+        ],
+        "videos": [],
+        "oldItemPrice": 544,
+        "newItemPrice": 1112,
+        "discount": "",
+        "badge": "",
+        "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+        "reviews": [
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+        ],
+        "avgRating": 4.7,
+        "brand": "Sony",
+        "category": "Speakers",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": null,
+        "createdAt": "2025-04-10T23:24:08.626Z"
+    },
+    {
+        "_id": "67f8531891c1ed37a3b80ec5",
+        "productId": "85",
+        "name": "Jbl Clip",
+        "collection": "Speakers",
+        "images": [
+            "assets/images/pro-img/6445546_rd.png",
+            "assets/images/pro-img/6445546_sd.jpeg",
+            "assets/images/pro-img/6445546cv1d.jpeg",
+            "assets/images/pro-img/6445546ld.jpeg"
+        ],
+        "videos": [],
+        "oldItemPrice": 544,
+        "newItemPrice": 1112,
+        "discount": "",
+        "badge": "",
+        "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+        "reviews": [
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+        ],
+        "avgRating": 4.7,
+        "brand": "jbl",
+        "category": "Speakers",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": null,
+        "createdAt": "2025-04-10T23:24:08.625Z"
+    },
+    {
+        "_id": "67f8531891c1ed37a3b80ec6",
+        "productId": "86",
+        "name": "Jbl Clip",
+        "collection": "Speakers",
+        "images": [
+            "assets/images/pro-img/6445547_rd.webp",
+            "assets/images/pro-img/6445547_sd.jpeg",
+            "assets/images/pro-img/6445547cv11d.jpeg",
+            "assets/images/pro-img/6445547cv12d.jpeg",
+            "assets/images/pro-img/6445547ld.jpeg"
+        ],
+        "videos": [],
+        "oldItemPrice": 544,
+        "newItemPrice": 1112,
+        "discount": "",
+        "badge": "",
+        "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+        "reviews": [
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+        ],
+        "avgRating": 4.7,
+        "brand": "jbl",
+        "category": "Speakers",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": null,
+        "createdAt": "2025-04-10T23:24:08.625Z"
+    },
+    {
+        "_id": "67f8531891c1ed37a3b80ec4",
+        "productId": "84",
+        "name": "JBL Headphone",
+        "collection": "Speakers",
+        "images": [
+            "assets/images/pro-img/headphone.png"
+        ],
+        "videos": [],
+        "oldItemPrice": 544,
+        "newItemPrice": 1112,
+        "discount": "",
+        "badge": "",
+        "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+        "reviews": [
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            },
+            {
+                "rating": 4.8,
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+        ],
+        "avgRating": 4.7,
+        "brand": "Xbox",
+        "category": "Speakers",
+        "color": "🇺🇦",
+        "OS": "🫶🏼",
+        "CPU": "🁼",
+        "isRecentlyAdded": false,
+        "feature": null,
+        "createdAt": "2025-04-10T23:24:08.624Z"
+    }
+]

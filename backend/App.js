@@ -22,7 +22,7 @@ app.enable('trust proxy');
 //GLOBAL MIDDLEWARES:THESE ARE APPLIED TO ALL FILES
 
 const allowedOrigins = [
-  'http://localhost:3000', // React default (Vite)
+  'http://localhost:3000',
   'https://gadgets-8unr.onrender.com'
 ];
 app.use(

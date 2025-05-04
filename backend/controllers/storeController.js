@@ -13,3 +13,14 @@ exports.getAllCollections = catchAsync(async (req, res, next) => {
     },
   });
 });
+
+// exports.createCollections = catchAsync(async (req, res, next) => {
+//   const create = Store.create()
+
+//   res.status(200).json({
+//     status: 'Success',
+//     data: {
+//       create
+//     }
+//   })
+// })
