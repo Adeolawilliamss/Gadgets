@@ -27,8 +27,8 @@ const createSendToken = (user, statusCode, req, res) => {
   res.cookie('jwt', accessToken, {
     expires: new Date(Date.now() + 60 * 60 * 1000), // 60 minutes
     httpOnly: true,
-    secure: req.secure || req.get('x-forwarded-proto') === 'https',
-    sameSite: 'Lax',
+    secure: true, // Always true in production (especially on Render)
+    sameSite: 'None', // ✅ allow cross-site cookies
     path: '/',
   });
 
@@ -36,7 +36,9 @@ const createSendToken = (user, statusCode, req, res) => {
   res.cookie('refreshToken', refreshToken, {
     expires: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000), // 7 days
     httpOnly: true,
-    secure: req.secure || req.get('x-forwarded-proto') === 'https',
+    secure: true, // Always true in production (especially on Render)
+    sameSite: 'None', // ✅ allow cross-site cookies
+    path: '/',
   });
 
   user.password = undefined; // Hide password in response
