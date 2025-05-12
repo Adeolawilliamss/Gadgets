@@ -1,6 +1,6 @@
 /*eslint-disable*/
 import { createContext, useContext, useEffect, useState } from 'react';
-import axios from 'axios';
+import axiosInstance from '../../utils/axios';
 import { useLocation } from 'react-router-dom';
 
 const AuthContext = createContext();
@@ -13,7 +13,7 @@ export const AuthProvider = ({ children }) => {
 
   const checkAuthStatus = async () => {
     try {
-      const res = await axios.get(
+      const res = await axiosInstance.get(
         `/users/isLoggedIn?timestamp=${Date.now()}`,
         {
           withCredentials: true,

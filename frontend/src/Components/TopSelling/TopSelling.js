@@ -1,6 +1,6 @@
 /*eslint-disable*/
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import axiosInstance from '../../utils/axios';
 import {FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
@@ -33,7 +33,7 @@ function TopSelling () {
   useEffect(() => {
     const fetchWeeklyFeatures = async () => {
       try {
-        const res = await axios.get('/products?feature=weekly');
+        const res = await axiosInstance.get('/products?feature=weekly');
         console.log(res.data)
         setWeeklyFeatures(res.data.data.products);
       } catch (error) {

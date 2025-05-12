@@ -1,6 +1,6 @@
 /*eslint-disable*/
 import React, { useState, useEffect } from "react";
-import axios from 'axios';
+import axiosInstance from "../../utils/axios";
 import { FaArrowCircleRight } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import './Collection.css';
@@ -11,7 +11,7 @@ function Collection() {
   useEffect(() => {
     const fetchCollections = async () => {
       try {
-        const res = await axios.get('/store');
+        const res = await axiosInstance.get('/store');
         setCollections(res.data.data.store); // matches your controller's response
       } catch (err) {
         console.error("Failed to fetch collections:", err);

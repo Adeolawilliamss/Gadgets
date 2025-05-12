@@ -8,7 +8,7 @@ import {
   FaCaretDown,
   FaCaretUp,
 } from 'react-icons/fa';
-import axios from 'axios';
+import axiosInstance from '../../utils/axios';
 import { useAlert } from './../../page/context/AlertContext';
 import { useAuth } from './../../page/context/AuthContext';
 import { motion } from 'framer-motion';
@@ -77,10 +77,9 @@ function Navbar() {
     e.preventDefault();
 
     try {
-      const res = await axios.post(
+      const res = await axiosInstance.post(
         '/users/logout',
         {},
-        { withCredentials: true },
       );
 
       if (res.data.status === 'success') {

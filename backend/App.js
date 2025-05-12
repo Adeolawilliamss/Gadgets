@@ -23,13 +23,21 @@ app.enable('trust proxy');
 
 const allowedOrigins = [
   'http://localhost:3000',
+  'http://localhost:5000',
   'https://gadgets-8unr.onrender.com'
 ];
+
 app.use(
   cors({
-    origin: allowedOrigins,
-    credentials: true, // Allow cookies & authentication headers
-  }),
+    origin: function (origin, callback) {
+      if (!origin || allowedOrigins.includes(origin)) {
+        callback(null, true);
+      } else {
+        callback(new Error('CORS not allowed from this origin'));
+      }
+    },
+    credentials: true,
+  })
 );
 
 // ✅ Serve user-uploaded files from /public
@@ -43,7 +51,7 @@ if (process.env.NODE_ENV === 'development') {
   app.use(morgan('dev'));
 }
 
-app.set('trust proxy', 2); // ✅ Trust only 2 proxy layer (Heroku, Vercel, etc.)
+app.set('trust proxy', 2);
 
 //Limit requests from same API
 const limiter = rateLimit({
@@ -81,14 +89,14 @@ app.use('/users', userRouter);
 app.use('/products', productRouter);
 app.use('/store', storeRouter);
 
-// Serve React frontend (Only in production)
-if (process.env.NODE_ENV === 'production') {
-  app.use(express.static(path.join(__dirname, "../frontend/build")));
+// Used only when to render both frontend and backend together
+// if (process.env.NODE_ENV === 'production') {
+//   app.use(express.static(path.join(__dirname, "../frontend/build")));
 
-  app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "../frontend/build/index.html"));
-  });
-}
+//   app.get("*", (req, res) => {
+//     res.sendFile(path.join(__dirname, "../frontend/build/index.html"));
+//   });
+// }
 
 app.use(globalErrorHandler);
 

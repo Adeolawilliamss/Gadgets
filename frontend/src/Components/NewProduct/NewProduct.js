@@ -1,6 +1,6 @@
 /*eslint-disable*/
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import axiosInstance from '../../utils/axios';
 import { IoHeartOutline } from 'react-icons/io5';
 import { cartActions } from '../../redux/cartSlice';
 import { toast } from 'react-toastify';
@@ -59,7 +59,7 @@ function NewProduct() {
   useEffect(() => {
     const fetchNewProducts = async () => {
       try {
-        const res = await axios.get('/products?isRecentlyAdded=true');
+        const res = await axiosInstance.get('/products?isRecentlyAdded=true');
         setNewProducts(res.data.data.products);
       } catch (error) {
         console.error('Failed to fetch Products:', error);

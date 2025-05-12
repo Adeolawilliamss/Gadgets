@@ -1,6 +1,6 @@
 /*eslint-disable*/
 import React, { useState, useRef, useEffect } from 'react';
-import axios from 'axios';
+import axiosInstance from '../../utils/axios';
 import { useAuth } from './../context/AuthContext';
 import SkeletonItemDetails from '../../utils/SkeletonItemDetails';
 import { useParams, Link, useNavigate } from 'react-router-dom';
@@ -29,7 +29,7 @@ function ItemDetails() {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const res = await axios.get('/products');
+        const res = await axiosInstance.get('/products');
         const allProducts = res.data.data.products;
 
         const currentProduct = allProducts.find((item) => item._id === id);

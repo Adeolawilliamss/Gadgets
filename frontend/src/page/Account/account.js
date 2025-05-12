@@ -10,7 +10,7 @@ import {
   FaCreditCard,
   FaCog,
 } from 'react-icons/fa';
-import axios from 'axios';
+import axiosInstance from '../../utils/axios';
 
 const Account = () => {
   const { user } = useAuth();
@@ -22,7 +22,7 @@ const Account = () => {
   const [photo, setPhoto] = useState(null);
   const [passwordCurrent, setPasswordCurrent] = useState('');
   const [photoPreview, setPhotoPreview] = useState(
-    user?.photo ? `/img/users/${user.photo}` : null,
+    user?.photo ? `/img/users/${user.photo}` : null
   );
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
@@ -35,8 +35,7 @@ const Account = () => {
     if (photo) formData.append('photo', photo);
 
     try {
-      await axios.patch('/users/updateMe', formData, {
-        withCredentials: true,
+      await axiosInstance.patch('/users/updateMe', formData, {
         headers: { 'Content-Type': 'multipart/form-data' },
       });
       showAlert('success', 'Profile updated successfully!');
@@ -53,21 +52,20 @@ const Account = () => {
     }
 
     try {
-      await axios.patch(
+      await axiosInstance.patch(
         '/users/updatePassword',
         {
           passwordCurrent,
           password,
           passwordConfirm: confirmPassword,
         },
-        { withCredentials: true },
       );
       showAlert('success', 'Password updated successfully!');
       setTimeout(() => window.location.reload(), 1500);
     } catch (err) {
       showAlert(
         'error',
-        err.response?.data?.message || 'Password update failed',
+        err.response?.data?.message || 'Password update failed'
       );
     }
   };
@@ -159,11 +157,11 @@ const Account = () => {
           <div>
             <label className="block mb-1 font-medium">Current Password</label>
             <input
-                type="password"
-                className="w-full border px-4 py-2 rounded"
-                value={passwordCurrent}
-                onChange={(e) => setPasswordCurrent(e.target.value)}
-                required
+              type="password"
+              className="w-full border px-4 py-2 rounded"
+              value={passwordCurrent}
+              onChange={(e) => setPasswordCurrent(e.target.value)}
+              required
             />
             <label className="block mb-1 font-medium">New Password</label>
             <input

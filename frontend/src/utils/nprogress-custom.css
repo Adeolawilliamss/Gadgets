@@ -1,0 +1,17 @@
+/* Red top progress bar */
+#nprogress .bar {
+  background: red !important;
+  height: 3px; /* You can change thickness here */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1031;
+}
+
+/* The blur/shadow effect at the front of the bar */
+#nprogress .peg {
+  box-shadow: 0 0 10px red, 0 0 5px red !important;
+  opacity: 1;
+  transform: rotate(3deg) translate(0px, -4px);
+}

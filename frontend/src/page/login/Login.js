@@ -1,7 +1,7 @@
 /*eslint-disable*/
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import axios from 'axios';
+import axiosInstance from '../../utils/axios';
 import { useAlert } from './../context/AlertContext';
 import Slider from 'react-slick';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
@@ -58,14 +58,10 @@ function Login() {
     e.preventDefault();
 
     try {
-      const res = await axios.post(
-        '/users/login',
-        {
-          email,
-          password,
-        },
-        { withCredentials: true },
-      );
+      const res = await axiosInstance.post('/users/login', {
+        email,
+        password,
+      });
 
       if (res.data.status === 'success') {
         showAlert('success', 'Login successful!');
@@ -109,7 +105,9 @@ function Login() {
                 placeholder="Enter your email"
                 className="block w-full h-12 mt-8 p-2.5 pr-10"
               />
-                <p className="text-slate-900 text-sm mt-2">For Testing: Adeolaoladeinde6@gmail.com</p>
+              <p className="text-slate-900 text-sm mt-2">
+                For Testing: Adeolaoladeinde6@gmail.com
+              </p>
 
               <div className="form__input">
                 <input
@@ -175,6 +173,5 @@ function Login() {
     </div>
   );
 }
-
 
 export default Login;

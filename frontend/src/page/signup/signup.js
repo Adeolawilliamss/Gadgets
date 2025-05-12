@@ -1,6 +1,6 @@
 /* eslint-disable */
 import React, { useState } from 'react';
-import axios from 'axios';
+import axiosInstance from '../../utils/axios';
 import { useAlert } from './../context/AlertContext';
 import Slider from 'react-slick';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
@@ -72,7 +72,7 @@ function Signup() {
       return showAlert('error', "Passwords don't match");
     }
     try {
-      const res = await axios.post(
+      const res = await axiosInstance.post(
         '/users/signup',
         {
           name,
@@ -80,7 +80,6 @@ function Signup() {
           password,
           passwordConfirm: confirmPassword,
         },
-        { withCredentials: true },
       );
 
       if (res.data.status === 'success') {

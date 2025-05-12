@@ -1,6 +1,6 @@
 /* eslint-disable */
 import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+import axiosInstance from '../../utils/axios';
 import { useParams, Link } from 'react-router-dom';
 import Skeleton from '../../utils/Skeleton';
 import pages from '../../utils/pages';
@@ -14,7 +14,7 @@ function Search() {
   useEffect(() => {
     const findProducts = async () => {
       try {
-        const res = await axios.get('/products');
+        const res = await axiosInstance.get('/products');
         const allProductSearch = res.data.data.products;
 
         const currentSearch = allProductSearch.filter((item) =>

@@ -1,6 +1,6 @@
 /*eslint-disable*/
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import axiosInstance from '../../utils/axios';
 import { Link, useParams } from 'react-router-dom';
 import Skeleton from '../../utils/Skeleton';
 import './Shop.css';
@@ -34,7 +34,7 @@ function Shop() {
   useEffect(() => {
     const fetchShopData = async () => {
       try {
-        const res = await axios.get(
+        const res = await axiosInstance.get(
           '/products?fields=_id,images,name,collection,oldItemPrice,newItemPrice,category'
         );
         setShop(res.data.data.products);
