@@ -39,7 +39,7 @@ const Account = () => {
         headers: { 'Content-Type': 'multipart/form-data' },
       });
       showAlert('success', 'Profile updated successfully!');
-      setTimeout(() => window.location.reload(), 1500);
+      navigate(0);
     } catch (err) {
       showAlert('error', err.response?.data?.message || 'Update failed');
     }
@@ -61,7 +61,7 @@ const Account = () => {
         },
       );
       showAlert('success', 'Password updated successfully!');
-      setTimeout(() => window.location.reload(), 1500);
+      navigate(0);
     } catch (err) {
       showAlert(
         'error',
