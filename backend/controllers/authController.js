@@ -23,21 +23,21 @@ const createSendToken = (user, statusCode, req, res) => {
   // Set access token in response headers (for Postman and frontend use)
   res.setHeader('Authorization', `Bearer ${accessToken}`);
 
-  // Set access token in response
+  const isSecure = req.secure || req.get('x-forwarded-proto') === 'https';
+
   res.cookie('jwt', accessToken, {
-    expires: new Date(Date.now() + 60 * 60 * 1000), // 60 minutes
+    expires: new Date(Date.now() + 60 * 60 * 1000),
     httpOnly: true,
-    secure: process.env.NODE_ENV === 'production', // only secure in prod
-    sameSite: process.env.NODE_ENV === 'production' ? 'None' : 'Lax',
+    secure: isSecure, // only true when the request is HTTPS
+    sameSite: isSecure ? 'None' : 'Lax', // None for cross-site on HTTPS, Lax on HTTP
     path: '/',
   });
 
-  // Set refresh token in a separate cookie
   res.cookie('refreshToken', refreshToken, {
-    expires: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000), // 7 days
+    expires: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000),
     httpOnly: true,
-    secure: process.env.NODE_ENV === 'production', // only secure in prod
-    sameSite: process.env.NODE_ENV === 'production' ? 'None' : 'Lax',
+    secure: isSecure,
+    sameSite: isSecure ? 'None' : 'Lax',
     path: '/',
   });
 
