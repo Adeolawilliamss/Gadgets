@@ -39,7 +39,7 @@ const Account = () => {
         headers: { 'Content-Type': 'multipart/form-data' },
       });
       showAlert('success', 'Profile updated successfully!');
-      navigate(0);
+      navigate('/account');
     } catch (err) {
       showAlert('error', err.response?.data?.message || 'Update failed');
     }
@@ -61,7 +61,7 @@ const Account = () => {
         },
       );
       showAlert('success', 'Password updated successfully!');
-      navigate(0);
+      navigate('/account');
     } catch (err) {
       showAlert(
         'error',
