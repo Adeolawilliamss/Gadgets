@@ -1,14 +1,14 @@
 import axios from 'axios';
-import NProgress from "nprogress";
-import "./nprogress-custom.css";
+import NProgress from 'nprogress';
+import './nprogress-custom.css';
 
-const baseURL =
-  process.env.NODE_ENV === 'development'
-    ? 'http://localhost:5000'
-    : process.env.REACT_APP_BACKEND_URL;
+// const baseURL =
+//   process.env.NODE_ENV === 'development'
+//     ? 'http://localhost:5000'
+//     : process.env.REACT_APP_BACKEND_URL;
 
 const axiosInstance = axios.create({
-  baseURL,
+  baseURL: process.env.REACT_APP_BACKEND_URL,
   withCredentials: true,
 });
 

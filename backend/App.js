@@ -24,6 +24,7 @@ app.enable('trust proxy');
 const allowedOrigins = [
   'http://localhost:3000',
   'http://localhost:5000',
+  'https://gadgets-frontend.onrender.com',
   'https://gadgets-8unr.onrender.com'
 ];
 

@@ -153,7 +153,7 @@ function Login() {
                   className="google-logo"
                 />
               </button>
-              <span className="flex absolute top-0 left-20 md:left-64 items-center h-full w-full text-slate-100 text-xl text-bold">
+              <span className="flex absolute top-0 left-20 md:left-20 items-center h-full w-full text-slate-100 text-xl text-bold">
                 Sign In with Google
               </span>
             </div>
