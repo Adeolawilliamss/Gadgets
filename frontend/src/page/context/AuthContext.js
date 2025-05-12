@@ -15,11 +15,12 @@ export const AuthProvider = ({ children }) => {
     try {
       const res = await axiosInstance.get(
         `/users/isLoggedIn?timestamp=${Date.now()}`,
-        { withCredentials: true },
         {
+          withCredentials: true,
           headers: { 'Cache-Control': 'no-cache' },
         }
       );
+
       console.log('Auth status response:', res.data);
       if (res.data?.status === 'success') {
         setIsAuthenticated(true);

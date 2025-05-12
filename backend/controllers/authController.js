@@ -27,8 +27,8 @@ const createSendToken = (user, statusCode, req, res) => {
   res.cookie('jwt', accessToken, {
     expires: new Date(Date.now() + 60 * 60 * 1000), // 60 minutes
     httpOnly: true,
-    secure: true, // Always true in production (especially on Render)
-    sameSite: 'None', // ✅ allow cross-site cookies
+    secure: process.env.NODE_ENV === 'production', // only secure in prod
+    sameSite: process.env.NODE_ENV === 'production' ? 'None' : 'Lax',
     path: '/',
   });
 
@@ -36,8 +36,8 @@ const createSendToken = (user, statusCode, req, res) => {
   res.cookie('refreshToken', refreshToken, {
     expires: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000), // 7 days
     httpOnly: true,
-    secure: true, // Always true in production (especially on Render)
-    sameSite: 'None', // ✅ allow cross-site cookies
+    secure: process.env.NODE_ENV === 'production', // only secure in prod
+    sameSite: process.env.NODE_ENV === 'production' ? 'None' : 'Lax',
     path: '/',
   });
 
