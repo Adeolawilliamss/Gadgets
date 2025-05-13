@@ -86,9 +86,9 @@ app.use((req, res, next) => {
 });
 
 //ROUTES
-app.use('/api/users', userRouter);
-app.use('/api/products', productRouter);
-app.use('/api/store', storeRouter);
+app.use('/users', userRouter);
+app.use('/products', productRouter);
+app.use('/store', storeRouter);
 
 // Used only when to render both frontend and backend together
 // if (process.env.NODE_ENV === 'production') {
