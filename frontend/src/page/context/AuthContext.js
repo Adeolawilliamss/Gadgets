@@ -29,6 +29,10 @@ export const AuthProvider = ({ children }) => {
         setPhoto(null);
       }
     } catch (err) {
+      if (err.response?.status !== 401) {
+        console.error('Unexpected auth error:', err);
+      }
+
       setIsAuthenticated(false);
       setUser(null);
       setPhoto(null);
@@ -38,7 +42,7 @@ export const AuthProvider = ({ children }) => {
   // Re-run checkAuthStatus whenever the route changes
   useEffect(() => {
     checkAuthStatus();
-  }, [location]);
+  }, []);
 
   return (
     <AuthContext.Provider
