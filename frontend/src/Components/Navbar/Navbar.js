@@ -84,7 +84,7 @@ function Navbar() {
 
       if (res.data.status === 'success') {
         setIsAuthenticated(false);
-        setTimeout(() => location.assign('/login'), 1500);
+        setTimeout(() => location.assign('/'), 1500);
       }
     } catch (error) {
       showAlert('error', error.response?.data?.message || 'LogOut failed');
@@ -204,7 +204,7 @@ function Navbar() {
                     Log Out
                   </button>
                 ) : (
-                  <button type="button" onClick={() => navigate('/login')}>
+                  <button type="button" onClick={() => navigate('/')}>
                     Login
                   </button>
                 )}

@@ -13,19 +13,16 @@ export const AuthProvider = ({ children }) => {
 
   const checkAuthStatus = async () => {
     try {
-      const res = await axiosInstance.get(
-        `/users/isLoggedIn?timestamp=${Date.now()}`,
-        {
-          withCredentials: true,
-          headers: { 'Cache-Control': 'no-cache' },
-        }
-      );
+      const res = await axiosInstance.get(`/users/isLoggedIn`, {
+        headers: { 'Cache-Control': 'no-cache' },
+      });
 
       console.log('Auth status response:', res.data);
-      if (res.data?.status === 'success') {
+      if (res.data.status === 'success') {
+        const { id, name, email, photo } = res.data.data.user;
         setIsAuthenticated(true);
-        setUser(res.data.data.user);
-        setPhoto(res.data.data.user);
+        setUser({ id, name, email });
+        setPhoto(photo);
       } else {
         setIsAuthenticated(false);
         setUser(null);

@@ -93,7 +93,7 @@ function ItemDetails() {
     const totalCost = totalAmount - discount;
 
     if (!isAuthenticated) {
-      navigate('/login'); // redirect to login page
+      navigate('/'); // redirect to login page
     } else {
       navigate('/checkout', {
         state: {
