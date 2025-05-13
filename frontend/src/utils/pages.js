@@ -1,8 +1,8 @@
 /*eslint-disable*/
 const pages = new Map();
-pages.set('home', { name: 'Home', path: '/', anchorable: true });
+pages.set('login', { name: 'Login', path: '/', anchorable: true });
+pages.set('home', { name: 'Home', path: '/home', anchorable: true });
 pages.set('shop', { name: 'Shop', path: '/shop/all', anchorable: true });
-pages.set('login', { name: 'Login', path: '/login', anchorable: true });
 pages.set('cart', { name: 'Cart', path: '/cart', anchorable: true });
 pages.set('checkout', { name: 'Checkout', path: '/checkout', anchorable: true });
 pages.set('search', { name: 'Search', path: '/search', anchorable: true });

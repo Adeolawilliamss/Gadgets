@@ -65,7 +65,7 @@ function Login() {
 
       if (res.data.status === 'success') {
         showAlert('success', 'Login successful!');
-        setTimeout(() => location.assign('/'), 1500);
+        setTimeout(() => location.assign('/home'), 1500);
       }
     } catch (error) {
       showAlert('error', error.response?.data?.message || 'Login failed');

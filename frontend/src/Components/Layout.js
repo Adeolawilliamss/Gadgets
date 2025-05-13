@@ -17,9 +17,9 @@ const Layout = ({ children }) => {
   const getPageTitle = () => {
     switch (location.pathname) {
       case '/':
-        return 'Home';
-      case '/login':
         return 'Login';
+      case '/home':
+        return 'Home';
       case '/cart':
         return 'Cart';
       case '/checkout':
@@ -58,24 +58,3 @@ const Layout = ({ children }) => {
 };
 
 export default Layout;
-
-
-// import React from 'react';
-// import { useLocation } from 'react-router-dom';
-// import Navbar from './Navbar/Navbar';
-// import Footer from './Footer/Footer';
-
-// const Layout = ({ children }) => {
-//   const location = useLocation();
-//   const showHeaderFooter = location.pathname !== '/login';
-
-//   return (
-//     <>
-//       {showHeaderFooter && <Navbar />}
-//       <main>{children}</main>
-//       {showHeaderFooter && <Footer />}
-//     </>
-//   );
-// };
-
-// export default Layout;

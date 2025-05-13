@@ -24,13 +24,6 @@ const createSendToken = (user, statusCode, req, res) => {
   res.setHeader('Authorization', `Bearer ${accessToken}`);
 
   const isProduction = process.env.NODE_ENV === 'production';
-
-  console.log('🔐 Setting cookies...');
-  console.log('isProduction:', isProduction);
-  console.log('req.secure:', req.secure);
-  console.log('x-forwarded-proto:', req.get('x-forwarded-proto'));
-  console.log('Access Token (jwt):', accessToken);
-  console.log('Refresh Token:', refreshToken);
   
   res.cookie('jwt', accessToken, {
     expires: new Date(Date.now() + 60 * 60 * 1000),

@@ -26,10 +26,10 @@ function App({ item }) {
       <Alert />
       <Layout>
         <Routes>
-          <Route path="/" element={<Home />} />
+           <Route path="/" element={<Login />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/shop/:category" element={<Shop />} />
           <Route path="/products/:id" element={<ItemDetails item={item} />} />
-          <Route path="/login" element={<Login />} />
           <Route path="/cart" element={<Cartpage />} />
           <Route path="/checkout" element={<Checkout />}/>
           <Route path="/favourite" element={<Favourite />} />
