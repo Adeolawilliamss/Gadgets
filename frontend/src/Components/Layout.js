@@ -7,7 +7,7 @@ import Footer from './Footer/Footer';
 
 const Layout = ({ children }) => {
   const location = useLocation();
-  const showHeaderFooter = location.pathname !== '/login' && location.pathname !== '/signup';
+  const showHeaderFooter = location.pathname !== '/' && location.pathname !== '/signup';
 
   // Define default metadata
   const defaultTitle = 'Adeola Gadgets';
