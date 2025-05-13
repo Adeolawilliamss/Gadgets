@@ -20,7 +20,7 @@ router.patch(
 
 router.get(
   '/isLoggedIn',
-  authController.isLoggedIn,
+  authController.login,
   userController.sendCurrentUser
 );
 
