@@ -26,7 +26,7 @@ function Navbar() {
   const { isAuthenticated, setIsAuthenticated, user, photo } = useAuth();
   const navigate = useNavigate();
   const { totalQuantity, wishListQuantity } = useSelector(
-    (state) => state.cart
+    (state) => state.cart,
   );
 
   const handleSearch = (e) => {
@@ -77,7 +77,10 @@ function Navbar() {
     e.preventDefault();
 
     try {
-      const res = await axiosInstance.post('/users/logout', {});
+      const res = await axiosInstance.post(
+        '/users/logout',
+        {},
+      );
 
       if (res.data.status === 'success') {
         setIsAuthenticated(false);
@@ -101,9 +104,7 @@ function Navbar() {
               </h1>
             </Link>
             <button
-              className={`menu-btn ${
-                menu ? 'active' : ''
-              } absolute md:static right-5 top-1/3 -translate-y-1/2 md:translate-y-0`}
+              className={`menu-btn ${menu ? 'active' : ''} absolute md:static right-5 top-1/3 -translate-y-1/2 md:translate-y-0`}
               onClick={handleMenuToggle}
             >
               {menu ? (
@@ -173,13 +174,13 @@ function Navbar() {
             >
               {isAuthenticated && user?.photo ? (
                 <img
-                  src={`/img/users/${user.photo}`}
+                 src={`${process.env.REACT_APP_BACKEND_URL}/img/users/${user.photo}`}
                   alt="avatar"
                   className="avatar mr-5 ml-5 rounded-full w-10 h-10 object-cover"
                 />
               ) : (
                 <img
-                  src={`${process.env.REACT_APP_BACKEND_URL}/img/users/${user.photo}`}
+                  src={'/default.jpg'}
                   alt="default avatar"
                   className="avatar mr-5 ml-5 rounded-full w-10 h-10 object-cover"
                 />
