@@ -15,8 +15,6 @@ export const AuthProvider = ({ children }) => {
         headers: { 'Cache-Control': 'no-cache' },
       });
 
-      console.log('✅ Auth status response:', res.data);
-
       if (res.data.status === 'success') {
         const { id, name, email, photo } = res.data.data.user;
         setIsAuthenticated(true);
@@ -28,8 +26,7 @@ export const AuthProvider = ({ children }) => {
         setPhoto(null);
       }
     } catch (err) {
-      // Axios interceptor will mark skipLog for calls blocked in request interceptor,
-      // and will silence expected 401 here.
+      // silence expected 401
       if (!err.skipLog && err.response?.status !== 401) {
         console.error('⚠️ Unexpected auth error:', err);
       }
@@ -39,9 +36,12 @@ export const AuthProvider = ({ children }) => {
     }
   };
 
-  // Run only once on initial mount
   useEffect(() => {
-    checkAuthStatus();
+    // Delay the single check by 100ms to let the cookie kick in
+    const timer = setTimeout(() => {
+      checkAuthStatus();
+    }, 100);
+    return () => clearTimeout(timer);
   }, []);
 
   return (
