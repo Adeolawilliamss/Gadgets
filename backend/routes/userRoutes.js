@@ -18,10 +18,15 @@ router.patch(
   userController.updateMe,
 );
 
-router.use(authController.protect);
+router.get(
+  '/isLoggedIn',
+  authController.isLoggedIn,
+  userController.sendCurrentUser,
+);
 
-router.get('/isLoggedIn', userController.sendCurrentUser);
-
-router.patch('/updatePassword', authController.updatePassword);
-
+router.patch(
+  '/updatePassword',
+  authController.protect,
+  authController.updatePassword,
+);
 module.exports = router;

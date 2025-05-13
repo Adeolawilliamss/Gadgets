@@ -225,71 +225,34 @@ exports.protect = catchAsync(async (req, res, next) => {
   next();
 });
 
-// ✅ Fixing isLoggedIn to work for API calls
-// exports.isLoggedIn = async (req, res, next) => {
-//   try {
-//     if (req.cookies.jwt) {
-//       const decoded = await promisify(jwt.verify)(
-//         req.cookies.jwt,
-//         process.env.JWT_ACCESS_SECRET,
-//       );
-
-//       const currentUser = await User.findById(decoded.id);
-//       console.log(currentUser)
-//       if (!currentUser || currentUser.changedPasswordAfter(decoded.iat)) {
-//         return res
-//           .status(401)
-//           .json({ status: 'fail', message: 'Not logged in' });
-//       }
-
-//       req.user = currentUser;
-//       res.locals.user = currentUser;
-
-//       // ✅ Respond with user info or just status success
-//       return res.status(200).json({
-//         status: 'success',
-//         data: {
-//           user: {
-//             id: currentUser._id,
-//             name: currentUser.name,
-//             email: currentUser.email,
-//             photo: currentUser.photo,
-//           },
-//         },
-//       });
-//     }
-
-//     // No token
-//     return res.status(401).json({ status: 'fail', message: 'Not logged in' });
-//   } catch (error) {
-//     return res.status(401).json({ status: 'fail', message: 'Invalid token' });
-//   }
-// };
-
 exports.isLoggedIn = async (req, res, next) => {
   try {
-    // 1) Do we have a cookie?
-    if (!req.cookies || !req.cookies.jwt) {
-      return next();                  // no token → just continue as guest
-    }
+    //1}Verifies the Token
+    if (req.cookies.jwt) {
+      const decoded = await promisify(jwt.verify)(
+        req.cookies.jwt,
+        process.env.JWT_ACCESS_SECRET,
+      );
 
-    // 2) Verify token
-    const decoded = await promisify(jwt.verify)(
-      req.cookies.jwt,
-      process.env.JWT_ACCESS_SECRET
-    );
+      //2}Check if user still exists
+      const currentUser = await User.findById(decoded.id);
+      if (!currentUser) {
+        return next();
+      }
 
-    // 3) Check user still exists
-    const currentUser = await User.findById(decoded.id);
-    if (!currentUser || currentUser.changedPasswordAfter(decoded.iat)) {
+      //3}Check if user changed password after the token was issued
+      if (currentUser.changedPasswordAfter(decoded.iat)) {
+        return next();
+      }
+
+      //IF ITS HAS BYPASSED ALL STAGES IT MEANS THERE IS A LOGGED IN USER
+      // ✅ FIX: Set both `req.user` and `res.locals.user`
+      req.user = currentUser; // Now your middleware (like getTour) can use this
+      res.locals.user = currentUser; // Your Pug templates can still access `user`
       return next();
     }
-
-    // 4) Attach user to request & template locals
-    req.user = currentUser;
-    res.locals.user = currentUser;
-  } catch (err) {
-    // if anything goes wrong, we just ignore and treat as not-logged-in
+  } catch (error) {
+    return next();
   }
   next();
 };

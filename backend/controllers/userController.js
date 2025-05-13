@@ -76,18 +76,28 @@ exports.updateMe = catchAsync(async (req, res, next) => {
   });
 });
 
-exports.sendCurrentUser = (req, res, next) => {
+exports.getMe = (req, res, next) => {
+  req.params.id = req.user.id;
+  next();
+};
+
+exports.sendCurrentUser = (req, res) => {
   if (!req.user) {
-    return res
-      .status(401)
-      .json({ status: 'fail', message: 'Not logged in' });
+    return res.status(401).json({
+      status: 'fail',
+      message: 'User not logged in',
+    });
   }
 
-  const { _id: id, name, email, photo } = req.user;
   res.status(200).json({
     status: 'success',
     data: {
-      user: { id, name, email, photo }
-    }
+      user: {
+        id: req.user._id,
+        name: req.user.name,
+        email: req.user.email,
+        photo: req.user.photo,
+      },
+    },
   });
 };
