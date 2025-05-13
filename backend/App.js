@@ -25,7 +25,7 @@ const allowedOrigins = [
   'http://localhost:3000',
   'http://localhost:5000',
   'https://gadgets-frontend.onrender.com',
-  'https://gadgets-8unr.onrender.com'
+  'https://gadgets-8unr.onrender.com',
 ];
 
 app.use(
@@ -38,7 +38,7 @@ app.use(
       }
     },
     credentials: true,
-  })
+  }),
 );
 
 // ✅ Serve user-uploaded files from /public
@@ -98,6 +98,11 @@ app.use('/api/store', storeRouter);
 //     res.sendFile(path.join(__dirname, "../frontend/build/index.html"));
 //   });
 // }
+
+// Health check route for Render
+app.get('/', (req, res) => {
+  res.status(200).send('Server is live and healthy');
+});
 
 app.use(globalErrorHandler);
 
