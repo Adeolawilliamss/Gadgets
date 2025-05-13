@@ -17,7 +17,7 @@ function FinalOrder() {
 
   const handleContinue = (id) => {
     dispatch(cartActions.clearCart());
-    navigate('/');
+    navigate('/home');
   };
 
   useEffect(() => {
