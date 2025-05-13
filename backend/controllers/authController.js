@@ -227,33 +227,28 @@ exports.protect = catchAsync(async (req, res, next) => {
 
 exports.isLoggedIn = async (req, res, next) => {
   try {
-    //1}Verifies the Token
     if (req.cookies.jwt) {
       const decoded = await promisify(jwt.verify)(
         req.cookies.jwt,
-        process.env.JWT_ACCESS_SECRET,
+        process.env.JWT_ACCESS_SECRET
       );
-
-      //2}Check if user still exists
       const currentUser = await User.findById(decoded.id);
-      if (!currentUser) {
+      if (currentUser && !currentUser.changedPasswordAfter(decoded.iat)) {
+        req.user = currentUser;
+        res.locals.user = currentUser;
+        console.log('✅ isLoggedIn: user attached:', {
+          id: currentUser.id,
+          name: currentUser.name,
+          email: currentUser.email,
+          photo: currentUser.photo,
+        });
         return next();
       }
-
-      //3}Check if user changed password after the token was issued
-      if (currentUser.changedPasswordAfter(decoded.iat)) {
-        return next();
-      }
-
-      //IF ITS HAS BYPASSED ALL STAGES IT MEANS THERE IS A LOGGED IN USER
-      // ✅ FIX: Set both `req.user` and `res.locals.user`
-      req.user = currentUser; // Now your middleware (like getTour) can use this
-      res.locals.user = currentUser; // Your Pug templates can still access `user`
-      return next();
     }
-  } catch (error) {
-    return next();
+  } catch (err) {
+    console.log('⚠️ isLoggedIn: error verifying token', err);
   }
+  console.log('ℹ️ isLoggedIn: no valid JWT, continuing as guest');
   next();
 };
 
