@@ -61,7 +61,7 @@ function Login() {
       const res = await axiosInstance.post('/users/login', {
         email,
         password,
-      });
+      },{ withCredentials: true });
 
       if (res.data.status === 'success') {
         showAlert('success', 'Login successful!');
