@@ -24,7 +24,7 @@ const createSendToken = (user, statusCode, req, res) => {
   res.setHeader('Authorization', `Bearer ${accessToken}`);
 
   console.log('Origin:', req.headers.origin);
-  console.log('Setting cookie with token:', token);
+  console.log('Setting cookie with token:', accessToken);
   res.cookie('jwt', accessToken, {
     expires: new Date(Date.now() + 60 * 60 * 1000),
     httpOnly: true,
