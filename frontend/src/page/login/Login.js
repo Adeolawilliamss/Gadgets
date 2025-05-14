@@ -1,8 +1,8 @@
 /*eslint-disable*/
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import axios from 'axios';
 import axiosInstance from '../../utils/axios';
+import axios from 'axios';
 import { useAlert } from './../context/AlertContext';
 import Slider from 'react-slick';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
@@ -59,10 +59,12 @@ function Login() {
     e.preventDefault();
 
     try {
-      const res = await axios.post('/users/login', {
-        email,
-        password,
-      },{ withCredentials: true });
+      await axios.post(
+  'https://gadgets-8unr.onrender.com/users/login',
+  { email, password },
+  { withCredentials: true }
+);
+
 
       if (res.data.status === 'success') {
         showAlert('success', 'Login successful!');
