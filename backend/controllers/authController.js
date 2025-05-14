@@ -24,12 +24,12 @@ const createSendToken = (user, statusCode, req, res) => {
   res.setHeader('Authorization', `Bearer ${accessToken}`);
 
   const isProduction = process.env.NODE_ENV === 'production';
-  
+
   res.cookie('jwt', accessToken, {
     expires: new Date(Date.now() + 60 * 60 * 1000),
     httpOnly: true,
     secure: true,
-    sameSite: None,
+    sameSite: 'None',
     path: '/',
   });
 
@@ -37,7 +37,7 @@ const createSendToken = (user, statusCode, req, res) => {
     expires: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000),
     httpOnly: true,
     secure: true, // always true in production
-    sameSite: None,
+    sameSite: 'None',
     path: '/',
   });
 
@@ -230,7 +230,7 @@ exports.isLoggedIn = async (req, res, next) => {
     if (req.cookies.jwt) {
       const decoded = await promisify(jwt.verify)(
         req.cookies.jwt,
-        process.env.JWT_ACCESS_SECRET
+        process.env.JWT_ACCESS_SECRET,
       );
       const currentUser = await User.findById(decoded.id);
       if (currentUser && !currentUser.changedPasswordAfter(decoded.iat)) {
