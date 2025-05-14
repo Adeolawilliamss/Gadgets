@@ -23,8 +23,8 @@ const createSendToken = (user, statusCode, req, res) => {
   // Set access token in response headers (for Postman and frontend use)
   res.setHeader('Authorization', `Bearer ${accessToken}`);
 
-  const isProduction = process.env.NODE_ENV === 'production';
-
+  console.log('Origin:', req.headers.origin);
+  console.log('Setting cookie with token:', token);
   res.cookie('jwt', accessToken, {
     expires: new Date(Date.now() + 60 * 60 * 1000),
     httpOnly: true,
@@ -177,8 +177,16 @@ exports.login = catchAsync(async (req, res, next) => {
     return next(new AppError('Incorrect email or password', 401));
   }
 
+  // Logging the email and some additional data for debugging
+  console.log('Login attempt for:', email);
+  console.log('User found:', user);
+
+  // Create and send token
   createSendToken(user, 200, req, res);
+
+  console.log('Access token created and sent');
 });
+
 
 exports.protect = catchAsync(async (req, res, next) => {
   console.log('🔍 Protect Middleware Triggered on:', req.path); // Debugging
