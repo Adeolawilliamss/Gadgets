@@ -1,7 +1,6 @@
 /*eslint-disable*/
 import React, { useState, useRef, useEffect } from 'react';
 import axiosInstance from '../../utils/axios';
-import { useAuth } from './../context/AuthContext';
 import SkeletonItemDetails from '../../utils/SkeletonItemDetails';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
@@ -23,7 +22,6 @@ function ItemDetails() {
   const [rating, setRating] = useState(null);
   const [product, setProduct] = useState(null);
   const [relatedProducts, setRelatedProducts] = useState([]);
-  const { isAuthenticated } = useAuth();
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -40,7 +38,7 @@ function ItemDetails() {
 
         const related = allProducts.filter(
           (item) =>
-            item._id !== id && item.category === currentProduct?.category,
+            item._id !== id && item.category === currentProduct?.category
         );
 
         setRelatedProducts(related);
@@ -81,7 +79,7 @@ function ItemDetails() {
         price: product.oldItemPrice,
         img: product.images[0],
         description: product.description,
-      }),
+      })
     );
     toast.success('Added Succesfully');
   };
@@ -92,17 +90,13 @@ function ItemDetails() {
     const discount = 5; // $5 off per item
     const totalCost = totalAmount - discount;
 
-    if (!isAuthenticated) {
-      navigate('/'); // redirect to login page
-    } else {
-      navigate('/checkout', {
-        state: {
-          totalQuantity,
-          totalAmount,
-          totalCost,
-        },
-      });
-    }
+    navigate('/checkout', {
+      state: {
+        totalQuantity,
+        totalAmount,
+        totalCost,
+      },
+    });
   };
 
   useEffect(() => {
@@ -112,9 +106,8 @@ function ItemDetails() {
   }, [id]);
 
   if (loading) {
-  return <SkeletonItemDetails />;
-}
-  
+    return <SkeletonItemDetails />;
+  }
 
   const handleRating = (rate) => {
     setRating(rate);
@@ -148,11 +141,9 @@ function ItemDetails() {
               className="buy-btn relative overflow-hidden group"
               onClick={buyNow}
             >
-              <span className="block">
-                {isAuthenticated ? 'Buy Now' : 'Login to continue'}
-              </span>
+              <span className="block">Buy Now</span>
               <span className="absolute inset-0 bg-black text-white flex items-center justify-center translate-x-full group-hover:translate-x-0 transition-transform duration-300">
-                {isAuthenticated ? 'Buy Now' : 'Login to continue'}
+                Buy Now
               </span>
             </button>
           </div>
@@ -162,25 +153,35 @@ function ItemDetails() {
       <div className="last-details mt-5 mb-8">
         <div className="flex justify-center md:justify-start gap-11 mb-5">
           <h2
-            className={`cursor-pointer text-lg transition-colors duration-300 ${activeTab === 'description' ? 'text-red-700' : ''}`}
+            className={`cursor-pointer text-lg transition-colors duration-300 ${
+              activeTab === 'description' ? 'text-red-700' : ''
+            }`}
             onClick={() => setActiveTab('description')}
           >
             Description
           </h2>
           <h2
-            className={`cursor-pointer text-lg transition-colors duration-300 ${activeTab === 'review' ? 'text-red-700' : ''}`}
+            className={`cursor-pointer text-lg transition-colors duration-300 ${
+              activeTab === 'review' ? 'text-red-700' : ''
+            }`}
             onClick={() => setActiveTab('review')}
           >
             Review({product.reviews.length})
           </h2>
         </div>
         <div
-          className={`transition-opacity duration-300 ${activeTab === 'description' ? 'block opacity-100' : 'hidden opacity-0'}`}
+          className={`transition-opacity duration-300 ${
+            activeTab === 'description'
+              ? 'block opacity-100'
+              : 'hidden opacity-0'
+          }`}
         >
           <p>{product.description}</p>
         </div>
         <div
-          className={`transition-opacity duration-300 ${activeTab === 'review' ? 'block opacity-100' : 'hidden opacity-0'}`}
+          className={`transition-opacity duration-300 ${
+            activeTab === 'review' ? 'block opacity-100' : 'hidden opacity-0'
+          }`}
         >
           <ul>
             {product.reviews.map((review, index) => (
@@ -206,7 +207,9 @@ function ItemDetails() {
                     key={rate}
                     title="rate"
                     onClick={() => handleRating(rate)}
-                    className={`cursor-pointer ${rate <= rating ? 'text-orange-800' : 'text-gray-400'}`}
+                    className={`cursor-pointer ${
+                      rate <= rating ? 'text-orange-800' : 'text-gray-400'
+                    }`}
                   >
                     {rate}
                     <RiStarFill />
