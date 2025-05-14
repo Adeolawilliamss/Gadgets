@@ -10,7 +10,7 @@ router.post('/logout', authController.logOut);
 router.post('/signup', authController.signUp);
 router.get('/checkout', authController.protect);
 
-// router.use(authController.protect);
+router.use(authController.protect);
 
 router.patch(
   '/updateMe',

@@ -16,6 +16,41 @@ const signRefreshToken = (id) =>
     expiresIn: process.env.JWT_REFRESH_EXPIRES_IN,
   });
 
+// const createSendToken = (user, statusCode, req, res) => {
+//   const accessToken = signAccessToken(user._id);
+//   const refreshToken = signRefreshToken(user._id);
+
+//   // Set access token in response headers (for Postman and frontend use)
+//   res.setHeader('Authorization', `Bearer ${accessToken}`);
+
+//   console.log('Origin:', req.headers.origin);
+//   console.log('Setting cookie with token:', accessToken);
+//   res.cookie('jwt', accessToken, {
+//     expires: new Date(Date.now() + 60 * 60 * 1000),
+//     httpOnly: true,
+//     secure: true,
+//     sameSite: 'None',
+//     path: '/',
+//   });
+
+//   res.cookie('refreshToken', refreshToken, {
+//     expires: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000),
+//     httpOnly: true,
+//     secure: true, // always true in production
+//     sameSite: 'None',
+//     path: '/',
+//   });
+
+//   user.password = undefined; // Hide password in response
+
+//   res.status(statusCode).json({
+//     status: 'success',
+//     accessToken, // Send access token to client
+//     refreshToken,
+//     data: { user },
+//   });
+// };
+
 const createSendToken = (user, statusCode, req, res) => {
   const accessToken = signAccessToken(user._id);
   const refreshToken = signRefreshToken(user._id);
@@ -23,22 +58,18 @@ const createSendToken = (user, statusCode, req, res) => {
   // Set access token in response headers (for Postman and frontend use)
   res.setHeader('Authorization', `Bearer ${accessToken}`);
 
-  console.log('Origin:', req.headers.origin);
-  console.log('Setting cookie with token:', accessToken);
+  // Set access token in response
   res.cookie('jwt', accessToken, {
-    expires: new Date(Date.now() + 60 * 60 * 1000),
+    expires: new Date(Date.now() + 60 * 60 * 1000), // 60 minutes
     httpOnly: true,
-    secure: true,
-    sameSite: 'None',
-    path: '/',
+    secure: req.secure || req.get('x-forwarded-proto') === 'https',
   });
 
+  // Set refresh token in a separate cookie
   res.cookie('refreshToken', refreshToken, {
-    expires: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000),
+    expires: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000), // 7 days
     httpOnly: true,
-    secure: true, // always true in production
-    sameSite: 'None',
-    path: '/',
+    secure: req.secure || req.get('x-forwarded-proto') === 'https',
   });
 
   user.password = undefined; // Hide password in response
