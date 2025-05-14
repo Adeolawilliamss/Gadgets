@@ -5,11 +5,13 @@ import axiosInstance from '../../utils/axios';
 const AuthContext = createContext();
 
 export const AuthProvider = ({ children }) => {
+  const [loading, setLoading] = useState(true);
   const [isAuthenticated, setIsAuthenticated] = useState(false);
-  const [user, setUser]               = useState(null);
-  const [photo, setPhoto]             = useState(null);
+  const [user, setUser] = useState(null);
+  const [photo, setPhoto] = useState(null);
 
   const checkAuthStatus = async () => {
+    setLoading(true);
     try {
       const res = await axiosInstance.get('/users/isLoggedIn', {
         headers: { 'Cache-Control': 'no-cache' },
@@ -33,20 +35,20 @@ export const AuthProvider = ({ children }) => {
       setIsAuthenticated(false);
       setUser(null);
       setPhoto(null);
+    } finally {
+      setLoading(false);
     }
   };
 
   useEffect(() => {
-    // Delay the single check by 100ms to let the cookie kick in
-    const timer = setTimeout(() => {
-      checkAuthStatus();
-    }, 100);
-    return () => clearTimeout(timer);
-  }, []);
+  checkAuthStatus();
+}, []);
+
 
   return (
     <AuthContext.Provider
       value={{
+        loading, 
         isAuthenticated,
         setIsAuthenticated,
         checkAuthStatus,

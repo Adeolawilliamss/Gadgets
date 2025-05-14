@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axiosInstance from '../../utils/axios';
 import { useAlert } from './../context/AlertContext';
+import { useAuth } from './../context/AuthContext';
 import Slider from 'react-slick';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import 'slick-carousel/slick/slick.css';
@@ -11,6 +12,7 @@ import './Login.css';
 
 function Login() {
   const { showAlert } = useAlert();
+  const { checkAuthStatus, isAuthenticated } = useAuth();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
@@ -58,14 +60,19 @@ function Login() {
     e.preventDefault();
 
     try {
-      const res = await axiosInstance.post('/users/login', {
+      await axiosInstance.post('/users/login', {
         email,
         password,
       });
 
-      if (res.data.status === 'success') {
+      // Immediately recheck auth status
+      await checkAuthStatus();
+
+      if (isAuthenticated) {
         showAlert('success', 'Login successful!');
-        setTimeout(() => location.assign('/home'), 1500);
+        navigate('/home'); // Navigate directly instead of setTimeout+reload
+      } else {
+        showAlert('error', 'Login failed. Try again.');
       }
     } catch (error) {
       showAlert('error', error.response?.data?.message || 'Login failed');
