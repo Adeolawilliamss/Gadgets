@@ -10,13 +10,19 @@ router.post('/logout', authController.logOut);
 router.post('/signup', authController.signUp);
 router.get('/checkout', authController.protect);
 
+router.use(authController.protect);
+
 router.patch(
   '/updateMe',
-  authController.protect,
   userController.uploadUserPhoto,
   userController.resizeUserPhoto,
   userController.updateMe,
 );
+router.get('/me', userController.getMe, userController.getUser);
+
+router.get('/', userController.getAllUsers);
+
+router.get('/:id', userController.getUser);
 
 router.get(
   '/isLoggedIn',
@@ -24,9 +30,5 @@ router.get(
   userController.sendCurrentUser,
 );
 
-router.patch(
-  '/updatePassword',
-  authController.protect,
-  authController.updatePassword,
-);
+router.patch('/updatePassword', authController.updatePassword);
 module.exports = router;

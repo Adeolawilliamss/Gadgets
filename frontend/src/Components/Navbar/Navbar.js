@@ -84,7 +84,7 @@ function Navbar() {
 
       if (res.data.status === 'success') {
         setIsAuthenticated(false);
-        setTimeout(() => location.assign('/'), 1500);
+        navigate('/')
       }
     } catch (error) {
       showAlert('error', error.response?.data?.message || 'LogOut failed');
