@@ -1,6 +1,7 @@
 /*eslint-disable*/
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
 import axiosInstance from '../../utils/axios';
 import { useAlert } from './../context/AlertContext';
 import Slider from 'react-slick';
@@ -58,7 +59,7 @@ function Login() {
     e.preventDefault();
 
     try {
-      const res = await axiosInstance.post('/users/login', {
+      const res = await axios.post('/users/login', {
         email,
         password,
       },{ withCredentials: true });
