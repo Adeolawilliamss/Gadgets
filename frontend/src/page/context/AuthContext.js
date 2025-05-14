@@ -9,7 +9,7 @@ export const AuthProvider = ({ children }) => {
 
   const checkAuthStatus = async () => {
     try {
-      const res = await axiosInstance.get('/me');
+      const res = await axiosInstance.get('/users/me');
       console.log(res);
 
       if (res.data.status === 'success') {
