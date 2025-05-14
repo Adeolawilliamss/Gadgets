@@ -28,16 +28,16 @@ const createSendToken = (user, statusCode, req, res) => {
   res.cookie('jwt', accessToken, {
     expires: new Date(Date.now() + 60 * 60 * 1000),
     httpOnly: true,
-    secure: isProduction, // always true in production
-    sameSite: isProduction ? 'None' : 'Lax',
+    secure: true,
+    sameSite: None,
     path: '/',
   });
 
   res.cookie('refreshToken', refreshToken, {
     expires: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000),
     httpOnly: true,
-    secure: isProduction, // always true in production
-    sameSite: isProduction ? 'None' : 'Lax',
+    secure: true, // always true in production
+    sameSite: None,
     path: '/',
   });
 

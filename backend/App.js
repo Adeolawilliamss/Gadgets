@@ -53,7 +53,11 @@ app.use(
     },
     credentials: true,
   }),
-  express.static(path.join(__dirname, 'public/img'))
+  express.static(path.join(__dirname, 'public/img'), {
+    setHeaders: (res, path) => {
+      res.set('Cross-Origin-Resource-Policy', 'cross-origin');
+    },
+  })
 );
 
 // Also allow general static access (e.g. if you have other files in public)

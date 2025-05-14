@@ -58,14 +58,18 @@ function Login() {
     e.preventDefault();
 
     try {
-      const res = await axiosInstance.post('/users/login', {
-        email,
-        password,
-      });
+      const res = await axiosInstance.post(
+        '/users/login',
+        {
+          email,
+          password,
+        },
+        { withCredentials: true }
+      );
 
       if (res.data.status === 'success') {
         showAlert('success', 'Login successful!');
-        navigate('/home')
+        navigate('/home');
       }
     } catch (error) {
       showAlert('error', error.response?.data?.message || 'Login failed');
