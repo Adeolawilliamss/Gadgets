@@ -59,12 +59,11 @@ function Login() {
     e.preventDefault();
 
     try {
-      await axios.post(
-  'https://gadgets-8unr.onrender.com/users/login',
-  { email, password },
-  { withCredentials: true }
-);
-
+      const res = await axios.post(
+        'https://gadgets-8unr.onrender.com/users/login',
+        { email, password },
+        { withCredentials: true }
+      );
 
       if (res.data.status === 'success') {
         showAlert('success', 'Login successful!');
