@@ -14,7 +14,6 @@ import Signup from './page/signup/signup';
 import Account from './page/Account/account';
 import FinalOrder from './page/FinalOrder/FinalOrder';
 import { AlertProvider } from './page/context/AlertContext';
-import { AuthProvider } from './page/context/AuthContext';
 import Alert from './page/Alert/Alert';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -22,7 +21,6 @@ import 'react-toastify/dist/ReactToastify.css';
 function App({ item }) {
   return (
     <AlertProvider>
-      <AuthProvider>
       <Alert />
       <Layout>
         <Routes>
@@ -41,7 +39,6 @@ function App({ item }) {
         </Routes>
       </Layout>
       <ToastContainer />
-      </AuthProvider>
     </AlertProvider>
   );
 }

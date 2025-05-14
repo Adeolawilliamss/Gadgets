@@ -1,6 +1,5 @@
 /* eslint-disable */
 import React, { useState } from 'react';
-import { useAuth } from '../context/AuthContext';
 import { useAlert } from '../context/AlertContext';
 import { useNavigate } from 'react-router-dom';
 import {
@@ -13,7 +12,6 @@ import {
 import axiosInstance from '../../utils/axios';
 
 const Account = () => {
-  const { user } = useAuth();
   const { showAlert } = useAlert();
   const navigate = useNavigate();
 

@@ -10,7 +10,6 @@ import {
 } from 'react-icons/fa';
 import axiosInstance from '../../utils/axios';
 import { useAlert } from './../../page/context/AlertContext';
-import { useAuth } from './../../page/context/AuthContext';
 import { motion } from 'framer-motion';
 import { Link, useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';

@@ -1,7 +1,6 @@
 /*eslint-disable*/
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { useAuth } from './../context/AuthContext';
 import { cartActions } from '../../redux/cartSlice';
 import pages from '../../utils/pages';
 import { FaTrash } from 'react-icons/fa';
@@ -11,7 +10,6 @@ import './Cartpage.css';
 function Cartpage() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const { isAuthenticated } = useAuth();
   const carts = useSelector((state) => state.cart.cartItem);
   const { totalAmount, totalQuantity } = useSelector((state) => state.cart);
   const discount = 5;
@@ -121,10 +119,10 @@ function Cartpage() {
                   onClick={handleCheckout}
                 >
                   <span className="block w-full text-white">
-                    {isAuthenticated ? 'Checkout' : 'Login to continue'}
+                    Checkout
                   </span>
                   <span className="absolute inset-0 bg-black text-white flex items-center justify-center translate-x-full group-hover:translate-x-0 transition-transform duration-300">
-                    {isAuthenticated ? 'Checkout' : 'Login to continue'}
+                   Checkout
                   </span>
                 </button>
 
