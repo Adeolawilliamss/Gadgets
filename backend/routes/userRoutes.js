@@ -24,7 +24,7 @@ router.get('/', userController.getAllUsers);
 
 router.get('/:id', userController.getUser);
 
-// router.post('/refresh', authController.refreshToken);
+router.post('/refresh-token', authController.refreshToken);
 
 
 router.get(
