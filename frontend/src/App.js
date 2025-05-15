@@ -14,32 +14,35 @@ import Signup from './page/signup/signup';
 import Account from './page/Account/account';
 import FinalOrder from './page/FinalOrder/FinalOrder';
 import { AlertProvider } from './page/context/AlertContext';
+import { AuthProvider } from './page/context/AuthContext';
 import Alert from './page/Alert/Alert';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 function App({ item }) {
   return (
-    <AlertProvider>
-      <Alert />
-      <Layout>
-        <Routes>
-           <Route path="/" element={<Login />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="/shop/:category" element={<Shop />} />
-          <Route path="/products/:id" element={<ItemDetails item={item} />} />
-          <Route path="/cart" element={<Cartpage />} />
-          <Route path="/checkout" element={<Checkout />}/>
-          <Route path="/favourite" element={<Favourite />} />
-          <Route path="/signup" element={<Signup />}/>
-          <Route path="/account" element={<Account />}/>
-          <Route path="/search/:query" element={<Search />} />
-          <Route path="/finalorder" element={<FinalOrder />} />
-          <Route path="*" element={<h1>404: Page Not Found</h1>} />
-        </Routes>
-      </Layout>
-      <ToastContainer />
-    </AlertProvider>
+    <AuthProvider>
+      <AlertProvider>
+        <Alert />
+        <Layout>
+          <Routes>
+            <Route path="/" element={<Login />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/shop/:category" element={<Shop />} />
+            <Route path="/products/:id" element={<ItemDetails item={item} />} />
+            <Route path="/cart" element={<Cartpage />} />
+            <Route path="/checkout" element={<Checkout />} />
+            <Route path="/favourite" element={<Favourite />} />
+            <Route path="/signup" element={<Signup />} />
+            <Route path="/account" element={<Account />} />
+            <Route path="/search/:query" element={<Search />} />
+            <Route path="/finalorder" element={<FinalOrder />} />
+            <Route path="*" element={<h1>404: Page Not Found</h1>} />
+          </Routes>
+        </Layout>
+        <ToastContainer />
+      </AlertProvider>
+    </AuthProvider>
   );
 }
 

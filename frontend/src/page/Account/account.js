@@ -9,12 +9,14 @@ import {
   FaCreditCard,
   FaCog,
 } from 'react-icons/fa';
+import { useAuth } from '../context/AuthContext';
 import axiosInstance from '../../utils/axios';
 
 const Account = () => {
   const { showAlert } = useAlert();
   const navigate = useNavigate();
 
+  const { user, checkAuthStatus } = useAuth();
   const [name, setName] = useState(user?.name || '');
   const [email, setEmail] = useState(user?.email || '');
   const [photo, setPhoto] = useState(null);

@@ -40,22 +40,15 @@ app.use(
   })
 );
 
-// ✅ Serve static image files with CORS explicitly
 app.use(
   '/img',
   cors({
-    origin: function (origin, callback) {
-      if (!origin || allowedOrigins.includes(origin)) {
-        callback(null, true);
-      } else {
-        callback(new Error('CORS not allowed from this origin'));
-      }
-    },
-    credentials: true,
+    origin: '*', // Public images can be viewed by anyone
   }),
   express.static(path.join(__dirname, 'public/img'), {
-    setHeaders: (res, path) => {
+    setHeaders: (res) => {
       res.set('Cross-Origin-Resource-Policy', 'cross-origin');
+      res.set('Access-Control-Allow-Origin', '*');
     },
   })
 );

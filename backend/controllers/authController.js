@@ -16,41 +16,6 @@ const signRefreshToken = (id) =>
     expiresIn: process.env.JWT_REFRESH_EXPIRES_IN,
   });
 
-// const createSendToken = (user, statusCode, req, res) => {
-//   const accessToken = signAccessToken(user._id);
-//   const refreshToken = signRefreshToken(user._id);
-
-//   // Set access token in response headers (for Postman and frontend use)
-//   res.setHeader('Authorization', `Bearer ${accessToken}`);
-
-//   console.log('Origin:', req.headers.origin);
-//   console.log('Setting cookie with token:', accessToken);
-//   res.cookie('jwt', accessToken, {
-//     expires: new Date(Date.now() + 60 * 60 * 1000),
-//     httpOnly: true,
-//     secure: true,
-//     sameSite: 'None',
-//     path: '/',
-//   });
-
-//   res.cookie('refreshToken', refreshToken, {
-//     expires: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000),
-//     httpOnly: true,
-//     secure: true, // always true in production
-//     sameSite: 'None',
-//     path: '/',
-//   });
-
-//   user.password = undefined; // Hide password in response
-
-//   res.status(statusCode).json({
-//     status: 'success',
-//     accessToken, // Send access token to client
-//     refreshToken,
-//     data: { user },
-//   });
-// };
-
 const createSendToken = (user, statusCode, req, res) => {
   const accessToken = signAccessToken(user._id);
   const refreshToken = signRefreshToken(user._id);
@@ -69,37 +34,34 @@ const createSendToken = (user, statusCode, req, res) => {
 };
 
 exports.refreshToken = catchAsync(async (req, res, next) => {
-  const refreshToken = req.cookies.refreshToken || req.body.refreshToken;
+  const { refreshToken } = req.body;
 
   if (!refreshToken) {
-    return next(new AppError('No refresh token provided', 403));
+    return next(new AppError('No refresh token provided', 401));
   }
 
+  let decoded;
   try {
-    const decoded = jwt.verify(refreshToken, process.env.JWT_REFRESH_SECRET);
-    console.log('Decoded JWT:', decoded); // Debugging
-
-    const user = await User.findById(decoded.id);
-    if (!user) {
-      return next(new AppError('User not found', 403));
-    }
-
-    const newAccessToken = signAccessToken(user._id);
-
-    res.setHeader('Authorization', `Bearer ${newAccessToken}`);
-    res.cookie('jwt', newAccessToken, {
-      expires: new Date(Date.now() + 15 * 60 * 1000), // 15 minutes
-      httpOnly: true,
-      secure: req.secure || req.get('x-forwarded-proto') === 'https',
-    });
-
-    res.status(200).json({
-      status: 'success',
-      accessToken: newAccessToken,
-    });
+    decoded = jwt.verify(refreshToken, process.env.JWT_REFRESH_SECRET);
   } catch (err) {
-    return next(new AppError('Invalid or expired refresh token', 403));
+    return next(new AppError('Invalid refresh token', 403));
   }
+
+  const currentUser = await User.findById(decoded.id);
+  if (!currentUser) {
+    return next(new AppError('User not found', 404));
+  }
+
+  const newAccessToken = jwt.sign(
+    { id: currentUser._id },
+    process.env.JWT_ACCESS_SECRET,
+    { expiresIn: process.env.JWT_EXPIRES_IN },
+  );
+
+  res.status(200).json({
+    status: 'success',
+    accessToken: newAccessToken,
+  });
 });
 
 exports.logOut = (req, res) => {
