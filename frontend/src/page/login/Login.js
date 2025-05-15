@@ -67,9 +67,11 @@ function Login() {
         // Save access token to localStorage
         localStorage.setItem('accessToken', res.data.accessToken);
         localStorage.setItem('refreshToken', res.data.refreshToken);
-        
+
         showAlert('success', 'Login successful!');
-        navigate('/home');
+        setTimeout(() => {
+          navigate('/home');
+        }, 500);
       }
     } catch (error) {
       showAlert('error', error.response?.data?.message || 'Login failed');
@@ -157,7 +159,7 @@ function Login() {
                   className="google-logo"
                 />
               </button>
-              <span className="flex absolute top-0 left-20 lg:left-60 items-center h-full w-full text-slate-100 text-xl text-bold">
+              <span className="flex absolute top-0 left-20 lg:left-52 items-center h-full w-full text-slate-100 text-xl text-bold">
                 Sign In with Google
               </span>
             </div>
