@@ -56,7 +56,15 @@ app.use(
 app.use(express.static(path.join(__dirname, 'public')));
 
 // ✅ Security middleware
-app.use(helmet());
+app.use(
+  helmet({
+    crossOriginResourcePolicy: {
+      policy: 'cross-origin'
+    },
+    // if you don’t need embedder policy, disable it:
+    crossOriginEmbedderPolicy: false
+  })
+);
 
 // ✅ Dev logging
 if (process.env.NODE_ENV === 'development') {
