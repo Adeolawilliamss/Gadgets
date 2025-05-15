@@ -58,16 +58,16 @@ function Login() {
     e.preventDefault();
 
     try {
-      const res = await axiosInstance.post(
-        '/users/login',
-        {
-          email,
-          password,
-        },
-        { withCredentials: true }
-      );
+      const res = await axiosInstance.post('/users/login', {
+        email,
+        password,
+      });
 
       if (res.data.status === 'success') {
+         // Save access and refresh tokens
+      localStorage.setItem('accessToken', res.data.accessToken);
+      localStorage.setItem('refreshToken', res.data.refreshToken);
+
         showAlert('success', 'Login successful!');
         navigate('/home');
       }

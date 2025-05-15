@@ -66,7 +66,7 @@ function Navbar() {
   useEffect(() => {
     const fetchUser = async () => {
       try {
-        const res = await axiosInstance.get('/users/me',{ withCredentials: true });
+        const res = await axiosInstance.get('/users/me');
         if (res.data.status === 'success') {
           setUser(res.data.data.user);
           setIsAuthenticated(true);

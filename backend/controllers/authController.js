@@ -55,28 +55,14 @@ const createSendToken = (user, statusCode, req, res) => {
   const accessToken = signAccessToken(user._id);
   const refreshToken = signRefreshToken(user._id);
 
-  // Set access token in response headers (for Postman and frontend use)
+  // Optional: Set in header (useful for Postman/testing)
   res.setHeader('Authorization', `Bearer ${accessToken}`);
 
-  // Set access token in response
-  res.cookie('jwt', accessToken, {
-    expires: new Date(Date.now() + 60 * 60 * 1000), // 60 minutes
-    httpOnly: true,
-    secure: req.secure || req.get('x-forwarded-proto') === 'https',
-  });
-
-  // Set refresh token in a separate cookie
-  res.cookie('refreshToken', refreshToken, {
-    expires: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000), // 7 days
-    httpOnly: true,
-    secure: req.secure || req.get('x-forwarded-proto') === 'https',
-  });
-
-  user.password = undefined; // Hide password in response
+  user.password = undefined;
 
   res.status(statusCode).json({
     status: 'success',
-    accessToken, // Send access token to client
+    accessToken,
     refreshToken,
     data: { user },
   });
@@ -218,47 +204,49 @@ exports.login = catchAsync(async (req, res, next) => {
   console.log('Access token created and sent');
 });
 
-
 exports.protect = catchAsync(async (req, res, next) => {
-  console.log('🔍 Protect Middleware Triggered on:', req.path); // Debugging
-  //1}Getting token and checking if its there
+  console.log('🔍 Protect Middleware Triggered on:', req.path);
+
   let token;
+
+  // 1) Prefer token from Authorization header
   if (
     req.headers.authorization &&
     req.headers.authorization.startsWith('Bearer')
   ) {
     token = req.headers.authorization.split(' ')[1];
-  } else if (req.cookies.jwt) {
+  }
+  // 2) Fallback to cookie (optional support for hybrid flows)
+  else if (req.cookies && req.cookies.jwt) {
     token = req.cookies.jwt;
   }
-  // console.log(token);
 
   if (!token) {
     return next(
-      new AppError('You are not logged in! Please login to continue', 404),
+      new AppError('You are not logged in! Please login to continue', 401),
     );
   }
-  //2}Verify token
+
+  // 3) Verify token
   const decoded = await promisify(jwt.verify)(
     token,
     process.env.JWT_ACCESS_SECRET,
   );
 
-  //3}Check if user still exists
+  // 4) Check user exists
   const currentUser = await User.findById(decoded.id);
-  // console.log('Current User:', currentUser);
   if (!currentUser) {
     return next(
       new AppError('The user belonging to this token no longer exists', 401),
     );
   }
 
-  //4}Check if user changed password after the token was issued
+  // 5) Check password not changed after token was issued
   if (currentUser.changedPasswordAfter(decoded.iat)) {
     return next(new AppError('User recently changed password', 401));
   }
 
-  //GRANT ACCESS TO PROTECTED ROUTE
+  // ✅ Grant access
   req.user = currentUser;
   res.locals.user = currentUser;
   next();
