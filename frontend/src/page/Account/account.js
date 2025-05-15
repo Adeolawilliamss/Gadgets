@@ -1,5 +1,5 @@
 /* eslint-disable */
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useAlert } from '../context/AlertContext';
 import { useNavigate } from 'react-router-dom';
 import {
@@ -15,15 +15,36 @@ const Account = () => {
   const { showAlert } = useAlert();
   const navigate = useNavigate();
 
-  const [name, setName] = useState(user?.name || '');
-  const [email, setEmail] = useState(user?.email || '');
+  const [user, setUser] = useState(null);
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
   const [photo, setPhoto] = useState(null);
+  const [photoPreview, setPhotoPreview] = useState(null);
   const [passwordCurrent, setPasswordCurrent] = useState('');
-  const [photoPreview, setPhotoPreview] = useState(
-    user?.photo ? `/img/users/${user.photo}` : null
-  );
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
+
+  useEffect(() => {
+    const fetchUser = async () => {
+      try {
+        const res = await axiosInstance.get('/users/me');
+        if (res.data.status === 'success') {
+          const userData = res.data.data.user;
+          setUser(userData);
+          setName(userData.name);
+          setEmail(userData.email);
+          setPhotoPreview(userData.photo ? `/img/users/${userData.photo}` : null);
+        } else {
+          showAlert('error', 'Failed to load user data');
+        }
+      } catch (error) {
+        console.error('⚠️ Auth fetch failed:', error.response?.data || error.message);
+        showAlert('error', 'Unable to fetch user data');
+      }
+    };
+
+    fetchUser();
+  }, []);
 
   const handleSettingsSubmit = async (e) => {
     e.preventDefault();
@@ -50,23 +71,21 @@ const Account = () => {
     }
 
     try {
-      await axiosInstance.patch(
-        '/users/updatePassword',
-        {
-          passwordCurrent,
-          password,
-          passwordConfirm: confirmPassword,
-        },
-      );
+      await axiosInstance.patch('/users/updatePassword', {
+        passwordCurrent,
+        password,
+        passwordConfirm: confirmPassword,
+      });
       showAlert('success', 'Password updated successfully!');
       navigate('/account');
     } catch (err) {
-      showAlert(
-        'error',
-        err.response?.data?.message || 'Password update failed'
-      );
+      showAlert('error', err.response?.data?.message || 'Password update failed');
     }
   };
+
+  if (!user) {
+    return <p className="p-8">Loading user info...</p>;
+  }
 
   return (
     <div className="flex flex-col md:flex-row gap-6 p-4">
@@ -116,7 +135,6 @@ const Account = () => {
 
           <div>
             <label className="block mb-1 font-medium">Profile Photo</label>
-
             {photoPreview && (
               <div className="mb-4">
                 <img
@@ -126,7 +144,6 @@ const Account = () => {
                 />
               </div>
             )}
-
             <input
               type="file"
               accept="image/*"
