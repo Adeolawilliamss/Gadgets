@@ -42,16 +42,15 @@ app.use(
 
 app.use(
   '/img',
-  cors({
-    origin: '*', // Public images can be viewed by anyone
-  }),
+  cors({ origin: '*' }),
   express.static(path.join(__dirname, 'public/img'), {
-    setHeaders: (res) => {
-      res.set('Cross-Origin-Resource-Policy', 'cross-origin');
-      res.set('Access-Control-Allow-Origin', '*');
+    setHeaders: (res, filePath, stat) => {
+      res.setHeader('Cross-Origin-Resource-Policy', 'cross-origin');
+      res.setHeader('Access-Control-Allow-Origin', '*');
     },
   })
 );
+
 
 // Also allow general static access (e.g. if you have other files in public)
 app.use(express.static(path.join(__dirname, 'public')));

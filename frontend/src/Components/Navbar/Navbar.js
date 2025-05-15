@@ -197,9 +197,9 @@ function Navbar() {
                 src={
                   isAuthenticated && user?.photo
                     ? `https://gadgets-8unr.onrender.com/img/users/${user.photo}`
-                    : '/default.jpg'
+                    : 'https://gadgets-frontend.onrender.com/default.jpg'
                 }
-                onError={(e) => (e.currentTarget.src = '/default.jpg')}
+                onError={(e) => (e.currentTarget.src = 'https://gadgets-frontend.onrender.com/default.jpg')}
                 alt="avatar"
                 className="avatar mr-5 ml-5 rounded-full w-10 h-10 object-cover"
               />
