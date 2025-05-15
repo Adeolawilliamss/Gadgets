@@ -196,9 +196,10 @@ function Navbar() {
               <img
                 src={
                   isAuthenticated && user?.photo
-                    ? `${process.env.REACT_APP_BACKEND_URL}/img/users/${user.photo}`
+                    ? `https://gadgets-8unr.onrender.com/img/users/${user.photo}`
                     : '/default.jpg'
                 }
+                onError={(e) => (e.currentTarget.src = '/default.jpg')}
                 alt="avatar"
                 className="avatar mr-5 ml-5 rounded-full w-10 h-10 object-cover"
               />

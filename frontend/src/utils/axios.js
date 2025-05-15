@@ -87,7 +87,7 @@ axiosInstance.interceptors.response.use(
         processQueue(err, null);
         localStorage.removeItem('accessToken');
         localStorage.removeItem('refreshToken');
-        window.location.href = '/login'; // or navigate('/login')
+        window.location.href = '/'; // or navigate('/login')
         return Promise.reject(err);
       } finally {
         isRefreshing = false;
