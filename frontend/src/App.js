@@ -21,28 +21,26 @@ import 'react-toastify/dist/ReactToastify.css';
 
 function App({ item }) {
   return (
-    <AuthProvider>
-      <AlertProvider>
-        <Alert />
-        <Layout>
-          <Routes>
-            <Route path="/" element={<Login />} />
-            <Route path="/home" element={<Home />} />
-            <Route path="/shop/:category" element={<Shop />} />
-            <Route path="/products/:id" element={<ItemDetails item={item} />} />
-            <Route path="/cart" element={<Cartpage />} />
-            <Route path="/checkout" element={<Checkout />} />
-            <Route path="/favourite" element={<Favourite />} />
-            <Route path="/signup" element={<Signup />} />
-            <Route path="/account" element={<Account />} />
-            <Route path="/search/:query" element={<Search />} />
-            <Route path="/finalorder" element={<FinalOrder />} />
-            <Route path="*" element={<h1>404: Page Not Found</h1>} />
-          </Routes>
-        </Layout>
-        <ToastContainer />
-      </AlertProvider>
-    </AuthProvider>
+    <AlertProvider>
+      <Alert />
+      <Layout>
+        <Routes>
+          <Route path="/" element={<Login />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/shop/:category" element={<Shop />} />
+          <Route path="/products/:id" element={<ItemDetails item={item} />} />
+          <Route path="/cart" element={<Cartpage />} />
+          <Route path="/checkout" element={<Checkout />} />
+          <Route path="/favourite" element={<Favourite />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/account" element={<Account />} />
+          <Route path="/search/:query" element={<Search />} />
+          <Route path="/finalorder" element={<FinalOrder />} />
+          <Route path="*" element={<h1>404: Page Not Found</h1>} />
+        </Routes>
+      </Layout>
+      <ToastContainer />
+    </AlertProvider>
   );
 }
 

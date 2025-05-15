@@ -23,8 +23,8 @@ function Navbar() {
   const [showItems, setShowItems] = useState(false);
   const [search, setSearch] = useState('');
   const { showAlert } = useAlert();
-  const { user, isAuthenticated, checkAuthStatus, setIsAuthenticated } =
-    useAuth();
+  const [user, setUser] = useState(null);
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
   const navigate = useNavigate();
   const { totalQuantity, wishListQuantity } = useSelector(
     (state) => state.cart
@@ -63,6 +63,28 @@ function Navbar() {
       transition: { delay: i * 0.1, duration: 0.3, ease: 'easeOut' },
     }),
   };
+
+  useEffect(() => {
+    const fetchUser = async () => {
+      try {
+        const res = await axiosInstance.get('/users/me');
+        if (res.data.status === 'success') {
+          setUser(res.data.data.user);
+          setIsAuthenticated(true);
+        } else {
+          setIsAuthenticated(false);
+        }
+      } catch (error) {
+        console.error(
+          '⚠️ Auth fetch failed:',
+          error.response?.data || error.message
+        );
+        setIsAuthenticated(false);
+      }
+    };
+
+    fetchUser();
+  }, []);
 
   useEffect(() => {
     if (menu) {

@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axiosInstance from '../../utils/axios';
 import { useAlert } from './../context/AlertContext';
-import { useAuth } from '../context/AuthContext'; 
 import Slider from 'react-slick';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import 'slick-carousel/slick/slick.css';
@@ -13,7 +12,6 @@ import './Login.css';
 function Login() {
   const { showAlert } = useAlert();
   const [email, setEmail] = useState('');
-  const { checkAuthStatus } = useAuth(); 
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
   const navigate = useNavigate();
@@ -66,12 +64,10 @@ function Login() {
       });
 
       if (res.data.status === 'success') {
-         // Save access and refresh tokens
-      localStorage.setItem('accessToken', res.data.accessToken);
-      localStorage.setItem('refreshToken', res.data.refreshToken);
+        // Save access token to localStorage
+        localStorage.setItem('accessToken', res.data.accessToken);
 
         showAlert('success', 'Login successful!');
-        await checkAuthStatus();
         navigate('/home');
       }
     } catch (error) {
