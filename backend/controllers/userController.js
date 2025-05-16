@@ -3,9 +3,13 @@ const sharp = require('sharp');
 const User = require('../models/userModel');
 const AppError = require('../utils/appError');
 const catchAsync = require('../utils/catchAsync');
+const cloudinary = require('../config/cloudinary');
+const { Readable } = require('stream');
 
+// MEMORY STORAGE for image buffer
 const multerStorage = multer.memoryStorage();
 
+// FILTER only images
 const multerFilter = (req, file, cb) => {
   if (file.mimetype.startsWith('image')) {
     cb(null, true);
@@ -14,25 +18,49 @@ const multerFilter = (req, file, cb) => {
   }
 };
 
+// Multer upload middleware
 const upload = multer({
   storage: multerStorage,
   fileFilter: multerFilter,
 });
 
+// Upload middleware
 exports.uploadUserPhoto = upload.single('photo');
 
+// Convert buffer to readable stream (for Cloudinary)
+const bufferToStream = (buffer) => {
+  const readable = new Readable();
+  readable._read = () => {};
+  readable.push(buffer);
+  readable.push(null);
+  return readable;
+};
+
+// Upload to Cloudinary instead of local file system
 exports.resizeUserPhoto = catchAsync(async (req, res, next) => {
   if (!req.file) return next();
 
-  req.file.filename = `user-${req.user.id}-${Date.now()}.jpeg`;
-
-  await sharp(req.file.buffer)
+  // Resize using sharp
+  const buffer = await sharp(req.file.buffer)
     .resize(500, 500)
     .toFormat('jpeg')
     .jpeg({ quality: 90 })
-    .toFile(`public/img/users/${req.file.filename}`);
+    .toBuffer();
 
-  next();
+  const stream = cloudinary.uploader.upload_stream(
+    {
+      folder: 'profile-pictures',
+      format: 'jpeg',
+      public_id: `user-${req.user.id}-${Date.now()}`,
+    },
+    (error, result) => {
+      if (error) return next(new AppError('Cloudinary upload failed', 500));
+      req.file.cloudinaryUrl = result.secure_url;
+      next();
+    }
+  );
+
+  bufferToStream(buffer).pipe(stream);
 });
 
 const filterObj = (obj, ...allowedFields) => {
@@ -76,20 +104,22 @@ exports.getAllUsers = catchAsync(async (req, res, next) => {
 });
 
 exports.updateMe = catchAsync(async (req, res, next) => {
-  //1} Create error if user POSTs password data
   if (req.body.password || req.body.passwordConfirm) {
     return next(
       new AppError(
-        'This route is not for password updates.Please use /updateMyPassword',
-        400,
-      ),
+        'This route is not for password updates. Please use /updateMyPassword',
+        400
+      )
     );
   }
-  //2}Filtered out unwanted field names that are not allowed to be updated
-  const filteredBody = filterObj(req.body, 'name', 'email');
-  if (req.file) filteredBody.photo = req.file.filename;
 
-  //3}Update user document
+  const filteredBody = filterObj(req.body, 'name', 'email');
+
+  // Add Cloudinary photo URL if available
+  if (req.file?.cloudinaryUrl) {
+    filteredBody.photo = req.file.cloudinaryUrl;
+  }
+
   const updatedUser = await User.findByIdAndUpdate(req.user.id, filteredBody, {
     new: true,
     runValidators: true,
@@ -102,21 +132,3 @@ exports.updateMe = catchAsync(async (req, res, next) => {
     },
   });
 });
-
-exports.getMe = (req, res, next) => {
-  req.params.id = req.user.id;
-  next();
-};
-
-exports.sendCurrentUser = (req, res) => {
-  console.log('🔄 sendCurrentUser: req.user is', req.user);
-  if (!req.user) {
-    return res.status(401).json({ status: 'fail', message: 'Not logged in' });
-  }
-  const { _id: id, name, email, photo } = req.user;
-  res.status(200).json({
-    status: 'success',
-    data: { user: { id, name, email, photo } },
-  });
-};
-

@@ -34,7 +34,6 @@ function TopSelling () {
     const fetchWeeklyFeatures = async () => {
       try {
         const res = await axiosInstance.get('/products?feature=weekly');
-        console.log(res.data)
         setWeeklyFeatures(res.data.data.products);
       } catch (error) {
         console.error('Failed to fetch Products:', error);

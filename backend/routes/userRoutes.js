@@ -24,11 +24,5 @@ router.get('/', userController.getAllUsers);
 
 router.get('/:id', userController.getUser);
 
-router.get(
-  '/isLoggedIn',
-  authController.isLoggedIn,
-  userController.sendCurrentUser,
-);
-
 router.patch('/updatePassword', authController.updatePassword);
 module.exports = router;
