@@ -33,7 +33,7 @@ const Account = () => {
           setUser(userData);
           setName(userData.name);
           setEmail(userData.email);
-          setPhotoPreview(userData.photo ? `https://gadgets-8unr.onrender.com/img/users/${userData.photo}` : null);
+          setPhotoPreview(userData.photo ? userData.photo : null);
         } else {
           showAlert('error', 'Failed to load user data');
         }
