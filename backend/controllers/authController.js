@@ -11,14 +11,8 @@ const signAccessToken = (id) =>
     expiresIn: process.env.JWT_EXPIRES_IN,
   });
 
-const signRefreshToken = (id) =>
-  jwt.sign({ id }, process.env.JWT_REFRESH_SECRET, {
-    expiresIn: process.env.JWT_REFRESH_EXPIRES_IN,
-  });
-
 const createSendToken = (user, statusCode, req, res) => {
   const accessToken = signAccessToken(user._id);
-  const refreshToken = signRefreshToken(user._id);
 
   // Optional: Set in header (useful for Postman/testing)
   res.setHeader('Authorization', `Bearer ${accessToken}`);
@@ -28,37 +22,9 @@ const createSendToken = (user, statusCode, req, res) => {
   res.status(statusCode).json({
     status: 'success',
     accessToken,
-    refreshToken,
     data: { user },
   });
 };
-
-exports.refreshToken = catchAsync(async (req, res, next) => {
-  const refreshToken = req.body.refreshToken;
-
-  if (!refreshToken) {
-    return next(new AppError('No refresh token provided', 403));
-  }
-
-  try {
-    const decoded = jwt.verify(refreshToken, process.env.JWT_REFRESH_SECRET);
-
-    const user = await User.findById(decoded.id);
-    if (!user) {
-      return next(new AppError('User not found', 403));
-    }
-
-    const newAccessToken = signAccessToken(user._id);
-
-    res.status(200).json({
-      status: 'success',
-      accessToken: newAccessToken,
-    });
-  } catch (err) {
-    return next(new AppError('Invalid or expired refresh token', 403));
-  }
-});
-
 
 exports.logOut = (req, res) => {
   res.clearCookie('jwt', {
@@ -151,15 +117,7 @@ exports.login = catchAsync(async (req, res, next) => {
   if (!user || !(await user.correctPassword(password, user.password))) {
     return next(new AppError('Incorrect email or password', 401));
   }
-
-  // Logging the email and some additional data for debugging
-  console.log('Login attempt for:', email);
-  console.log('User found:', user);
-
-  // Create and send token
   createSendToken(user, 200, req, res);
-
-  console.log('Access token created and sent');
 });
 
 exports.protect = catchAsync(async (req, res, next) => {

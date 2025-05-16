@@ -66,8 +66,6 @@ function Login() {
       if (res.data.status === 'success') {
         // Save access token to localStorage
         localStorage.setItem('accessToken', res.data.accessToken);
-        localStorage.setItem('refreshToken', res.data.refreshToken);
-
         showAlert('success', 'Login successful!');
         setTimeout(() => {
           navigate('/home');
