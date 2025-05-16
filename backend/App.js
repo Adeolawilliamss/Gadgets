@@ -43,7 +43,7 @@ app.use(
 app.use(
   '/img',
   cors({ origin: '*' }),
-  express.static(path.join(__dirname, 'public/img'), {
+  express.static(path.join(__dirname, 'public/img/users'), {
     setHeaders: (res, filePath, stat) => {
       res.setHeader('Cross-Origin-Resource-Policy', 'cross-origin');
       res.setHeader('Access-Control-Allow-Origin', '*');

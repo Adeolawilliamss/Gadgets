@@ -69,7 +69,7 @@ function Navbar() {
         const res = await axiosInstance.get('/users/me');
         if (res.data.status === 'success') {
           setUser(res.data.data.user);
-          console.log(res.data.user)
+          console.log(res.data.data.user)
           setIsAuthenticated(true);
         } else {
           setIsAuthenticated(false);
