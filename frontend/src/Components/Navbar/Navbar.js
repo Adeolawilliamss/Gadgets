@@ -197,7 +197,7 @@ function Navbar() {
               <img
                 src={
                   isAuthenticated && user?.photo
-                    ? `https://gadgets-8unr.onrender.com/img/users/${user.photo}`
+                    ? user.photo
                     : 'https://gadgets-frontend.onrender.com/default.jpg'
                 }
                 onError={(e) => (e.currentTarget.src = 'https://gadgets-frontend.onrender.com/default.jpg')}
